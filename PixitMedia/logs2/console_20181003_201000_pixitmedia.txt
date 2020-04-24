@@ -1,0 +1,158 @@
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ py.test.exe -v -s tests/p01google/p01searchpixitmedia_tests.py > consoleoutput1.txt 2>&1
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-3.4.2, py-1.5.3, pluggy-0.6.0 -- c:\tools\python36\python.exe
+cachedir: .pytest_cache
+sensitiveurl: .*
+metadata: {'Python': '3.6.1', 'Platform': 'Windows-7-6.1.7601-SP1', 'Packages': {'pytest': '3.4.2', 'py': '1.5.3', 'pluggy': '0.6.0'}, 'Plugins': {'variables': '1.7.1', 'selenium': '1.14.0', 'metadata': '1.7.0', 'html': '1.17.0', 'bdd': '2.21.0', 'base-url': '1.4.1'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk8u172', 'Base URL': '', 'Driver': None, 'Capabilities': {}}
+rootdir: C:\Users\cromox\Desktop\newselenium\UDEMY\PixitMedia, inifile:
+plugins: variables-1.7.1, selenium-1.14.0, metadata-1.7.0, html-1.17.0, bdd-2.21.0, base-url-1.4.1
+collecting ... collected 3 items
+
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test1_google_pixitmedia_page 
+== > Running one time setUp
+Python Version = 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)]
+Browser version ( opera ) = 55.0.2994.61
+
+--- > Running method level setUp
+Result 1  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test2_products_page 
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+Result 3  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test3_contactus_page 
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  False
+ResultLast = True
+FAILED
+--- > Running method level tearDown
+
+== > Running one time tearDown
+
+
+================================== FAILURES ===================================
+________________ P01SearchPixitMediaTests.test3_contactus_page ________________
+
+self = <tests.p01google.p01searchpixitmedia_tests.P01SearchPixitMediaTests testMethod=test3_contactus_page>
+
+    @pytest.mark.run(order=3)
+    def test3_contactus_page(self):
+        self.log.info("test3_fill_in_contactus_page_started")
+        self.googlesearchpage.gotoContactUs()
+        time.sleep(3)
+        result = self.googlesearchpage.verifyPageURL("https://www.pixitmedia.com/contact-us/")
+        self.tstatus.mark(result, "ContactUs URL Verified")
+        print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
+        self.googlesearchpage.fillfirstname('Test1')
+        self.googlesearchpage.filllastname('Last1')
+        self.googlesearchpage.fillemailadd('t1@test123@gmail.com')
+        emailx = self.googlesearchpage.email_on_emailsection()
+        result = self.googlesearchpage.verifyEmailFormat(emailx)
+        self.tstatus.mark(result, "Get email and verified")
+        print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
+        self.googlesearchpage.fillorganisation('TesterOne')
+        self.googlesearchpage.fillcontactno('07777111222')
+        self.googlesearchpage.fillsubject('Tester 123')
+        self.googlesearchpage.fillmessage('Cubaan 123')
+        result = self.googlesearchpage.verifyMessageTab()
+        print("ResultLast = " + str(result))
+>       self.tstatus.markFinal("Contact Us page verified", result, "test3_contactus_page")
+
+tests\p01google\p01searchpixitmedia_tests.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <utilities.teststatus.TestStatus object at 0x0000000004C308D0>
+testName = 'Contact Us page verified', result = True
+resultMessage = 'test3_contactus_page'
+
+    def markFinal(self, testName, result, resultMessage):
+        """
+            Mark the final result of the verification point in a test case
+            This needs to be called at least once in a test case
+            This should be final test status of the test case
+            """
+        self.setResult(result, resultMessage)
+    
+        if "FAIL" in self.resultList:
+            self.log.error(testName +  " ### TEST FAILED")
+            self.resultList.clear()
+>           assert True == False
+E           AssertionError
+
+utilities\teststatus.py:63: AssertionError
+------------------------------ Captured log call ------------------------------
+p01searchpixitmedia_tests.py   72 INFO     test3_fill_in_contactus_page_started
+selenium_driver.py          70 INFO     Element found - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+selenium_driver.py          99 INFO     Clicked on element - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+basepage.py                 45 INFO     expectedURL ( https://www.pixitmedia.com/contact-us/ ) VS currentURL ( https://www.pixitmedia.com/contact-us/ )
+teststatus.py               31 INFO     ### VERIFICATION SUCCESSFUL -- ContactUs URL Verified
+selenium_driver.py          70 INFO     Element found - locator (field_qh4icy2) + locatorType (id)
+selenium_driver.py          99 INFO     Clicked on element - locator (field_qh4icy2) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_qh4icy2) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_qh4icy2) + locatorType (id)
+selenium_driver.py         113 INFO     Sent data (b'Test1') on element - locator (field_qh4icy2) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_ocfup12) + locatorType (id)
+selenium_driver.py          99 INFO     Clicked on element - locator (field_ocfup12) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_ocfup12) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_ocfup12) + locatorType (id)
+selenium_driver.py         113 INFO     Sent data (b'Last1') on element - locator (field_ocfup12) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py          99 INFO     Clicked on element - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py         113 INFO     Sent data (b't1@test123@gmail.com') on element - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py         179 INFO     Element present - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py         153 DEBUG    In locator condition
+selenium_driver.py          70 INFO     Element found - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py         155 DEBUG    Before finding value, size = 0
+selenium_driver.py         157 DEBUG    After finding element value, size = 20
+selenium_driver.py         161 INFO     Text is on the element - locator (field_29yf4d2) + locatorType (id)
+selenium_driver.py         162 INFO     The value = 't1@test123@gmail.com'
+teststatus.py               34 ERROR    ### VERIFICATION FAILED -- Get email and verified
+selenium_driver.py          38 INFO     Screenshot save to directory: C:\Users\cromox\Desktop\newselenium\UDEMY\PixitMedia\base\..\screenshots\Get_email_and_verified_20181003_201232_401921.png
+selenium_driver.py          70 INFO     Element found - locator (field_fz52u) + locatorType (id)
+selenium_driver.py          99 INFO     Clicked on element - locator (field_fz52u) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_fz52u) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_fz52u) + locatorType (id)
+selenium_driver.py         113 INFO     Sent data (b'TesterOne') on element - locator (field_fz52u) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_yuy03) + locatorType (id)
+selenium_driver.py          99 INFO     Clicked on element - locator (field_yuy03) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_yuy03) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_yuy03) + locatorType (id)
+selenium_driver.py         113 INFO     Sent data (b'07777111222') on element - locator (field_yuy03) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_e6lis62) + locatorType (id)
+selenium_driver.py          99 INFO     Clicked on element - locator (field_e6lis62) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_e6lis62) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_e6lis62) + locatorType (id)
+selenium_driver.py         113 INFO     Sent data (b'Tester 123') on element - locator (field_e6lis62) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py          99 INFO     Clicked on element - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py         113 INFO     Sent data (b'Cubaan 123') on element - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py          70 INFO     Element found - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py         179 INFO     Element present - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py         153 DEBUG    In locator condition
+selenium_driver.py          70 INFO     Element found - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py         155 DEBUG    Before finding value, size = 0
+selenium_driver.py         157 DEBUG    After finding element value, size = 10
+selenium_driver.py         161 INFO     Text is on the element - locator (field_9jv0r12) + locatorType (id)
+selenium_driver.py         162 INFO     The value = 'Cubaan 123'
+teststatus.py               31 INFO     ### VERIFICATION SUCCESSFUL -- test3_contactus_page
+teststatus.py               61 ERROR    Contact Us page verified ### TEST FAILED
+===================== 1 failed, 2 passed in 31.53 seconds =====================

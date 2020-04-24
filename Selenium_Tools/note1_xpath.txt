@@ -1,0 +1,82 @@
+1) Difference between single ‘/’ or double ‘//’
+
+A single slash at the start of Xpath instructs XPath engine to look for element starting from root node.
+A double slash at the start of Xpath instructs XPath engine to search look for matching element anywhere in the XML document.
+
+2) Relative XPath - Combination of Double Slash 
+
+Relative xpath can be choose in many ways and to understand that, it is required to understand the usage of single & double slashes in the xpaths.
+
+Usage of Single ‘/’ and double ‘//’ in the xpath :
+
+A single slash ‘/’ anywhere in Xpath signifies to look for the element immediately inside its parent element.
+A double slash ‘//’ signifies to look for any child or any grand-child element inside the parent element.
+
+Finding it confusing, just look at the xpath of the same RSS button with using double slashes in the middle of the xpath:
+
+Absolute xpath: /html/body/div[2]/div/div/footer/section[3]/div/ul/li[3]/a
+FirePath xpath: //*[@id=’social-media’]/ul/li[3]/a
+
+New relative xpath: //body//footer/section[3]/div/ul/li[3]/a
+Another relative xpath: //body//section[3]/div/ul/li[3]/a
+
+3) Partial XPath - Contains Keyword
+
+Most of the times tester face issues when the locator’s properties are dynamically generating. 
+Let’s take the example of my profile image on this same page at the right side of the screen and assume that the ‘src’ of 
+the image  is dynamically generating. 
+
+The html code of the div looks like this:
+
+XHTML
+
+<div class="profile_cont" itemtype="http://schema.org/Article" itemscope="">
+<img src="https://toolsqa.com/wp-content/uploads/2014/02/Profile.jpg?51a507" itemprop="image">
+</div>
+
+The only thing we are sure here is that the text ‘Profile’ will always be included in the src of this image, 
+so we can utilize this hint in our xpath like this:   //img[contains(@src,’Profile’)]
+
+4) Partial XPath - Starts-With Keyword
+
+Now let’s take another example of the Linked In image on this same page at the right side of the screen just under the My 
+Profile section and again assume that the ‘src’ of the image  is dynamically generating. 
+
+The html code of the div looks like this:
+
+XHTML
+
+<img alt="Visit Us On Linkedin" style="border:0px;" src="http://toolsqa.com/wp-content/uploads/2014/04/linkedin.png">
+
+The only thing we are sure here is that the text ‘Visit Us On Linkedin’ will always be included in the ‘src’ of this image, 
+so we can utilize this hint in our xpath like this:    //img[starts-with(@alt,’Visit Us On Linkedin’)]
+
+5) Partial XPath - Text Keyword
+
+Take another example of the text of my name “Lakshay Sharma’ on this same page at the right side of the screen just under 
+the My Profile section. 
+
+The html code of the div looks like this:
+
+XHTML
+
+<span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+<b itemprop="name">LAKSHAY SHARMA</b>
+. I’M A
+<b>TEST AUTOMATION ENGINEER</b>
+</span>
+
+-- //*[text()='LAKSHAY SHARMA']
+
+Other examples :
+
+Below the image, you can see link with words/sentences = 'View my complete profile'
+
+-- //*[text()='View my complete profile']
+
+OR
+
+-- //a[contains (text(), 'View my complete profile')]
+
+
+

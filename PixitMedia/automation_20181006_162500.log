@@ -1,0 +1,114 @@
+06/10/2018 04:29:20 PM - P01SearchPixitMediaTests - INFO: test1_goto_google_page_started
+06/10/2018 04:29:20 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.google.co.uk ) VS currentURL ( https://www.google.co.uk )
+06/10/2018 04:29:20 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Currently At Google Page Verified
+06/10/2018 04:29:20 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- google word Verified
+06/10/2018 04:29:20 PM - P01SearchPixitMedia - INFO: Element found - locator (lst-ib) + locatorType (id)
+06/10/2018 04:29:20 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (lst-ib) + locatorType (id)
+06/10/2018 04:29:20 PM - P01SearchPixitMedia - INFO: Element found - locator (lst-ib) + locatorType (id)
+06/10/2018 04:29:21 PM - P01SearchPixitMedia - INFO: Sent data (b'pixitmedia') on element - locator (lst-ib) + locatorType (id)
+06/10/2018 04:29:21 PM - P01SearchPixitMedia - INFO: Element found - locator (lst-ib) + locatorType (id)
+06/10/2018 04:29:22 PM - P01SearchPixitMedia - INFO: Sent data (b'+4Ac-') on element - locator (lst-ib) + locatorType (id)
+06/10/2018 04:29:22 PM - P01SearchPixitMedia - DEBUG: In locator condition
+06/10/2018 04:29:22 PM - P01SearchPixitMedia - INFO: Element found - locator (//*[contains(text(),'https://www.pixitmedia.com/')]) + locatorType (xpath)
+06/10/2018 04:29:22 PM - P01SearchPixitMedia - DEBUG: Before finding element.text, size = 0
+06/10/2018 04:29:22 PM - P01SearchPixitMedia - DEBUG: After finding element.text, size = 27
+06/10/2018 04:29:22 PM - P01SearchPixitMedia - INFO: Text is on the element - locator (//*[contains(text(),'https://www.pixitmedia.com/')]) + locatorType (xpath)
+06/10/2018 04:29:22 PM - P01SearchPixitMedia - INFO: The text = 'https://www.pixitmedia.com/'
+06/10/2018 04:29:27 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- pixitmedia word Verified
+06/10/2018 04:29:27 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.pixitmedia.com ) VS currentURL ( https://www.pixitmedia.com )
+06/10/2018 04:29:27 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- test1_google_pixitmedia
+06/10/2018 04:29:27 PM - TestStatus - INFO: URL pixitmedia verified passed ### TEST SUCCESSFUL
+06/10/2018 04:29:27 PM - P01SearchPixitMediaTests - INFO: test2_goto_pixstor_page_started
+06/10/2018 04:29:27 PM - P01SearchPixitMedia - INFO: Element found - locator (//*[@id="menu-item-48"]/*/*) + locatorType (xpath)
+06/10/2018 04:29:28 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (//*[@id="menu-item-48"]/*/*) + locatorType (xpath)
+06/10/2018 04:29:28 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- products word Verified
+06/10/2018 04:29:28 PM - P01SearchPixitMedia - INFO: Element found - locator (PixStor Search) + locatorType (link)
+06/10/2018 04:29:30 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (PixStor Search) + locatorType (link)
+06/10/2018 04:29:30 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- PixStor-Search word Verified
+06/10/2018 04:29:30 PM - P01SearchPixitMedia - INFO: Element found - locator (//span[@class='elementor-button-text']) + locatorType (xpath)
+06/10/2018 04:29:30 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (//span[@class='elementor-button-text']) + locatorType (xpath)
+06/10/2018 04:29:30 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Datasheet word Verified
+06/10/2018 04:29:35 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- File bigger than 1000 bytes
+06/10/2018 04:29:35 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- File has Content-Type application/pdf
+06/10/2018 04:29:35 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- File is PDF format
+06/10/2018 04:29:35 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.pixitmedia.com/wp-content/uploads/2018/03/PixStor-Search-Datasheet.pdf ) VS currentURL ( https://www.pixitmedia.com/wp-content/uploads/2018/03/PixStor-Search-Datasheet.pdf )
+06/10/2018 04:29:35 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- test2_products_page
+06/10/2018 04:29:35 PM - TestStatus - INFO: View pdf doc verified passed ### TEST SUCCESSFUL
+06/10/2018 04:29:37 PM - P01SearchPixitMediaTests - INFO: test3_fill_in_contactus_page_started
+06/10/2018 04:29:37 PM - P01SearchPixitMedia - INFO: Element found - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+06/10/2018 04:29:38 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.pixitmedia.com/contact-us/ ) VS currentURL ( https://www.pixitmedia.com/contact-us/ )
+06/10/2018 04:29:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- ContactUs URL Verified
+06/10/2018 04:29:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- ContactUs word Verified
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_qh4icy2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (field_qh4icy2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_qh4icy2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_qh4icy2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Sent data (b'Rosli1') on element - locator (field_qh4icy2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_ocfup12) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (field_ocfup12) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_ocfup12) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_ocfup12) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Sent data (b'Talib1') on element - locator (field_ocfup12) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Sent data (b'roslitalib2017@gmail.com') on element - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element present - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - DEBUG: In locator condition
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Element found - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - DEBUG: Before finding value, size = 0
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - DEBUG: After finding element value, size = 24
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: Text is on the element - locator (field_29yf4d2) + locatorType (id)
+06/10/2018 04:29:41 PM - P01SearchPixitMedia - INFO: The value = 'roslitalib2017@gmail.com'
+06/10/2018 04:29:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Email address verified
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_fz52u) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (field_fz52u) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_fz52u) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_fz52u) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Sent data (b'TesterOne') on element - locator (field_fz52u) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Sent data (b'07799888444') on element - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element present - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - DEBUG: In locator condition
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - DEBUG: Before finding value, size = 0
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - DEBUG: After finding element value, size = 11
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Text is on the element - locator (field_yuy03) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: The value = '07799888444'
+06/10/2018 04:29:42 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- PhoneNumber verified
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_e6lis62) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (field_e6lis62) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_e6lis62) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_e6lis62) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Sent data (b'LastTest - before wrap-up') on element - locator (field_e6lis62) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:42 PM - P01SearchPixitMedia - INFO: Element found - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Sent data (b'This is a test for Jez') on element - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Element found - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Element present - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - DEBUG: In locator condition
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Element found - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - DEBUG: Before finding value, size = 0
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - DEBUG: After finding element value, size = 22
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Text is on the element - locator (field_9jv0r12) + locatorType (id)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: The value = 'This is a test for Jez'
+06/10/2018 04:29:43 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Text messages verified
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - DEBUG: In locator condition
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Element found - locator (//button[@type='submit']) + locatorType (xpath)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - DEBUG: Before finding element.text, size = 0
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - DEBUG: After finding element.text, size = 4
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Text is on the element - locator (//button[@type='submit']) + locatorType (xpath)
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: The text = 'SEND'
+06/10/2018 04:29:43 PM - P01SearchPixitMedia - INFO: Element found - locator (//button[@type='submit']) + locatorType (xpath)
+06/10/2018 04:29:44 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (//button[@type='submit']) + locatorType (xpath)
+06/10/2018 04:29:44 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- test3_contactus_page
+06/10/2018 04:29:44 PM - TestStatus - INFO: Contact Us page verified passed ### TEST SUCCESSFUL

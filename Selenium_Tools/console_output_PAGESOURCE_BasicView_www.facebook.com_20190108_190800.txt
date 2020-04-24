@@ -1,0 +1,2318 @@
+Python Version = 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)]
+
+Put URL = www.facebook.com
+URL = https://www.facebook.com
+
+DECL     : DOCTYPE html
+    Data : \ENTER\ 
+START tag: html
+    Attr : ('lang', 'en')
+    Attr : ('id', 'facebook')
+    Attr : ('class', 'no_js')
+    Data : \ENTER\ 
+START tag: head
+START tag: meta
+    Attr : ('charset', 'utf-8')
+END tag  : meta
+START tag: meta
+    Attr : ('name', 'referrer')
+    Attr : ('content', 'default')
+    Attr : ('id', 'meta_referrer')
+END tag  : meta
+START tag: script
+    Data : window._cstart=+new Date();
+END tag  : script
+START tag: script
+    Data : function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"ajaxpipe_token":"AXjGK1qoVbAcnhAH","ti ...(cont)...
+END tag  : script
+START tag: style
+END tag  : style
+START tag: script
+    Data : __DEV__=0;CavalryLogger=window.CavalryLogger||function(a){this.lid=a,this.transition=!1,this.metric_collected=!1,this.is_detailed_profiler=!1,this.instrumentation_started=!1,this.pagelet_metrics={},th ...(cont)...
+END tag  : script
+START tag: noscript
+START tag: meta
+    Attr : ('http-equiv', 'refresh')
+    Attr : ('content', '0; URL=/?_fb_noscript=1')
+END tag  : meta
+END tag  : noscript
+START tag: title
+    Attr : ('id', 'pageTitle')
+    Data : Facebook log in or sign up
+END tag  : title
+START tag: meta
+    Attr : ('property', 'og:site_name')
+    Attr : ('content', 'Facebook')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:url')
+    Attr : ('content', 'https://www.facebook.com/')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:image')
+    Attr : ('content', 'https://www.facebook.com/images/fb_icon_325x325.png')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale')
+    Attr : ('content', 'en_GB')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'www')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'es_LA')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'es_ES')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'fr_FR')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'it_IT')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'id_ID')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'th_TH')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'vi_VN')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'ko_KR')
+END tag  : meta
+START tag: meta
+    Attr : ('property', 'og:locale:alternate')
+    Attr : ('content', 'ja_JP')
+END tag  : meta
+START tag: script
+    Attr : ('type', 'application/ld+json')
+    Data : {"\u0040context":"http:\/\/schema.org","\u0040type":"WebSite","name":"Facebook","url":"https:\/\/www.facebook.com\/"}
+END tag  : script
+START tag: link
+    Attr : ('rel', 'search')
+    Attr : ('type', 'application/opensearchdescription+xml')
+    Attr : ('href', '/osd.xml')
+    Attr : ('title', 'Facebook')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'canonical')
+    Attr : ('href', 'https://www.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('media', 'only screen and (max-width: 640px)')
+    Attr : ('href', 'https://m.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('media', 'handheld')
+    Attr : ('href', 'https://m.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'x-default')
+    Attr : ('href', 'https://www.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'en')
+    Attr : ('href', 'https://www.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'ar')
+    Attr : ('href', 'https://ar-ar.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'bg')
+    Attr : ('href', 'https://bg-bg.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'bs')
+    Attr : ('href', 'https://bs-ba.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'ca')
+    Attr : ('href', 'https://ca-es.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'da')
+    Attr : ('href', 'https://da-dk.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'el')
+    Attr : ('href', 'https://el-gr.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'es')
+    Attr : ('href', 'https://es-la.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'es-es')
+    Attr : ('href', 'https://es-es.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'fa')
+    Attr : ('href', 'https://fa-ir.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'fi')
+    Attr : ('href', 'https://fi-fi.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'fr')
+    Attr : ('href', 'https://fr-fr.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'fr-ca')
+    Attr : ('href', 'https://fr-ca.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'hi')
+    Attr : ('href', 'https://hi-in.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'hr')
+    Attr : ('href', 'https://hr-hr.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'id')
+    Attr : ('href', 'https://id-id.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'it')
+    Attr : ('href', 'https://it-it.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'ko')
+    Attr : ('href', 'https://ko-kr.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'mk')
+    Attr : ('href', 'https://mk-mk.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'ms')
+    Attr : ('href', 'https://ms-my.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'pl')
+    Attr : ('href', 'https://pl-pl.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'pt')
+    Attr : ('href', 'https://pt-br.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'pt-pt')
+    Attr : ('href', 'https://pt-pt.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'ro')
+    Attr : ('href', 'https://ro-ro.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'sl')
+    Attr : ('href', 'https://sl-si.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'sr')
+    Attr : ('href', 'https://sr-rs.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'th')
+    Attr : ('href', 'https://th-th.facebook.com/')
+END tag  : link
+START tag: link
+    Attr : ('rel', 'alternate')
+    Attr : ('hreflang', 'vi')
+    Attr : ('href', 'https://vi-vn.facebook.com/')
+END tag  : link
+START tag: meta
+    Attr : ('name', 'description')
+    Attr : ('content', 'Create an account or log in to Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates.')
+END tag  : meta
+START tag: meta
+    Attr : ('name', 'robots')
+    Attr : ('content', 'noodp,noydir')
+END tag  : meta
+START tag: link
+    Attr : ('rel', 'shortcut icon')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico')
+END tag  : link
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/yL/l/0,cross/wTv9vIaAQdw.css')
+    Attr : ('data-bootloader-hash', '3FY0S')
+END tag  : link
+    Data : \ENTER\ 
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/yQ/l/0,cross/w_bWgU4SI5J.css')
+    Attr : ('data-bootloader-hash', 'br29X')
+END tag  : link
+    Data : \ENTER\ 
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/yO/l/0,cross/eTMpICWiCk-.css')
+    Attr : ('data-bootloader-hash', '7Vaz7')
+END tag  : link
+    Data : \ENTER\ 
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/ym/l/0,cross/P_ra4wlCrED.css')
+    Attr : ('data-bootloader-hash', 'WB7Mr')
+END tag  : link
+    Data : \ENTER\ 
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/ym/l/0,cross/m_Ykex9PfIl.css')
+    Attr : ('data-bootloader-hash', 'YhhRI')
+END tag  : link
+    Data : \ENTER\ 
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/y8/l/0,cross/K5INS6tPOqH.css')
+    Attr : ('data-bootloader-hash', 'XY/3Y')
+END tag  : link
+    Data : \ENTER\ 
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/ym/l/0,cross/0MX56pMgbdX.css')
+    Attr : ('data-bootloader-hash', 'saRsX')
+END tag  : link
+    Data : \ENTER\ 
+START tag: link
+    Attr : ('type', 'text/css')
+    Attr : ('rel', 'stylesheet')
+    Attr : ('href', 'https://static.xx.fbcdn.net/rsrc.php/v3/y0/l/0,cross/8ENYH16uMP3.css')
+    Attr : ('data-bootloader-hash', 'xn/7D')
+END tag  : link
+    Data : \ENTER\ 
+START tag: script
+    Attr : ('src', 'https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/RoO_U33uf5M.js')
+    Attr : ('data-bootloader-hash', 'Fhmuy')
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : requireLazy(["ix"],function(ix){ix.add({"496757":{"sprited":true,"spriteCssClass":"sx_01e432","spriteMapCssClass":"sp_8LHBGdMsWH3"},"503180":{"sprited":true,"spriteCssClass":"sx_f85df8","spriteMapCssC ...(cont)...
+END tag  : script
+END tag  : head
+START tag: body
+    Attr : ('class', 'fbIndex UIPage_LoggedOut _-kb _61s0 _605a b_c3pyn-ahh x1 Locale_en_GB')
+    Attr : ('dir', 'ltr')
+START tag: div
+    Attr : ('class', '_li')
+    Attr : ('id', 'u_0_b')
+START tag: div
+    Attr : ('class', '_3_s0 _1toe _3_s1 _3_s1 uiBoxGray noborder')
+    Attr : ('data-testid', 'ax-navigation-menubar')
+    Attr : ('id', 'u_0_c')
+START tag: div
+    Attr : ('class', '_608m')
+START tag: div
+    Attr : ('class', '_5aj7 _tb6')
+START tag: div
+    Attr : ('class', '_4bl7')
+START tag: span
+    Attr : ('class', 'mrm _3bcv _50f3')
+    Data : Jump to
+END tag  : span
+END tag  : div
+START tag: div
+    Attr : ('class', '_4bl9 _3bcp')
+START tag: div
+    Attr : ('class', '_6a _608n')
+    Attr : ('aria-label', 'Navigation assistant')
+    Attr : ('aria-keyshortcuts', 'Alt+/')
+    Attr : ('role', 'menubar')
+    Attr : ('id', 'u_0_d')
+START tag: div
+    Attr : ('class', '_6a uiPopover')
+    Attr : ('id', 'u_0_e')
+START tag: a
+    Attr : ('role', 'button')
+    Attr : ('class', '_42ft _4jy0 _55pi _2agf _4o_4 _63xb _p _4jy3 _517h _51sy')
+    Attr : ('href', '#')
+    Attr : ('style', 'max-width:200px;')
+    Attr : ('aria-haspopup', 'true')
+    Attr : ('aria-expanded', 'false')
+    Attr : ('rel', 'toggle')
+    Attr : ('id', 'u_0_f')
+START tag: span
+    Attr : ('class', '_55pe')
+    Data : Sections of this page
+END tag  : span
+START tag: span
+    Attr : ('class', '_4o_3 _3-99')
+START tag: i
+    Attr : ('class', 'img sp_SIKcGzrLw3L sx_d1deec')
+END tag  : i
+END tag  : span
+END tag  : a
+END tag  : div
+START tag: div
+    Attr : ('class', '_6a _3bcs')
+END tag  : div
+START tag: div
+    Attr : ('class', '_6a mrm uiPopover')
+    Attr : ('id', 'u_0_g')
+START tag: a
+    Attr : ('role', 'button')
+    Attr : ('class', '_42ft _4jy0 _55pi _2agf _4o_4 _3_s2 _63xb _p _4jy3 _4jy1 selected _51sy')
+    Attr : ('href', '#')
+    Attr : ('style', 'max-width:200px;')
+    Attr : ('aria-haspopup', 'true')
+    Attr : ('tabindex', '-1')
+    Attr : ('aria-expanded', 'false')
+    Attr : ('rel', 'toggle')
+    Attr : ('id', 'u_0_h')
+START tag: span
+    Attr : ('class', '_55pe')
+    Data : Accessibility help
+END tag  : span
+START tag: span
+    Attr : ('class', '_4o_3 _3-99')
+START tag: i
+    Attr : ('class', 'img sp_SIKcGzrLw3L sx_d7e736')
+END tag  : i
+END tag  : span
+END tag  : a
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', '_4bl7 mlm pll _3bct')
+START tag: div
+    Attr : ('class', '_6a _3bcy')
+    Data : Press 
+START tag: span
+    Attr : ('class', '_3bcz')
+    Data : alt
+END tag  : span
+    Data :  + 
+START tag: span
+    Attr : ('class', '_3bcz')
+    Data : /
+END tag  : span
+    Data :  to open this menu
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('id', 'pagelet_bluebar')
+    Attr : ('data-referrer', 'pagelet_bluebar')
+START tag: div
+    Attr : ('id', 'blueBarDOMInspector')
+START tag: div
+    Attr : ('class', '_53jh')
+START tag: div
+    Attr : ('class', 'loggedout_menubar_container')
+START tag: div
+    Attr : ('class', 'clearfix loggedout_menubar')
+START tag: div
+    Attr : ('class', 'lfloat _ohe')
+START tag: h1
+START tag: a
+    Attr : ('href', 'https://www.facebook.com/')
+    Attr : ('title', 'Go to Facebook home')
+START tag: i
+    Attr : ('class', 'fb_logo img sp_DM94Tzbs4_7 sx_0d58d6')
+START tag: u
+    Data : Facebook
+END tag  : u
+END tag  : i
+END tag  : a
+END tag  : h1
+END tag  : div
+START tag: div
+    Attr : ('class', 'menu_login_container rfloat _ohf')
+    Attr : ('data-testid', 'royal_login_form')
+START tag: form
+    Attr : ('id', 'login_form')
+    Attr : ('action', 'https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110')
+    Attr : ('method', 'post')
+    Attr : ('novalidate', '1')
+    Attr : ('onsubmit', '')
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('name', 'lsd')
+    Attr : ('value', 'AVr8m8Ro')
+    Attr : ('autocomplete', 'off')
+END tag  : input
+START tag: table
+    Attr : ('cellspacing', '0')
+    Attr : ('role', 'presentation')
+START tag: tr
+START tag: td
+    Attr : ('class', 'html7magic')
+START tag: label
+    Attr : ('for', 'email')
+    Data : Email or Phone
+END tag  : label
+END tag  : td
+START tag: td
+    Attr : ('class', 'html7magic')
+START tag: label
+    Attr : ('for', 'pass')
+    Data : Password
+END tag  : label
+END tag  : td
+END tag  : tr
+START tag: tr
+START tag: td
+START tag: input
+    Attr : ('type', 'email')
+    Attr : ('class', 'inputtext')
+    Attr : ('name', 'email')
+    Attr : ('id', 'email')
+    Attr : ('data-testid', 'royal_email')
+END tag  : input
+END tag  : td
+START tag: td
+START tag: input
+    Attr : ('type', 'password')
+    Attr : ('class', 'inputtext')
+    Attr : ('name', 'pass')
+    Attr : ('id', 'pass')
+    Attr : ('data-testid', 'royal_pass')
+END tag  : input
+END tag  : td
+START tag: td
+START tag: label
+    Attr : ('class', 'uiButton uiButtonConfirm')
+    Attr : ('id', 'loginbutton')
+    Attr : ('for', 'u_0_2')
+START tag: input
+    Attr : ('value', 'Log In')
+    Attr : ('aria-label', 'Log In')
+    Attr : ('data-testid', 'royal_login_button')
+    Attr : ('type', 'submit')
+    Attr : ('id', 'u_0_2')
+END tag  : input
+END tag  : label
+END tag  : td
+END tag  : tr
+START tag: tr
+START tag: td
+    Attr : ('class', 'login_form_label_field')
+END tag  : td
+START tag: td
+    Attr : ('class', 'login_form_label_field')
+START tag: div
+START tag: a
+    Attr : ('href', 'https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar')
+    Data : Forgotten account?
+END tag  : a
+END tag  : div
+END tag  : td
+END tag  : tr
+END tag  : table
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('name', 'timezone')
+    Attr : ('value', '')
+    Attr : ('id', 'u_0_3')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('name', 'lgndim')
+    Attr : ('value', '')
+    Attr : ('id', 'u_0_4')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('name', 'lgnrnd')
+    Attr : ('value', '110759_pPG_')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('id', 'lgnjs')
+    Attr : ('name', 'lgnjs')
+    Attr : ('value', 'n')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('name', 'ab_test_data')
+    Attr : ('value', '')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'locale')
+    Attr : ('name', 'locale')
+    Attr : ('value', 'en_GB')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('name', 'next')
+    Attr : ('value', 'https://www.facebook.com/')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('name', 'login_source')
+    Attr : ('value', 'login_bluebar')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'prefill_contact_point')
+    Attr : ('name', 'prefill_contact_point')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'prefill_source')
+    Attr : ('name', 'prefill_source')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'prefill_type')
+    Attr : ('name', 'prefill_type')
+END tag  : input
+END tag  : form
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('id', 'globalContainer')
+    Attr : ('class', 'uiContextualLayerParent')
+START tag: div
+    Attr : ('class', 'fb_content clearfix ')
+    Attr : ('id', 'content')
+    Attr : ('role', 'main')
+START tag: div
+START tag: div
+    Attr : ('class', 'gradient')
+START tag: div
+    Attr : ('class', 'gradientContent')
+START tag: div
+    Attr : ('class', 'clearfix')
+START tag: div
+    Attr : ('class', 'lfloat _ohe')
+START tag: div
+    Attr : ('class', '_5iyy')
+START tag: div
+    Attr : ('class', '_5iyx')
+    Data : Facebook helps you connect and share with the people in your life.
+END tag  : div
+START tag: img
+    Attr : ('class', 'img')
+    Attr : ('src', 'https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png')
+    Attr : ('alt', '')
+    Attr : ('width', '537')
+    Attr : ('height', '195')
+END tag  : img
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', '_5iyz rfloat _ohf')
+START tag: div
+    Attr : ('class', 'pvl _52lp _59d-')
+START tag: div
+    Attr : ('class', 'mbs _52lq fsl fwb fcb')
+START tag: span
+    Data : Create an account
+END tag  : span
+END tag  : div
+START tag: div
+    Attr : ('class', '_52lr fsm fwn fcg')
+    Data : It's free and always will be.
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('id', 'registration_container')
+START tag: div
+START tag: noscript
+START tag: div
+    Attr : ('id', 'no_js_box')
+START tag: h2
+    Data : JavaScript is disabled in your browser.
+END tag  : h2
+START tag: p
+    Data : Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser to register for Facebook.
+END tag  : p
+END tag  : div
+END tag  : noscript
+START tag: div
+    Attr : ('class', '_58mf')
+START tag: div
+    Attr : ('id', 'reg_box')
+    Attr : ('class', 'registration_redesign')
+START tag: div
+START tag: div
+    Attr : ('id', 'reg_error')
+    Attr : ('class', 'hidden_elem _58mn')
+    Attr : ('role', 'alert')
+START tag: div
+    Attr : ('class', '_58mo')
+    Attr : ('id', 'reg_error_inner')
+    Attr : ('tabindex', '0')
+    Data : An error occurred. Please try again.
+END tag  : div
+END tag  : div
+START tag: form
+    Attr : ('method', 'post')
+    Attr : ('id', 'reg')
+    Attr : ('name', 'reg')
+    Attr : ('action', 'https://m.facebook.com/reg/')
+    Attr : ('onsubmit', 'return false;')
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('name', 'lsd')
+    Attr : ('value', 'AVr8m8Ro')
+    Attr : ('autocomplete', 'off')
+END tag  : input
+START tag: div
+    Attr : ('id', 'reg_form_box')
+    Attr : ('class', 'large_form')
+START tag: div
+    Attr : ('id', 'fullname_field')
+    Attr : ('class', '_1ixn')
+START tag: div
+    Attr : ('class', 'clearfix _58mh')
+START tag: div
+    Attr : ('class', 'mbm _1iy_ _a4y _3-90 lfloat _ohe')
+START tag: div
+    Attr : ('class', '_5dbb')
+    Attr : ('id', 'u_0_i')
+START tag: input
+    Attr : ('type', 'text')
+    Attr : ('class', 'inputtext _58mg _5dba _2ph-')
+    Attr : ('data-type', 'text')
+    Attr : ('name', 'firstname')
+    Attr : ('aria-required', 'true')
+    Attr : ('placeholder', 'First name')
+    Attr : ('aria-label', 'First name')
+    Attr : ('id', 'u_0_j')
+END tag  : input
+START tag: i
+    Attr : ('class', '_5dbc img sp_6E_d5dmi7E6 sx_f40ac8')
+END tag  : i
+START tag: i
+    Attr : ('class', '_5dbd img sp_6E_d5dmi7E6 sx_df456a')
+END tag  : i
+START tag: div
+    Attr : ('class', '_1pc_')
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', 'mbm _1iy_ _a4y rfloat _ohf')
+START tag: div
+    Attr : ('class', '_5dbb')
+    Attr : ('id', 'u_0_k')
+START tag: input
+    Attr : ('type', 'text')
+    Attr : ('class', 'inputtext _58mg _5dba _2ph-')
+    Attr : ('data-type', 'text')
+    Attr : ('name', 'lastname')
+    Attr : ('aria-required', 'true')
+    Attr : ('placeholder', 'Surname')
+    Attr : ('aria-label', 'Surname')
+    Attr : ('id', 'u_0_l')
+END tag  : input
+START tag: i
+    Attr : ('class', '_5dbc img sp_6E_d5dmi7E6 sx_f40ac8')
+END tag  : i
+START tag: i
+    Attr : ('class', '_5dbd img sp_6E_d5dmi7E6 sx_df456a')
+END tag  : i
+START tag: div
+    Attr : ('class', '_1pc_')
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', '_1pc_')
+    Attr : ('id', 'fullname_error_msg')
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', 'mbm _a4y')
+    Attr : ('id', 'u_0_m')
+START tag: div
+    Attr : ('class', '_5dbb')
+    Attr : ('id', 'u_0_n')
+START tag: input
+    Attr : ('type', 'text')
+    Attr : ('class', 'inputtext _58mg _5dba _2ph-')
+    Attr : ('data-type', 'text')
+    Attr : ('name', 'reg_email__')
+    Attr : ('aria-required', 'true')
+    Attr : ('placeholder', 'Mobile number or email address')
+    Attr : ('aria-label', 'Mobile number or email address')
+    Attr : ('id', 'u_0_o')
+END tag  : input
+START tag: i
+    Attr : ('class', '_5dbc img sp_6E_d5dmi7E6 sx_f40ac8')
+END tag  : i
+START tag: i
+    Attr : ('class', '_5dbd img sp_6E_d5dmi7E6 sx_df456a')
+END tag  : i
+START tag: div
+    Attr : ('class', '_1pc_')
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', 'hidden_elem')
+    Attr : ('id', 'u_0_p')
+START tag: div
+    Attr : ('class', 'mbm _a4y')
+START tag: div
+    Attr : ('class', '_5dbb')
+    Attr : ('id', 'u_0_q')
+START tag: input
+    Attr : ('type', 'text')
+    Attr : ('class', 'inputtext _58mg _5dba _2ph-')
+    Attr : ('data-type', 'text')
+    Attr : ('name', 'reg_email_confirmation__')
+    Attr : ('aria-required', 'true')
+    Attr : ('placeholder', 'Re-enter email address')
+    Attr : ('aria-label', 'Re-enter email address')
+    Attr : ('id', 'u_0_r')
+END tag  : input
+START tag: i
+    Attr : ('class', '_5dbc img sp_6E_d5dmi7E6 sx_f40ac8')
+END tag  : i
+START tag: i
+    Attr : ('class', '_5dbd img sp_6E_d5dmi7E6 sx_df456a')
+END tag  : i
+START tag: div
+    Attr : ('class', '_1pc_')
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', 'mbm _br- _a4y hidden_elem')
+    Attr : ('id', 'u_0_s')
+START tag: input
+    Attr : ('type', 'text')
+    Attr : ('class', 'inputtext _58mg _5dba _2ph-')
+    Attr : ('data-type', 'text')
+    Attr : ('name', 'reg_second_contactpoint__')
+    Attr : ('placeholder', 'Mobile number')
+    Attr : ('aria-label', 'Mobile number')
+    Attr : ('id', 'u_0_t')
+END tag  : input
+END tag  : div
+START tag: div
+    Attr : ('class', 'mbm _br- _a4y')
+    Attr : ('id', 'password_field')
+START tag: div
+    Attr : ('class', '_5dbb')
+    Attr : ('id', 'u_0_u')
+START tag: input
+    Attr : ('type', 'password')
+    Attr : ('class', 'inputtext _58mg _5dba _2ph-')
+    Attr : ('data-type', 'password')
+    Attr : ('autocomplete', 'new-password')
+    Attr : ('name', 'reg_passwd__')
+    Attr : ('aria-required', 'true')
+    Attr : ('placeholder', 'New password')
+    Attr : ('aria-label', 'New password')
+    Attr : ('id', 'u_0_v')
+END tag  : input
+START tag: i
+    Attr : ('class', '_5dbc img sp_6E_d5dmi7E6 sx_f40ac8')
+END tag  : i
+START tag: i
+    Attr : ('class', '_5dbd img sp_6E_d5dmi7E6 sx_df456a')
+END tag  : i
+START tag: div
+    Attr : ('class', '_1pc_')
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', '_58mq _5dbb')
+    Attr : ('id', 'u_0_w')
+START tag: div
+    Attr : ('class', 'mtm mbs _2_68')
+    Data : Birthday
+END tag  : div
+START tag: div
+    Attr : ('class', '_5k_5')
+START tag: span
+    Attr : ('class', '_5k_4')
+    Attr : ('data-type', 'selectors')
+    Attr : ('data-name', 'birthday_wrapper')
+    Attr : ('id', 'u_0_x')
+START tag: span
+START tag: select
+    Attr : ('aria-label', 'Day')
+    Attr : ('name', 'birthday_day')
+    Attr : ('id', 'day')
+    Attr : ('title', 'Day')
+    Attr : ('class', '_5dba')
+START tag: option
+    Attr : ('value', '0')
+    Data : Day
+END tag  : option
+START tag: option
+    Attr : ('value', '1')
+    Data : 1
+END tag  : option
+START tag: option
+    Attr : ('value', '2')
+    Data : 2
+END tag  : option
+START tag: option
+    Attr : ('value', '3')
+    Data : 3
+END tag  : option
+START tag: option
+    Attr : ('value', '4')
+    Data : 4
+END tag  : option
+START tag: option
+    Attr : ('value', '5')
+    Data : 5
+END tag  : option
+START tag: option
+    Attr : ('value', '6')
+    Data : 6
+END tag  : option
+START tag: option
+    Attr : ('value', '7')
+    Data : 7
+END tag  : option
+START tag: option
+    Attr : ('value', '8')
+    Attr : ('selected', '1')
+    Data : 8
+END tag  : option
+START tag: option
+    Attr : ('value', '9')
+    Data : 9
+END tag  : option
+START tag: option
+    Attr : ('value', '10')
+    Data : 10
+END tag  : option
+START tag: option
+    Attr : ('value', '11')
+    Data : 11
+END tag  : option
+START tag: option
+    Attr : ('value', '12')
+    Data : 12
+END tag  : option
+START tag: option
+    Attr : ('value', '13')
+    Data : 13
+END tag  : option
+START tag: option
+    Attr : ('value', '14')
+    Data : 14
+END tag  : option
+START tag: option
+    Attr : ('value', '15')
+    Data : 15
+END tag  : option
+START tag: option
+    Attr : ('value', '16')
+    Data : 16
+END tag  : option
+START tag: option
+    Attr : ('value', '17')
+    Data : 17
+END tag  : option
+START tag: option
+    Attr : ('value', '18')
+    Data : 18
+END tag  : option
+START tag: option
+    Attr : ('value', '19')
+    Data : 19
+END tag  : option
+START tag: option
+    Attr : ('value', '20')
+    Data : 20
+END tag  : option
+START tag: option
+    Attr : ('value', '21')
+    Data : 21
+END tag  : option
+START tag: option
+    Attr : ('value', '22')
+    Data : 22
+END tag  : option
+START tag: option
+    Attr : ('value', '23')
+    Data : 23
+END tag  : option
+START tag: option
+    Attr : ('value', '24')
+    Data : 24
+END tag  : option
+START tag: option
+    Attr : ('value', '25')
+    Data : 25
+END tag  : option
+START tag: option
+    Attr : ('value', '26')
+    Data : 26
+END tag  : option
+START tag: option
+    Attr : ('value', '27')
+    Data : 27
+END tag  : option
+START tag: option
+    Attr : ('value', '28')
+    Data : 28
+END tag  : option
+START tag: option
+    Attr : ('value', '29')
+    Data : 29
+END tag  : option
+START tag: option
+    Attr : ('value', '30')
+    Data : 30
+END tag  : option
+START tag: option
+    Attr : ('value', '31')
+    Data : 31
+END tag  : option
+END tag  : select
+START tag: select
+    Attr : ('aria-label', 'Month')
+    Attr : ('name', 'birthday_month')
+    Attr : ('id', 'month')
+    Attr : ('title', 'Month')
+    Attr : ('class', '_5dba')
+START tag: option
+    Attr : ('value', '0')
+    Data : Month
+END tag  : option
+START tag: option
+    Attr : ('value', '1')
+    Attr : ('selected', '1')
+    Data : Jan
+END tag  : option
+START tag: option
+    Attr : ('value', '2')
+    Data : Feb
+END tag  : option
+START tag: option
+    Attr : ('value', '3')
+    Data : Mar
+END tag  : option
+START tag: option
+    Attr : ('value', '4')
+    Data : Apr
+END tag  : option
+START tag: option
+    Attr : ('value', '5')
+    Data : May
+END tag  : option
+START tag: option
+    Attr : ('value', '6')
+    Data : Jun
+END tag  : option
+START tag: option
+    Attr : ('value', '7')
+    Data : Jul
+END tag  : option
+START tag: option
+    Attr : ('value', '8')
+    Data : Aug
+END tag  : option
+START tag: option
+    Attr : ('value', '9')
+    Data : Sept
+END tag  : option
+START tag: option
+    Attr : ('value', '10')
+    Data : Oct
+END tag  : option
+START tag: option
+    Attr : ('value', '11')
+    Data : Nov
+END tag  : option
+START tag: option
+    Attr : ('value', '12')
+    Data : Dec
+END tag  : option
+END tag  : select
+START tag: select
+    Attr : ('aria-label', 'Year')
+    Attr : ('name', 'birthday_year')
+    Attr : ('id', 'year')
+    Attr : ('title', 'Year')
+    Attr : ('class', '_5dba')
+START tag: option
+    Attr : ('value', '0')
+    Data : Year
+END tag  : option
+START tag: option
+    Attr : ('value', '2019')
+    Data : 2019
+END tag  : option
+START tag: option
+    Attr : ('value', '2018')
+    Data : 2018
+END tag  : option
+START tag: option
+    Attr : ('value', '2017')
+    Data : 2017
+END tag  : option
+START tag: option
+    Attr : ('value', '2016')
+    Data : 2016
+END tag  : option
+START tag: option
+    Attr : ('value', '2015')
+    Data : 2015
+END tag  : option
+START tag: option
+    Attr : ('value', '2014')
+    Data : 2014
+END tag  : option
+START tag: option
+    Attr : ('value', '2013')
+    Data : 2013
+END tag  : option
+START tag: option
+    Attr : ('value', '2012')
+    Data : 2012
+END tag  : option
+START tag: option
+    Attr : ('value', '2011')
+    Data : 2011
+END tag  : option
+START tag: option
+    Attr : ('value', '2010')
+    Data : 2010
+END tag  : option
+START tag: option
+    Attr : ('value', '2009')
+    Data : 2009
+END tag  : option
+START tag: option
+    Attr : ('value', '2008')
+    Data : 2008
+END tag  : option
+START tag: option
+    Attr : ('value', '2007')
+    Data : 2007
+END tag  : option
+START tag: option
+    Attr : ('value', '2006')
+    Data : 2006
+END tag  : option
+START tag: option
+    Attr : ('value', '2005')
+    Data : 2005
+END tag  : option
+START tag: option
+    Attr : ('value', '2004')
+    Data : 2004
+END tag  : option
+START tag: option
+    Attr : ('value', '2003')
+    Data : 2003
+END tag  : option
+START tag: option
+    Attr : ('value', '2002')
+    Data : 2002
+END tag  : option
+START tag: option
+    Attr : ('value', '2001')
+    Data : 2001
+END tag  : option
+START tag: option
+    Attr : ('value', '2000')
+    Data : 2000
+END tag  : option
+START tag: option
+    Attr : ('value', '1999')
+    Data : 1999
+END tag  : option
+START tag: option
+    Attr : ('value', '1998')
+    Data : 1998
+END tag  : option
+START tag: option
+    Attr : ('value', '1997')
+    Data : 1997
+END tag  : option
+START tag: option
+    Attr : ('value', '1996')
+    Data : 1996
+END tag  : option
+START tag: option
+    Attr : ('value', '1995')
+    Data : 1995
+END tag  : option
+START tag: option
+    Attr : ('value', '1994')
+    Attr : ('selected', '1')
+    Data : 1994
+END tag  : option
+START tag: option
+    Attr : ('value', '1993')
+    Data : 1993
+END tag  : option
+START tag: option
+    Attr : ('value', '1992')
+    Data : 1992
+END tag  : option
+START tag: option
+    Attr : ('value', '1991')
+    Data : 1991
+END tag  : option
+START tag: option
+    Attr : ('value', '1990')
+    Data : 1990
+END tag  : option
+START tag: option
+    Attr : ('value', '1989')
+    Data : 1989
+END tag  : option
+START tag: option
+    Attr : ('value', '1988')
+    Data : 1988
+END tag  : option
+START tag: option
+    Attr : ('value', '1987')
+    Data : 1987
+END tag  : option
+START tag: option
+    Attr : ('value', '1986')
+    Data : 1986
+END tag  : option
+START tag: option
+    Attr : ('value', '1985')
+    Data : 1985
+END tag  : option
+START tag: option
+    Attr : ('value', '1984')
+    Data : 1984
+END tag  : option
+START tag: option
+    Attr : ('value', '1983')
+    Data : 1983
+END tag  : option
+START tag: option
+    Attr : ('value', '1982')
+    Data : 1982
+END tag  : option
+START tag: option
+    Attr : ('value', '1981')
+    Data : 1981
+END tag  : option
+START tag: option
+    Attr : ('value', '1980')
+    Data : 1980
+END tag  : option
+START tag: option
+    Attr : ('value', '1979')
+    Data : 1979
+END tag  : option
+START tag: option
+    Attr : ('value', '1978')
+    Data : 1978
+END tag  : option
+START tag: option
+    Attr : ('value', '1977')
+    Data : 1977
+END tag  : option
+START tag: option
+    Attr : ('value', '1976')
+    Data : 1976
+END tag  : option
+START tag: option
+    Attr : ('value', '1975')
+    Data : 1975
+END tag  : option
+START tag: option
+    Attr : ('value', '1974')
+    Data : 1974
+END tag  : option
+START tag: option
+    Attr : ('value', '1973')
+    Data : 1973
+END tag  : option
+START tag: option
+    Attr : ('value', '1972')
+    Data : 1972
+END tag  : option
+START tag: option
+    Attr : ('value', '1971')
+    Data : 1971
+END tag  : option
+START tag: option
+    Attr : ('value', '1970')
+    Data : 1970
+END tag  : option
+START tag: option
+    Attr : ('value', '1969')
+    Data : 1969
+END tag  : option
+START tag: option
+    Attr : ('value', '1968')
+    Data : 1968
+END tag  : option
+START tag: option
+    Attr : ('value', '1967')
+    Data : 1967
+END tag  : option
+START tag: option
+    Attr : ('value', '1966')
+    Data : 1966
+END tag  : option
+START tag: option
+    Attr : ('value', '1965')
+    Data : 1965
+END tag  : option
+START tag: option
+    Attr : ('value', '1964')
+    Data : 1964
+END tag  : option
+START tag: option
+    Attr : ('value', '1963')
+    Data : 1963
+END tag  : option
+START tag: option
+    Attr : ('value', '1962')
+    Data : 1962
+END tag  : option
+START tag: option
+    Attr : ('value', '1961')
+    Data : 1961
+END tag  : option
+START tag: option
+    Attr : ('value', '1960')
+    Data : 1960
+END tag  : option
+START tag: option
+    Attr : ('value', '1959')
+    Data : 1959
+END tag  : option
+START tag: option
+    Attr : ('value', '1958')
+    Data : 1958
+END tag  : option
+START tag: option
+    Attr : ('value', '1957')
+    Data : 1957
+END tag  : option
+START tag: option
+    Attr : ('value', '1956')
+    Data : 1956
+END tag  : option
+START tag: option
+    Attr : ('value', '1955')
+    Data : 1955
+END tag  : option
+START tag: option
+    Attr : ('value', '1954')
+    Data : 1954
+END tag  : option
+START tag: option
+    Attr : ('value', '1953')
+    Data : 1953
+END tag  : option
+START tag: option
+    Attr : ('value', '1952')
+    Data : 1952
+END tag  : option
+START tag: option
+    Attr : ('value', '1951')
+    Data : 1951
+END tag  : option
+START tag: option
+    Attr : ('value', '1950')
+    Data : 1950
+END tag  : option
+START tag: option
+    Attr : ('value', '1949')
+    Data : 1949
+END tag  : option
+START tag: option
+    Attr : ('value', '1948')
+    Data : 1948
+END tag  : option
+START tag: option
+    Attr : ('value', '1947')
+    Data : 1947
+END tag  : option
+START tag: option
+    Attr : ('value', '1946')
+    Data : 1946
+END tag  : option
+START tag: option
+    Attr : ('value', '1945')
+    Data : 1945
+END tag  : option
+START tag: option
+    Attr : ('value', '1944')
+    Data : 1944
+END tag  : option
+START tag: option
+    Attr : ('value', '1943')
+    Data : 1943
+END tag  : option
+START tag: option
+    Attr : ('value', '1942')
+    Data : 1942
+END tag  : option
+START tag: option
+    Attr : ('value', '1941')
+    Data : 1941
+END tag  : option
+START tag: option
+    Attr : ('value', '1940')
+    Data : 1940
+END tag  : option
+START tag: option
+    Attr : ('value', '1939')
+    Data : 1939
+END tag  : option
+START tag: option
+    Attr : ('value', '1938')
+    Data : 1938
+END tag  : option
+START tag: option
+    Attr : ('value', '1937')
+    Data : 1937
+END tag  : option
+START tag: option
+    Attr : ('value', '1936')
+    Data : 1936
+END tag  : option
+START tag: option
+    Attr : ('value', '1935')
+    Data : 1935
+END tag  : option
+START tag: option
+    Attr : ('value', '1934')
+    Data : 1934
+END tag  : option
+START tag: option
+    Attr : ('value', '1933')
+    Data : 1933
+END tag  : option
+START tag: option
+    Attr : ('value', '1932')
+    Data : 1932
+END tag  : option
+START tag: option
+    Attr : ('value', '1931')
+    Data : 1931
+END tag  : option
+START tag: option
+    Attr : ('value', '1930')
+    Data : 1930
+END tag  : option
+START tag: option
+    Attr : ('value', '1929')
+    Data : 1929
+END tag  : option
+START tag: option
+    Attr : ('value', '1928')
+    Data : 1928
+END tag  : option
+START tag: option
+    Attr : ('value', '1927')
+    Data : 1927
+END tag  : option
+START tag: option
+    Attr : ('value', '1926')
+    Data : 1926
+END tag  : option
+START tag: option
+    Attr : ('value', '1925')
+    Data : 1925
+END tag  : option
+START tag: option
+    Attr : ('value', '1924')
+    Data : 1924
+END tag  : option
+START tag: option
+    Attr : ('value', '1923')
+    Data : 1923
+END tag  : option
+START tag: option
+    Attr : ('value', '1922')
+    Data : 1922
+END tag  : option
+START tag: option
+    Attr : ('value', '1921')
+    Data : 1921
+END tag  : option
+START tag: option
+    Attr : ('value', '1920')
+    Data : 1920
+END tag  : option
+START tag: option
+    Attr : ('value', '1919')
+    Data : 1919
+END tag  : option
+START tag: option
+    Attr : ('value', '1918')
+    Data : 1918
+END tag  : option
+START tag: option
+    Attr : ('value', '1917')
+    Data : 1917
+END tag  : option
+START tag: option
+    Attr : ('value', '1916')
+    Data : 1916
+END tag  : option
+START tag: option
+    Attr : ('value', '1915')
+    Data : 1915
+END tag  : option
+START tag: option
+    Attr : ('value', '1914')
+    Data : 1914
+END tag  : option
+START tag: option
+    Attr : ('value', '1913')
+    Data : 1913
+END tag  : option
+START tag: option
+    Attr : ('value', '1912')
+    Data : 1912
+END tag  : option
+START tag: option
+    Attr : ('value', '1911')
+    Data : 1911
+END tag  : option
+START tag: option
+    Attr : ('value', '1910')
+    Data : 1910
+END tag  : option
+START tag: option
+    Attr : ('value', '1909')
+    Data : 1909
+END tag  : option
+START tag: option
+    Attr : ('value', '1908')
+    Data : 1908
+END tag  : option
+START tag: option
+    Attr : ('value', '1907')
+    Data : 1907
+END tag  : option
+START tag: option
+    Attr : ('value', '1906')
+    Data : 1906
+END tag  : option
+START tag: option
+    Attr : ('value', '1905')
+    Data : 1905
+END tag  : option
+END tag  : select
+END tag  : span
+END tag  : span
+START tag: a
+    Attr : ('class', '_58ms mlm')
+    Attr : ('id', 'birthday-help')
+    Attr : ('href', '#')
+    Attr : ('title', 'Click for more information')
+    Attr : ('role', 'button')
+    Data : Why do I need to provide my date of birth?
+END tag  : a
+START tag: i
+    Attr : ('class', '_5dbc _5k_6 img sp_6E_d5dmi7E6 sx_f40ac8')
+END tag  : i
+START tag: i
+    Attr : ('class', '_5dbd _5k_7 img sp_6E_d5dmi7E6 sx_df456a')
+END tag  : i
+START tag: div
+    Attr : ('class', '_1pc_')
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', 'mtm _5wa2 _5dbb')
+    Attr : ('id', 'u_0_y')
+START tag: span
+    Attr : ('class', '_5k_3')
+    Attr : ('data-type', 'radio')
+    Attr : ('data-name', 'gender_wrapper')
+    Attr : ('id', 'u_0_z')
+START tag: span
+    Attr : ('class', '_5k_2 _5dba')
+START tag: input
+    Attr : ('type', 'radio')
+    Attr : ('name', 'sex')
+    Attr : ('value', '1')
+    Attr : ('id', 'u_0_9')
+END tag  : input
+START tag: label
+    Attr : ('class', '_58mt')
+    Attr : ('for', 'u_0_9')
+    Data : Female
+END tag  : label
+END tag  : span
+START tag: span
+    Attr : ('class', '_5k_2 _5dba')
+START tag: input
+    Attr : ('type', 'radio')
+    Attr : ('name', 'sex')
+    Attr : ('value', '2')
+    Attr : ('id', 'u_0_a')
+END tag  : input
+START tag: label
+    Attr : ('class', '_58mt')
+    Attr : ('for', 'u_0_a')
+    Data : Male
+END tag  : label
+END tag  : span
+END tag  : span
+START tag: i
+    Attr : ('class', '_5dbc _5k_6 img sp_6E_d5dmi7E6 sx_f40ac8')
+END tag  : i
+START tag: i
+    Attr : ('class', '_5dbd _5k_7 img sp_6E_d5dmi7E6 sx_df456a')
+END tag  : i
+START tag: div
+    Attr : ('class', '_1pc_')
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('class', '_58mu')
+    Attr : ('data-nocookies', '1')
+    Attr : ('id', 'u_0_10')
+START tag: p
+    Attr : ('class', '_58mv')
+    Data : By clicking Sign Up, you agree to our 
+START tag: a
+    Attr : ('href', '/legal/terms/update')
+    Attr : ('id', 'terms-link')
+    Attr : ('target', '_blank')
+    Attr : ('rel', 'nofollow')
+    Data : Terms
+END tag  : a
+    Data : . Learn how we collect, use and share your data in our 
+START tag: a
+    Attr : ('href', '/about/privacy/update')
+    Attr : ('id', 'privacy-link')
+    Attr : ('target', '_blank')
+    Attr : ('rel', 'nofollow')
+    Data : Data Policy
+END tag  : a
+    Data :  and how we use cookies and similar technology in our 
+START tag: a
+    Attr : ('href', '/policies/cookies/')
+    Attr : ('id', 'cookie-use-link')
+    Attr : ('target', '_blank')
+    Attr : ('rel', 'nofollow')
+    Data : Cookie Policy
+END tag  : a
+    Data : . You may receive SMS notifications from us and can opt out at any time.
+END tag  : p
+END tag  : div
+START tag: div
+    Attr : ('class', 'clearfix')
+START tag: button
+    Attr : ('type', 'submit')
+    Attr : ('class', '_6j mvm _6wk _6wl _58mi _6o _6v')
+    Attr : ('name', 'websubmit')
+    Attr : ('id', 'u_0_11')
+    Data : Sign Up
+END tag  : button
+START tag: span
+    Attr : ('class', 'hidden_elem _58ml')
+    Attr : ('id', 'u_0_12')
+START tag: img
+    Attr : ('class', 'img')
+    Attr : ('src', 'https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif')
+    Attr : ('alt', '')
+    Attr : ('width', '16')
+    Attr : ('height', '11')
+END tag  : img
+END tag  : span
+END tag  : div
+END tag  : div
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'referrer')
+    Attr : ('name', 'referrer')
+    Attr : ('value', '')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'asked_to_login')
+    Attr : ('name', 'asked_to_login')
+    Attr : ('value', '0')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'terms')
+    Attr : ('name', 'terms')
+    Attr : ('value', 'on')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'ns')
+    Attr : ('name', 'ns')
+    Attr : ('value', '0')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'ri')
+    Attr : ('name', 'ri')
+    Attr : ('value', 'dc10944a-1d1a-32de-4771-bfdb508e5042')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'action_dialog_shown')
+    Attr : ('name', 'action_dialog_shown')
+    Attr : ('value', '')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'contactpoint_label')
+    Attr : ('name', 'contactpoint_label')
+    Attr : ('value', 'email_or_phone')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'ignore')
+    Attr : ('name', 'ignore')
+    Attr : ('value', 'reg_email_confirmation__|reg_second_contactpoint__')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'locale')
+    Attr : ('name', 'locale')
+    Attr : ('value', 'en_GB')
+END tag  : input
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'reg_instance')
+    Attr : ('name', 'reg_instance')
+    Attr : ('value', 'D_U0XKRigYlGF_p1kgwwvLPJ')
+END tag  : input
+START tag: div
+    Attr : ('id', 'reg_captcha')
+    Attr : ('class', '_58mw hidden_elem')
+START tag: div
+START tag: h2
+    Attr : ('id', 'security_check_header')
+    Data : Security check
+END tag  : h2
+START tag: div
+    Attr : ('id', 'outer_captcha_box')
+START tag: div
+    Attr : ('id', 'captcha_box')
+START tag: div
+    Attr : ('class', 'field_error hidden_elem')
+    Attr : ('id', 'captcha_response_error')
+    Data : This field is required.
+END tag  : div
+START tag: div
+    Attr : ('id', 'captcha')
+    Attr : ('class', 'captcha')
+    Attr : ('data-captcha-class', 'ReCaptchav2Captcha')
+START tag: input
+    Attr : ('type', 'hidden')
+    Attr : ('autocomplete', 'off')
+    Attr : ('id', 'captcha_persist_data')
+    Attr : ('name', 'captcha_persist_data')
+    Attr : ('value', 'AZl7HxaoAS8MiFOgVcWZlsIhDJF8BOsVv7bAqCJZdGs-hp9bEOeMjWEtC7iLIvESyczmaCV7UOwY-ztaug7AvXA-EyFv31nu42SKZPnLwrg_pxodk45ZYhPPYjs4zBE4_cwl_2x60eG7lX2OhAPA_5DZEog4Ct9rpwX2q9bUYAIEM5EK5PycZ4OP4J6N3jL_lUmlC8PsXAJnPWuPFWu3ei5HqqzClD4_G-qOg0lg84j1nWaI48i7ubvD6OxVT3HO-j__9xADEtjddGF3Kk_cLpKuXVoUFxvfhF6N-PoeH9lUYGPreGIOFv_8X-fzfmu5isUdiIol2JDOo_Q0Z0zdPwcOC_BXf9K0w57ibI1-bhC4a9pkUHV_K2AtC4uPtuS4Uuo')
+END tag  : input
+START tag: div
+START tag: input
+    Attr : ('name', 'captcha_response')
+    Attr : ('id', 'captcha_response')
+    Attr : ('type', 'hidden')
+END tag  : input
+START tag: iframe
+    Attr : ('id', 'captca-recaptcha')
+    Attr : ('width', '400px')
+    Attr : ('height', '93px')
+    Attr : ('scrolling', 'no')
+    Attr : ('frameborder', '0')
+END tag  : iframe
+END tag  : div
+START tag: div
+    Attr : ('class', 'captcha_input')
+START tag: a
+    Attr : ('href', '#')
+    Attr : ('onclick', "CSS.show($('captcha_whats_this')); return false;")
+    Attr : ('role', 'button')
+    Data : Why am I seeing this?
+END tag  : a
+START tag: div
+    Attr : ('id', 'captcha_whats_this')
+    Attr : ('class', 'hidden_elem')
+START tag: div
+    Attr : ('class', 'fsl fwb')
+    Data : Security Check
+END tag  : div
+    Data : This is a standard security test that we use to prevent spammers from creating fake accounts and spamming users.
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+    Attr : ('id', 'captcha_buttons')
+    Attr : ('class', '_58p2 clearfix hidden_elem')
+START tag: div
+    Attr : ('class', '_58mx _58mm')
+START tag: div
+    Attr : ('class', '_58mz')
+    Data :  
+END tag  : div
+START tag: a
+    Attr : ('class', '_58my')
+    Attr : ('href', '#')
+    Attr : ('role', 'button')
+    Attr : ('id', 'u_0_13')
+    Data : Back
+END tag  : a
+END tag  : div
+START tag: div
+    Attr : ('class', '_58mm')
+START tag: div
+    Attr : ('class', 'clearfix')
+START tag: button
+    Attr : ('type', 'submit')
+    Attr : ('class', '_6j mvm _6wk _6wl _58me _58mi _6o _6v')
+    Attr : ('id', 'u_0_14')
+    Data : Sign Up
+END tag  : button
+START tag: span
+    Attr : ('class', 'hidden_elem _58ml')
+    Attr : ('id', 'u_0_15')
+START tag: img
+    Attr : ('class', 'img')
+    Attr : ('src', 'https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif')
+    Attr : ('alt', '')
+    Attr : ('width', '16')
+    Attr : ('height', '11')
+END tag  : img
+END tag  : span
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : form
+END tag  : div
+START tag: div
+    Attr : ('id', 'reg_pages_msg')
+    Attr : ('class', '_58mk')
+START tag: a
+    Attr : ('href', '/pages/create/?ref_type=registration_form')
+    Data : Create a Page
+END tag  : a
+    Data :  for a celebrity, band or business.
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: div
+START tag: div
+    Attr : ('id', 'pageFooter')
+    Attr : ('data-referrer', 'page_footer')
+START tag: ul
+    Attr : ('class', 'uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i')
+    Attr : ('data-nocookies', '1')
+START tag: li
+    Data : English (UK)
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://pl-pl.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("pl_PL", "en_GB", "https:\\/\\/pl-pl.facebook.com\\/", "www_list_selector", 0); return false;')
+    Attr : ('title', 'Polish')
+    Data : Polski
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://es-la.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("es_LA", "en_GB", "https:\\/\\/es-la.facebook.com\\/", "www_list_selector", 1); return false;')
+    Attr : ('title', 'Spanish')
+    Data : Espaol
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://fr-fr.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("fr_FR", "en_GB", "https:\\/\\/fr-fr.facebook.com\\/", "www_list_selector", 2); return false;')
+    Attr : ('title', 'French (France)')
+    Data : Franais (France)
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://it-it.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("it_IT", "en_GB", "https:\\/\\/it-it.facebook.com\\/", "www_list_selector", 3); return false;')
+    Attr : ('title', 'Italian')
+    Data : Italiano
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://lt-lt.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("lt_LT", "en_GB", "https:\\/\\/lt-lt.facebook.com\\/", "www_list_selector", 4); return false;')
+    Attr : ('title', 'Lithuanian')
+    Data : Lietuvi
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://ro-ro.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("ro_RO", "en_GB", "https:\\/\\/ro-ro.facebook.com\\/", "www_list_selector", 5); return false;')
+    Attr : ('title', 'Romanian')
+    Data : Romn
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://zh-cn.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("zh_CN", "en_GB", "https:\\/\\/zh-cn.facebook.com\\/", "www_list_selector", 6); return false;')
+    Attr : ('title', 'Simplified Chinese (China)')
+    Data : ()
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://pt-br.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("pt_BR", "en_GB", "https:\\/\\/pt-br.facebook.com\\/", "www_list_selector", 7); return false;')
+    Attr : ('title', 'Portuguese (Brazil)')
+    Data : Portugus (Brasil)
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'ltr')
+    Attr : ('href', 'https://de-de.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("de_DE", "en_GB", "https:\\/\\/de-de.facebook.com\\/", "www_list_selector", 8); return false;')
+    Attr : ('title', 'German')
+    Data : Deutsch
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_sv4')
+    Attr : ('dir', 'rtl')
+    Attr : ('href', 'https://ar-ar.facebook.com/')
+    Attr : ('onclick', 'require("IntlUtils").setCookieLocale("ar_AR", "en_GB", "https:\\/\\/ar-ar.facebook.com\\/", "www_list_selector", 9); return false;')
+    Attr : ('title', 'Arabic')
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('role', 'button')
+    Attr : ('class', '_42ft _4jy0 _517i _517h _51sy')
+    Attr : ('rel', 'dialog')
+    Attr : ('ajaxify', '/settings/language/language/?uri=https%3A%2F%2Far-ar.facebook.com%2F&source=www_list_selector_more')
+    Attr : ('href', '#')
+    Attr : ('title', 'Show more languages')
+START tag: i
+    Attr : ('class', 'img sp_GACAiCW_W9S sx_dae843')
+END tag  : i
+END tag  : a
+END tag  : li
+END tag  : ul
+START tag: div
+    Attr : ('id', 'contentCurve')
+END tag  : div
+START tag: div
+    Attr : ('role', 'contentinfo')
+    Attr : ('aria-label', 'Facebook site links')
+START tag: ul
+    Attr : ('class', 'uiList pageFooterLinkList _509- _4ki _703 _6-i')
+START tag: li
+START tag: a
+    Attr : ('href', '/r.php')
+    Attr : ('title', 'Sign up for Facebook')
+    Data : Sign Up
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/login/')
+    Attr : ('title', 'Log in to Facebook')
+    Data : Log In
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', 'https://messenger.com/')
+    Attr : ('title', 'Take a look at Messenger.')
+    Data : Messenger
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/lite/')
+    Attr : ('title', 'Facebook Lite for Android.')
+    Data : Facebook Lite
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/mobile/?ref=pf')
+    Attr : ('title', 'Take a look at Facebook Mobile.')
+    Data : Mobile
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/find-friends?ref=pf')
+    Attr : ('title', 'Find anyone on the web.')
+    Data : Find Friends
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/directory/people_remain/')
+    Attr : ('title', 'Browse our people directory.')
+    Data : People
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/directory/people_sm/')
+    Attr : ('title', 'Browse our profiles directory.')
+    Data : Profiles
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/directory/pages/')
+    Attr : ('title', 'Browse our Pages directory.')
+    Data : Pages
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/pages/category/')
+    Data : Page categories
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/places/')
+    Attr : ('title', 'Take a look at popular places on Facebook.')
+    Data : Places
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/games/')
+    Attr : ('title', 'Check out Facebook games.')
+    Data : Games
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/directory/places/')
+    Attr : ('title', 'Browse our places directory.')
+    Data : Locations
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/directory/marketplace/')
+    Attr : ('title', 'Browse our Marketplace product directory.')
+    Data : Marketplace
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/directory/groups/')
+    Attr : ('title', 'Browse our Groups directory.')
+    Data : Groups
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', 'https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2F&h=AT2sYubhGFxylq6XXa-LyDevRrSJpjhTJHh1tSp1yX051z_CbZRqkSBRRz2hYlQWtKhIgcnXzmo0ErtphAGIPFHXP0w_SY38PIQMZFq-hvswzJdZD4_62Cgfd29cU53znv-BtOaNY4EKL9VN')
+    Attr : ('title', 'Take a look at Instagram')
+    Attr : ('target', '_blank')
+    Attr : ('rel', 'nofollow')
+    Attr : ('data-lynx-mode', 'hover')
+    Data : Instagram
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/local/lists/245019872666104/')
+    Attr : ('title', 'Browse our Local Lists directory.')
+    Data : Local
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/fundraisers/')
+    Attr : ('title', 'Donate to worthy causes.')
+    Data : Fundraisers
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/facebook')
+    Attr : ('accesskey', '8')
+    Attr : ('title', 'Read our blog, discover the resource centre and find job opportunities.')
+    Data : About
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&extra_1=auto')
+    Attr : ('title', 'Advertise on Facebook')
+    Data : Create ad
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/pages/create/?ref_type=sitefooter')
+    Attr : ('title', 'Create a Page')
+    Data : Create Page
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', 'https://developers.facebook.com/?ref=pf')
+    Attr : ('title', 'Develop on our platform.')
+    Data : Developers
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/careers/?ref=pf')
+    Attr : ('title', 'Make your next career move to our brilliant company.')
+    Data : Careers
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('data-nocookies', '1')
+    Attr : ('href', '/privacy/explanation')
+    Attr : ('title', 'Learn about your privacy and Facebook.')
+    Data : Privacy
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/policies/cookies/')
+    Attr : ('title', 'Learn about cookies and Facebook.')
+    Attr : ('data-nocookies', '1')
+    Data : Cookies
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('class', '_41ug')
+    Attr : ('data-nocookies', '1')
+    Attr : ('href', 'https://www.facebook.com/help/568137493302217')
+    Attr : ('title', 'Learn about AdChoices.')
+    Data : AdChoices
+START tag: i
+    Attr : ('class', 'img sp_DM94Tzbs4_7 sx_144a31')
+END tag  : i
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('data-nocookies', '1')
+    Attr : ('href', '/policies?ref=pf')
+    Attr : ('accesskey', '9')
+    Attr : ('title', 'Review our terms and policies.')
+    Data : Terms
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', 'https://www.facebook.com/help/2687943754764396')
+    Data : Account security
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', 'https://www.facebook.com/help/www/1573156092981768/')
+    Data : Login help
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('href', '/help/?ref=pf')
+    Attr : ('accesskey', '0')
+    Attr : ('title', 'Visit our Help Centre.')
+    Data : Help
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('accesskey', '6')
+    Attr : ('class', 'accessible_elem')
+    Attr : ('href', '/settings')
+    Attr : ('title', 'View and edit your Facebook settings.')
+    Data : Settings
+END tag  : a
+END tag  : li
+START tag: li
+START tag: a
+    Attr : ('accesskey', '7')
+    Attr : ('class', 'accessible_elem')
+    Attr : ('href', '/allactivity?privacy_source=activity_log_top_menu')
+    Attr : ('title', 'View your activity log')
+    Data : Activity log
+END tag  : a
+END tag  : li
+END tag  : ul
+END tag  : div
+START tag: div
+    Attr : ('class', 'mvl copyright')
+START tag: div
+START tag: span
+    Data :  Facebook 2019
+END tag  : span
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+END tag  : div
+START tag: span
+START tag: img
+    Attr : ('src', 'https://facebook.com/security/hsts-pixel.gif?c=3.2.5')
+    Attr : ('width', '0')
+    Attr : ('height', '0')
+    Attr : ('style', 'display:none')
+END tag  : img
+END tag  : span
+END tag  : div
+START tag: div
+END tag  : div
+    Data : \ENTER\ 
+START tag: script
+    Data : requireLazy(["gkx"],function(gkx){gkx.add({"677762":{"result":true,"hash":"AT57_tnndzmTidoX"},"677763":{"result":false,"hash":"AT5L8mflx6riEvh1"}});});\ENTER\ requireLazy(["Bootloader"],function(Bootl ...(cont)...
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : requireLazy(["InitialJSLoader"], function(InitialJSLoader) {InitialJSLoader.loadOnDOMContentReady(["zeT2F","X4iP4","+HDH6","jIoRm","kL92e","dSnp+","pQxXd","DVctu","8dS6Q","jfDvr","60e0p","sUSRh","hD4N ...(cont)...
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : require("TimeSlice").guard(function() {require("ServerJSDefine").handleDefines([]);require("InitialJSLoader").handleServerJS({"instances":[["__inst_5b4d0c00_0_0",["Menu","XUIMenuWithSquareCorner","XUI ...(cont)...
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : var bigPipe = new (require("BigPipe"))({"forceFinish":true,"config":{"flush_pagelets_asap":true,"handle_defines_asap":true,"handle_instances_asap":true,"dispatch_pagelet_replayable_actions":false}});
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : bigPipe.beforePageletArrive("first_response")
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : require("TimeSlice").guard((function(){bigPipe.onPageletArrive({allResources:["3FY0S","zeT2F","br29X","X4iP4","+HDH6","jIoRm","7Vaz7","WB7Mr","kL92e","dSnp+","pQxXd","DVctu","8dS6Q","jfDvr","60e0p","s ...(cont)...
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : bigPipe.setPageID("6644204795288548730-0");CavalryLogger.setPageID("6644204795288548730-0");
+END tag  : script
+START tag: script
+    Data : bigPipe.beforePageletArrive("last_response")
+END tag  : script
+    Data : \ENTER\ 
+START tag: script
+    Data : require("TimeSlice").guard((function(){bigPipe.onPageletArrive({resource_map:{FEt5G:{type:"js",src:"https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/UqZ8zYqisVa.js"}},allResources:["3FY0S","zeT2F","br29X" ...(cont)...
+END tag  : script
+END tag  : body
+END tag  : html

@@ -1,0 +1,54 @@
+26/05/2018 05:48:22 PM - NewsPage - INFO: Element not found - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:48:22 PM - NewsPage - INFO: Element not present - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:48:22 PM - NewsPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+26/05/2018 05:48:26 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:48:26 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:48:28 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:48:28 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:48:28 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+26/05/2018 05:48:28 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:48:29 PM - LoginPage - INFO: Sent data (xxPSWD1xx) on element - locator (password) + locatorType (id)
+26/05/2018 05:48:29 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+26/05/2018 05:48:29 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+26/05/2018 05:48:31 PM - Util - INFO: Actual Text From Application Web UI == My Account
+26/05/2018 05:48:31 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+26/05/2018 05:48:31 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+26/05/2018 05:48:31 PM - NewsTests - INFO: test_gotoNewsBase started 1
+26/05/2018 05:48:31 PM - NewsPage - INFO: Element found - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:48:31 PM - NewsPage - INFO: Clicked on element - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:48:32 PM - NewsPage - INFO: Element found - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:48:32 PM - NewsPage - INFO: Clicked on element - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:48:43 PM - Util - INFO: Actual Text From Application Web UI == Google News
+26/05/2018 05:48:43 PM - Util - INFO: Expected Text From Application Web UI == Google News
+26/05/2018 05:48:43 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:48:43 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+26/05/2018 05:48:45 PM - NewsPage - INFO: expectedURL ( https://news.google.com ) VS currentURL ( https://news.google.com )
+26/05/2018 05:48:45 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+26/05/2018 05:48:45 PM - TestStatus - INFO: test_gotoNewsBase OK ### TEST SUCCESSFUL
+26/05/2018 05:48:49 PM - NewsPage - INFO: Element found - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:48:49 PM - NewsPage - INFO: Element present - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:48:49 PM - NewsTests - INFO: test_xcheckMainNewsBars started 2
+26/05/2018 05:48:49 PM - NewsPage - INFO: expectedURL ( https://news.google.com ) VS currentURL ( https://myaccount.google.com )
+26/05/2018 05:48:49 PM - NewsPage - INFO: Element found - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:48:49 PM - NewsPage - INFO: Clicked on element - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:48:50 PM - NewsPage - INFO: Element found - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:48:50 PM - NewsPage - INFO: Clicked on element - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:48:59 PM - NewsPage - INFO: Element found - locator (//*[contains(text(),'Top stories')]) + locatorType (xpath)
+26/05/2018 05:48:59 PM - NewsPage - INFO: Element present - locator (//*[contains(text(),'Top stories')]) + locatorType (xpath)
+26/05/2018 05:48:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar 1 Verified
+26/05/2018 05:48:59 PM - NewsPage - INFO: Element found - locator (//*[@class='ICsaqd'][contains(text(),'United Kingdom')]) + locatorType (xpath)
+26/05/2018 05:48:59 PM - NewsPage - INFO: Element present - locator (//*[@class='ICsaqd'][contains(text(),'United Kingdom')]) + locatorType (xpath)
+26/05/2018 05:48:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar 2 Verified
+26/05/2018 05:48:59 PM - NewsPage - INFO: Element found - locator (//*[contains(text(),'Send feedback')]) + locatorType (xpath)
+26/05/2018 05:48:59 PM - NewsPage - INFO: Element present - locator (//*[contains(text(),'Send feedback')]) + locatorType (xpath)
+26/05/2018 05:48:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar 3 Verified
+26/05/2018 05:48:59 PM - NewsPage - DEBUG: In locator condition
+26/05/2018 05:48:59 PM - NewsPage - INFO: Element found - locator (//*[@id="yDmH0d"]/*/*/*[1]/*/*/*/*[1]/*[1]/*[1]/h3/a) + locatorType (xpath)
+26/05/2018 05:48:59 PM - NewsPage - DEBUG: Before finding text
+26/05/2018 05:48:59 PM - NewsPage - DEBUG: After finding element, size is = 9
+26/05/2018 05:48:59 PM - NewsPage - INFO: Text is on the element - locator (//*[@id="yDmH0d"]/*/*/*[1]/*/*/*/*[1]/*[1]/*[1]/h3/a) + locatorType (xpath)
+26/05/2018 05:48:59 PM - NewsPage - INFO: The text is = 'Headlines'
+26/05/2018 05:48:59 PM - NewsPage - INFO: Info text on element =  
+26/05/2018 05:48:59 PM - NewsPage - INFO: expectedText ( Headlines ) VS pageText ( Headlines )
+26/05/2018 05:48:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Text Verified
+26/05/2018 05:48:59 PM - TestStatus - INFO: test_xcheckMainNewsBars OK ### TEST SUCCESSFUL

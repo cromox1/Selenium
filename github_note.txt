@@ -1,0 +1,73 @@
+# Setting your Git username for every repository on your computer
+# ---------------------------------------------------------------
+git config --global user.name "Rosli Talib"
+git config --global user.name
+git config --global user.email "xixa01@yahoo.co.uk"
+git config --global user.email
+
+  644  git status
+  645  git add github_note.sh
+  646  git status
+  647  git checkout
+  648  git commit -m 'test1'
+  649  git push
+  650  cat .git/config
+  661  git init
+  664  git push origin master
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/TMP_SELENIUM/Selenium
+$ git push origin master
+Username for 'https://github.com':       <---- cromox1
+Password for 'https://cromox1@github.com':
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 402 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cromox1/Selenium.git
+   f40e630..b52704c  master -> master
+
+## sometimes failed because in Master ('https://cromox1@github.com') is newer, because commit by other people
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/TMP_SELENIUM/Selenium
+$ git push
+Username for 'https://github.com':
+Password for 'https://cromox1@github.com':
+To https://github.com/cromox1/Selenium.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cromox1/Selenium.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+So need to PULL first
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/TMP_SELENIUM/Selenium
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/cromox1/Selenium
+   b52704c..f8f2429  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ github_note.sh | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+## then PUSH
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/TMP_SELENIUM/Selenium
+$ git push
+Username for 'https://github.com':
+Password for 'https://cromox1@github.com':
+Counting objects: 61, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (61/61), 476.85 KiB | 0 bytes/s, done.
+Total 61 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.
+To https://github.com/cromox1/Selenium.git
+   f8f2429..ef96ab1  master -> master

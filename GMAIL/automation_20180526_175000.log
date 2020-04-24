@@ -1,0 +1,358 @@
+26/05/2018 05:50:23 PM - LoginTests - INFO: test_invalidLogin started
+26/05/2018 05:50:23 PM - LoginTests - INFO: test_validLogin started
+26/05/2018 05:50:23 PM - LoginTests - INFO: test_xcheckGmail started
+26/05/2018 05:50:23 PM - YoutubeTests - INFO: test_gotoYoutubeRushdi started
+26/05/2018 05:50:23 PM - YoutubeTests - INFO: test_userloginEmailId started
+26/05/2018 05:50:23 PM - PlayGoogleTests - INFO: test_gotoGooglePlay started 1
+26/05/2018 05:50:23 PM - PlayGoogleTests - INFO: test_moviesFree started 3
+26/05/2018 05:50:23 PM - PlayGoogleTests - INFO: test_musicFree started 2
+26/05/2018 05:50:23 PM - PlayGoogleTests - INFO: test_xbooksFree started 4
+26/05/2018 05:50:23 PM - HangOutsTests - INFO: test_gotoHangOutsBase started 1
+26/05/2018 05:50:23 PM - HangOutsTests - INFO: test_xcheckMainHangOutsBars started 2
+26/05/2018 05:50:23 PM - NewsTests - INFO: test_gotoNewsBase started 1
+26/05/2018 05:50:23 PM - NewsTests - INFO: test_xcheckMainNewsBars started 2
+26/05/2018 05:50:30 PM - HangOutsPage - INFO: Element not found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:50:30 PM - HangOutsPage - INFO: Element not present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:50:30 PM - HangOutsPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+26/05/2018 05:50:34 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:50:34 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:50:36 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:50:36 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:50:36 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+26/05/2018 05:50:36 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:50:36 PM - LoginPage - INFO: Sent data (xxPSWD1xx) on element - locator (password) + locatorType (id)
+26/05/2018 05:50:36 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+26/05/2018 05:50:36 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+26/05/2018 05:50:38 PM - Util - INFO: Actual Text From Application Web UI == My Account
+26/05/2018 05:50:38 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+26/05/2018 05:50:38 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+26/05/2018 05:50:38 PM - HangOutsTests - INFO: test_gotoHangOutsBase started 1
+26/05/2018 05:50:38 PM - HangOutsPage - INFO: Element found - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:50:38 PM - HangOutsPage - INFO: Clicked on element - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:50:40 PM - HangOutsPage - INFO: Element found - locator (//*[contains(text(),"More")]) + locatorType (xpath)
+26/05/2018 05:50:40 PM - HangOutsPage - INFO: Clicked on element - locator (//*[contains(text(),"More")]) + locatorType (xpath)
+26/05/2018 05:50:41 PM - HangOutsPage - INFO: Element found - locator (//*/span[contains(text(),"Hangouts")]) + locatorType (xpath)
+26/05/2018 05:50:41 PM - HangOutsPage - INFO: Clicked on element - locator (//*/span[contains(text(),"Hangouts")]) + locatorType (xpath)
+26/05/2018 05:50:42 PM - Util - INFO: Actual Text From Application Web UI == Google Hangouts
+26/05/2018 05:50:42 PM - Util - INFO: Expected Text From Application Web UI == Google Hangouts
+26/05/2018 05:50:42 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:50:42 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: expectedURL ( https://hangouts.google.com ) VS currentURL ( https://hangouts.google.com )
+26/05/2018 05:50:42 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+26/05/2018 05:50:42 PM - TestStatus - INFO: test_gotoHangOutsBase OK ### TEST SUCCESSFUL
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:50:42 PM - HangOutsTests - INFO: test_xcheckMainHangOutsBars started 2
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: expectedURL ( https://hangouts.google.com ) VS currentURL ( https://hangouts.google.com )
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: Element found - locator (//*[@id="yDmH0d"]/*[4]/*[1]) + locatorType (xpath)
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: Element present - locator (//*[@id="yDmH0d"]/*[4]/*[1]) + locatorType (xpath)
+26/05/2018 05:50:42 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar Verified
+26/05/2018 05:50:42 PM - HangOutsPage - DEBUG: In locator condition
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: Element found - locator (//div[@class="g-Ue-zr-ma"]) + locatorType (xpath)
+26/05/2018 05:50:42 PM - HangOutsPage - DEBUG: Before finding text
+26/05/2018 05:50:42 PM - HangOutsPage - DEBUG: After finding element, size is = 51
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: Text is on the element - locator (//div[@class="g-Ue-zr-ma"]) + locatorType (xpath)
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: The text is = 'Get started by calling or messaging a friend below.'
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: Info text on element =  
+26/05/2018 05:50:42 PM - HangOutsPage - INFO: expectedText ( Get started by calling or messaging a friend below. ) VS pageText ( Get started by calling or messaging a friend below. )
+26/05/2018 05:50:42 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Text Verified
+26/05/2018 05:50:42 PM - TestStatus - INFO: test_checkMainHangOutsBars OK ### TEST SUCCESSFUL
+26/05/2018 05:50:52 PM - NewsPage - INFO: Element not found - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:50:52 PM - NewsPage - INFO: Element not present - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:50:52 PM - NewsPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+26/05/2018 05:50:56 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:50:56 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:50:58 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:50:58 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:50:58 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+26/05/2018 05:50:58 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:50:58 PM - LoginPage - INFO: Sent data (xxPSWD1xx) on element - locator (password) + locatorType (id)
+26/05/2018 05:50:59 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+26/05/2018 05:50:59 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+26/05/2018 05:51:01 PM - Util - INFO: Actual Text From Application Web UI == My Account
+26/05/2018 05:51:01 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+26/05/2018 05:51:01 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+26/05/2018 05:51:01 PM - NewsTests - INFO: test_gotoNewsBase started 1
+26/05/2018 05:51:01 PM - NewsPage - INFO: Element found - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:51:01 PM - NewsPage - INFO: Clicked on element - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:51:02 PM - NewsPage - INFO: Element found - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:51:02 PM - NewsPage - INFO: Clicked on element - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:51:08 PM - Util - INFO: Actual Text From Application Web UI == Google News
+26/05/2018 05:51:08 PM - Util - INFO: Expected Text From Application Web UI == Google News
+26/05/2018 05:51:08 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:51:08 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+26/05/2018 05:51:10 PM - NewsPage - INFO: expectedURL ( https://news.google.com ) VS currentURL ( https://news.google.com )
+26/05/2018 05:51:10 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+26/05/2018 05:51:10 PM - TestStatus - INFO: test_gotoNewsBase OK ### TEST SUCCESSFUL
+26/05/2018 05:51:12 PM - NewsPage - INFO: Element found - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:51:12 PM - NewsPage - INFO: Element present - locator (//span[@class='gb_db gbii']) + locatorType (xpath)
+26/05/2018 05:51:12 PM - NewsTests - INFO: test_xcheckMainNewsBars started 2
+26/05/2018 05:51:12 PM - NewsPage - INFO: expectedURL ( https://news.google.com ) VS currentURL ( https://myaccount.google.com )
+26/05/2018 05:51:12 PM - NewsPage - INFO: Element found - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:51:12 PM - NewsPage - INFO: Clicked on element - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+26/05/2018 05:51:13 PM - NewsPage - INFO: Element found - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:51:13 PM - NewsPage - INFO: Clicked on element - locator (//*/span[contains(text(),"News")]) + locatorType (xpath)
+26/05/2018 05:51:27 PM - NewsPage - INFO: Element found - locator (//*[contains(text(),'Top stories')]) + locatorType (xpath)
+26/05/2018 05:51:27 PM - NewsPage - INFO: Element present - locator (//*[contains(text(),'Top stories')]) + locatorType (xpath)
+26/05/2018 05:51:27 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar 1 Verified
+26/05/2018 05:51:29 PM - NewsPage - INFO: Element found - locator (//*[@class='ICsaqd'][contains(text(),'United Kingdom')]) + locatorType (xpath)
+26/05/2018 05:51:29 PM - NewsPage - INFO: Element present - locator (//*[@class='ICsaqd'][contains(text(),'United Kingdom')]) + locatorType (xpath)
+26/05/2018 05:51:29 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar 2 Verified
+26/05/2018 05:51:32 PM - NewsPage - INFO: Element found - locator (//*[contains(text(),'Send feedback')]) + locatorType (xpath)
+26/05/2018 05:51:32 PM - NewsPage - INFO: Element present - locator (//*[contains(text(),'Send feedback')]) + locatorType (xpath)
+26/05/2018 05:51:32 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar 3 Verified
+26/05/2018 05:51:32 PM - NewsPage - DEBUG: In locator condition
+26/05/2018 05:51:33 PM - NewsPage - INFO: Element found - locator (//*[@id="yDmH0d"]/*/*/*[1]/*/*/*/*[1]/*[1]/*[1]/h3/a) + locatorType (xpath)
+26/05/2018 05:51:33 PM - NewsPage - DEBUG: Before finding text
+26/05/2018 05:51:33 PM - NewsPage - DEBUG: After finding element, size is = 9
+26/05/2018 05:51:33 PM - NewsPage - INFO: Text is on the element - locator (//*[@id="yDmH0d"]/*/*/*[1]/*/*/*/*[1]/*[1]/*[1]/h3/a) + locatorType (xpath)
+26/05/2018 05:51:33 PM - NewsPage - INFO: The text is = 'Headlines'
+26/05/2018 05:51:33 PM - NewsPage - INFO: Info text on element =  
+26/05/2018 05:51:33 PM - NewsPage - INFO: expectedText ( Headlines ) VS pageText ( Headlines )
+26/05/2018 05:51:33 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Text Verified
+26/05/2018 05:51:33 PM - TestStatus - INFO: test_xcheckMainNewsBars OK ### TEST SUCCESSFUL
+26/05/2018 05:51:43 PM - GooglePlayPage - INFO: Element not found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:51:43 PM - GooglePlayPage - INFO: Element not present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:51:43 PM - GooglePlayPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@googlemail.com
+26/05/2018 05:51:47 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:51:47 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:51:49 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:51:49 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:51:49 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+26/05/2018 05:51:49 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:51:49 PM - LoginPage - INFO: Sent data (xxPSWD1xx) on element - locator (password) + locatorType (id)
+26/05/2018 05:51:49 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+26/05/2018 05:51:49 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+26/05/2018 05:51:51 PM - Util - INFO: Actual Text From Application Web UI == My Account
+26/05/2018 05:51:51 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+26/05/2018 05:51:51 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+26/05/2018 05:51:51 PM - PlayGoogleTests - INFO: test_gotoGooglePlay started 1
+26/05/2018 05:51:56 PM - Util - INFO: Actual Text From Application Web UI == Google Play
+26/05/2018 05:51:56 PM - Util - INFO: Expected Text From Application Web UI == Google Play
+26/05/2018 05:51:56 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:51:56 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:51:56 PM - GooglePlayPage - DEBUG: In locator condition
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div/div[2]) + locatorType (xpath)
+26/05/2018 05:51:56 PM - GooglePlayPage - DEBUG: Before finding text
+26/05/2018 05:51:56 PM - GooglePlayPage - DEBUG: After finding element, size is = 26
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div/div[2]) + locatorType (xpath)
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: The text is = 'xxuser1xx@googlemail.com'
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: Info text on element =  
+26/05/2018 05:51:56 PM - PlayGoogleTests - INFO: User's email ( xxuser1xx@googlemail.com ) VS Expected email ( xxuser1xx@googlemail.com )
+26/05/2018 05:51:56 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Email Verified
+26/05/2018 05:51:56 PM - TestStatus - INFO: test_gotoGooglePlayBase OK ### TEST SUCCESSFUL
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:51:56 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:51:56 PM - PlayGoogleTests - INFO: test_moviesFree started 3
+26/05/2018 05:51:59 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:51:59 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:51:59 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:51:59 PM - GooglePlayPage - INFO: Sent data (free movies) on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:51:59 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+26/05/2018 05:51:59 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: expectedURL ( https://play.google.com/store/search?q=free%20movies&c=movies ) VS currentURL ( https://play.google.com/store/search?q=free%20movies&c=movies )
+26/05/2018 05:52:01 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:01 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Movies Verified
+26/05/2018 05:52:01 PM - GooglePlayPage - DEBUG: In locator condition
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:01 PM - GooglePlayPage - DEBUG: Before finding text
+26/05/2018 05:52:01 PM - GooglePlayPage - DEBUG: After finding element, size is = 11
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: The text is = 'Free Movies'
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: Info text on element =  
+26/05/2018 05:52:01 PM - GooglePlayPage - INFO: expectedText ( Free Movies ) VS pageText ( Free Movies )
+26/05/2018 05:52:01 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Movies text Verified
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:02 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Movies Cover Verified
+26/05/2018 05:52:02 PM - GooglePlayPage - DEBUG: In locator condition
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:02 PM - GooglePlayPage - DEBUG: Before finding text
+26/05/2018 05:52:02 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: The text is = 'Free'
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: Info text on element =  
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+26/05/2018 05:52:02 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Movies Verified
+26/05/2018 05:52:02 PM - TestStatus - INFO: test_moviesFree OK ### TEST SUCCESSFUL
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:52:02 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:52:02 PM - PlayGoogleTests - INFO: test_musicFree started 2
+26/05/2018 05:52:04 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:05 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:05 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:05 PM - GooglePlayPage - INFO: Sent data (free music) on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:05 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+26/05/2018 05:52:05 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: expectedURL ( https://play.google.com/store/search?q=free%20music&c=music ) VS currentURL ( https://play.google.com/store/search?q=free%20music&c=music )
+26/05/2018 05:52:07 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+26/05/2018 05:52:07 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Albums Verified
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Element found - locator (//*//*[1]/*[1]/*[2]/*[1]/*[1]/*[1]) + locatorType (xpath)
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Element present - locator (//*//*[1]/*[1]/*[2]/*[1]/*[1]/*[1]) + locatorType (xpath)
+26/05/2018 05:52:07 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Album Cover Verified
+26/05/2018 05:52:07 PM - GooglePlayPage - DEBUG: In locator condition
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:07 PM - GooglePlayPage - DEBUG: Before finding text
+26/05/2018 05:52:07 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: The text is = 'Free'
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Info text on element =  
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+26/05/2018 05:52:07 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Musics Verified
+26/05/2018 05:52:07 PM - TestStatus - INFO: test_musicFree OK ### TEST SUCCESSFUL
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:52:07 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+26/05/2018 05:52:07 PM - PlayGoogleTests - INFO: test_xbooksFree started 4
+26/05/2018 05:52:11 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:11 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:11 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:11 PM - GooglePlayPage - INFO: Sent data (free books) on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+26/05/2018 05:52:11 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+26/05/2018 05:52:12 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: expectedURL ( https://play.google.com/store/search?q=free%20books&c=books ) VS currentURL ( https://play.google.com/store/search?q=free%20books&c=books )
+26/05/2018 05:52:14 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+26/05/2018 05:52:14 PM - GooglePlayPage - DEBUG: In locator condition
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:14 PM - GooglePlayPage - DEBUG: Before finding text
+26/05/2018 05:52:14 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: The text is = 'Free'
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: Info text on element =  
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+26/05/2018 05:52:14 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Ebooks Verified
+26/05/2018 05:52:14 PM - GooglePlayPage - DEBUG: In locator condition
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*/*/*[1]/*/*[2]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:14 PM - GooglePlayPage - DEBUG: Before finding text
+26/05/2018 05:52:14 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*/*/*[1]/*/*[2]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: The text is = 'Free'
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: Info text on element =  
+26/05/2018 05:52:14 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+26/05/2018 05:52:14 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Audiobooks Verified
+26/05/2018 05:52:14 PM - TestStatus - INFO: test_xbooksFree OK ### TEST SUCCESSFUL
+26/05/2018 05:52:20 PM - LoginTests - INFO: test_invalidLogin started
+26/05/2018 05:52:23 PM - LoginPage - INFO: Element not found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:23 PM - LoginPage - INFO: Element not present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:23 PM - LoginPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=akula12345@emailcubaan.com
+26/05/2018 05:52:28 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:52:28 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:52:33 PM - LoginPage - INFO: Element not found - locator (password) + locatorType (id)
+26/05/2018 05:52:33 PM - Util - INFO: Actual Text From Application Web UI == Sign in - Google Accounts
+26/05/2018 05:52:33 PM - Util - INFO: Expected Text From Application Web UI == Sign in - Google Accounts
+26/05/2018 05:52:33 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:52:33 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Not Login email1 Verified
+26/05/2018 05:52:36 PM - LoginPage - INFO: Element not found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:36 PM - LoginPage - INFO: Element not present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:36 PM - LoginPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=test123cubaan@gmail.com
+26/05/2018 05:52:39 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:52:39 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:52:44 PM - LoginPage - INFO: Element not found - locator (password) + locatorType (id)
+26/05/2018 05:52:44 PM - Util - INFO: Actual Text From Application Web UI == Sign in - Google Accounts
+26/05/2018 05:52:44 PM - Util - INFO: Expected Text From Application Web UI == Sign in - Google Accounts
+26/05/2018 05:52:44 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:52:44 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Not Login email2 Verified
+26/05/2018 05:52:44 PM - TestStatus - INFO: Test invalidLogin was successful ### TEST SUCCESSFUL
+26/05/2018 05:52:44 PM - LoginTests - INFO: test_validLogin started
+26/05/2018 05:52:47 PM - LoginPage - INFO: Element not found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:47 PM - LoginPage - INFO: Element not present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:47 PM - LoginPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+26/05/2018 05:52:51 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:52:51 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:52:53 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:52:53 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:52:53 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+26/05/2018 05:52:53 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:52:53 PM - LoginPage - INFO: Sent data (xxPSWD1xx!) on element - locator (password) + locatorType (id)
+26/05/2018 05:52:53 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+26/05/2018 05:52:53 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+26/05/2018 05:52:55 PM - Util - INFO: Actual Text From Application Web UI == My Account
+26/05/2018 05:52:55 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+26/05/2018 05:52:55 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+26/05/2018 05:52:55 PM - Util - INFO: Actual Text From Application Web UI == My Account
+26/05/2018 05:52:55 PM - Util - INFO: Expected Text From Application Web UI == My Account
+26/05/2018 05:52:55 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:52:55 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Login xxuser1xx@gmail.com Verified
+26/05/2018 05:52:55 PM - LoginPage - INFO: expectedURL ( https://myaccount.google.com/?pli=1 ) VS currentURL ( https://myaccount.google.com/?pli=1 )
+26/05/2018 05:52:55 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Login URL verified
+26/05/2018 05:52:55 PM - TestStatus - INFO: Test validLogin was successful ### TEST SUCCESSFUL
+26/05/2018 05:52:55 PM - LoginTests - INFO: test_xcheckGmail started
+26/05/2018 05:52:56 PM - LoginPage - INFO: Element found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:56 PM - LoginPage - INFO: Element present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+26/05/2018 05:52:56 PM - LoginPage - INFO: Element found - locator (//a[@class='WaidBe']) + locatorType (xpath)
+26/05/2018 05:52:56 PM - LoginPage - INFO: Clicked on element - locator (//a[@class='WaidBe']) + locatorType (xpath)
+26/05/2018 05:53:01 PM - LoginPage - INFO: expectedURL ( https://mail.google.com ) VS currentURL ( https://mail.google.com )
+26/05/2018 05:53:01 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Gmail URL verified
+26/05/2018 05:53:02 PM - LoginPage - INFO: Element found - locator (//div[@class='T-I J-J5-Ji T-I-KE L3']) + locatorType (xpath)
+26/05/2018 05:53:02 PM - LoginPage - INFO: Element present - locator (//div[@class='T-I J-J5-Ji T-I-KE L3']) + locatorType (xpath)
+26/05/2018 05:53:02 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Compose button verified
+26/05/2018 05:53:02 PM - LoginPage - DEBUG: In locator condition
+26/05/2018 05:53:02 PM - LoginPage - INFO: Element found - locator (//div[@id=':i']//span[contains(text(),'Gmail')]) + locatorType (xpath)
+26/05/2018 05:53:02 PM - LoginPage - DEBUG: Before finding text
+26/05/2018 05:53:02 PM - LoginPage - DEBUG: After finding element, size is = 5
+26/05/2018 05:53:02 PM - LoginPage - INFO: Text is on the element - locator (//div[@id=':i']//span[contains(text(),'Gmail')]) + locatorType (xpath)
+26/05/2018 05:53:02 PM - LoginPage - INFO: The text is = 'Gmail'
+26/05/2018 05:53:02 PM - LoginPage - INFO: Info text on element =  
+26/05/2018 05:53:02 PM - LoginPage - INFO: expectedText ( Gmail ) VS pageText ( Gmail )
+26/05/2018 05:53:02 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Gmail button OK
+26/05/2018 05:53:02 PM - TestStatus - INFO: Test test_xcheckGmail was successful ### TEST SUCCESSFUL
+26/05/2018 05:53:13 PM - YoutubePage - INFO: Element not found - locator (//*[@id="img"]) + locatorType (xpath)
+26/05/2018 05:53:13 PM - YoutubePage - INFO: Element not present - locator (//*[@id="img"]) + locatorType (xpath)
+26/05/2018 05:53:13 PM - YoutubePage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@googlemail.com
+26/05/2018 05:53:17 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+26/05/2018 05:53:18 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+26/05/2018 05:53:20 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:53:20 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:53:20 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+26/05/2018 05:53:20 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+26/05/2018 05:53:20 PM - LoginPage - INFO: Sent data (xxPSWD1xx) on element - locator (password) + locatorType (id)
+26/05/2018 05:53:20 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+26/05/2018 05:53:20 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+26/05/2018 05:53:22 PM - Util - INFO: Actual Text From Application Web UI == My Account
+26/05/2018 05:53:22 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+26/05/2018 05:53:22 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+26/05/2018 05:53:22 PM - YoutubeTests - INFO: test_gotoYoutubeRushdi started
+26/05/2018 05:53:41 PM - Util - INFO: Actual Text From Application Web UI == The Land of Gibbery - YouTube
+26/05/2018 05:53:41 PM - Util - INFO: Expected Text From Application Web UI == The Land of Gibbery - YouTube
+26/05/2018 05:53:41 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:53:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+26/05/2018 05:53:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Views Verified = 267
+26/05/2018 05:53:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Likes Verified = 4
+26/05/2018 05:53:41 PM - TestStatus - INFO: test_gotoYoutubeRushdi ### TEST SUCCESSFUL
+26/05/2018 05:53:59 PM - Util - INFO: Actual Text From Application Web UI == Bersih 4.0 & Iklan Merdeka 2015 (Wrecking Ball Parody) - YouTube
+26/05/2018 05:53:59 PM - Util - INFO: Expected Text From Application Web UI == Bersih 4.0 & Iklan Merdeka 2015 (Wrecking Ball Parody) - YouTube
+26/05/2018 05:53:59 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:53:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+26/05/2018 05:53:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Views Verified = 1111
+26/05/2018 05:53:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Likes Verified = 4
+26/05/2018 05:53:59 PM - TestStatus - INFO: test_gotoYoutubeRushdi ### TEST SUCCESSFUL
+26/05/2018 05:54:16 PM - Util - INFO: Actual Text From Application Web UI == FOOTBALL CHALLENGES (with Messi) - YouTube
+26/05/2018 05:54:16 PM - Util - INFO: Expected Text From Application Web UI == FOOTBALL CHALLENGES (with Messi) - YouTube
+26/05/2018 05:54:16 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:54:16 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+26/05/2018 05:54:16 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Views Verified = 172
+26/05/2018 05:54:16 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Likes Verified = 7
+26/05/2018 05:54:16 PM - TestStatus - INFO: test_gotoYoutubeRushdi ### TEST SUCCESSFUL
+26/05/2018 05:54:16 PM - YoutubePage - INFO: Element found - locator (//*[@id="img"]) + locatorType (xpath)
+26/05/2018 05:54:16 PM - YoutubePage - INFO: Element present - locator (//*[@id="img"]) + locatorType (xpath)
+26/05/2018 05:54:16 PM - YoutubeTests - INFO: test_userloginEmailId started
+26/05/2018 05:54:16 PM - YoutubePage - INFO: Element found - locator (//*[@id="img"]) + locatorType (xpath)
+26/05/2018 05:54:17 PM - YoutubePage - INFO: Clicked on element - locator (//*[@id="img"]) + locatorType (xpath)
+26/05/2018 05:54:17 PM - YoutubePage - DEBUG: In locator condition
+26/05/2018 05:54:17 PM - YoutubePage - INFO: Element found - locator (yt-formatted-string.ytd-active-account-header-renderer:nth-child(2)) + locatorType (css)
+26/05/2018 05:54:17 PM - YoutubePage - DEBUG: Before finding text
+26/05/2018 05:54:17 PM - YoutubePage - DEBUG: After finding element, size is = 26
+26/05/2018 05:54:17 PM - YoutubePage - INFO: Text is on the element - locator (yt-formatted-string.ytd-active-account-header-renderer:nth-child(2)) + locatorType (css)
+26/05/2018 05:54:17 PM - YoutubePage - INFO: The text is = 'xxuser1xx@googlemail.com'
+26/05/2018 05:54:17 PM - YoutubePage - INFO: Info text on element =  
+26/05/2018 05:54:17 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Email id Verified = xxuser1xx@googlemail.com
+26/05/2018 05:54:19 PM - Util - INFO: Actual Text From Application Web UI == Email
+26/05/2018 05:54:19 PM - Util - INFO: Expected Text From Application Web UI == Email
+26/05/2018 05:54:19 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+26/05/2018 05:54:19 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Email page Verified
+26/05/2018 05:54:19 PM - TestStatus - INFO: test_userloginEmailId ### TEST SUCCESSFUL

@@ -1,0 +1,66 @@
+24/05/2018 12:42:25 PM - LoginTests - INFO: test_invalidLogin started
+24/05/2018 12:42:28 PM - LoginPage - INFO: Element not found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:28 PM - LoginPage - INFO: Element not present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:28 PM - LoginPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=akula12345@emailcubaan.com
+24/05/2018 12:42:31 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+24/05/2018 12:42:32 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+24/05/2018 12:42:37 PM - LoginPage - INFO: Element not found - locator (password) + locatorType (id)
+24/05/2018 12:42:37 PM - Util - INFO: Actual Text From Application Web UI == Sign in - Google Accounts
+24/05/2018 12:42:37 PM - Util - INFO: Expected Text From Application Web UI == Sign in - Google Accounts
+24/05/2018 12:42:37 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:42:37 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Not Login email1 Verified
+24/05/2018 12:42:40 PM - LoginPage - INFO: Element not found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:40 PM - LoginPage - INFO: Element not present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:40 PM - LoginPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=test123cubaan@gmail.com
+24/05/2018 12:42:43 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+24/05/2018 12:42:43 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+24/05/2018 12:42:48 PM - LoginPage - INFO: Element not found - locator (password) + locatorType (id)
+24/05/2018 12:42:48 PM - Util - INFO: Actual Text From Application Web UI == Sign in - Google Accounts
+24/05/2018 12:42:48 PM - Util - INFO: Expected Text From Application Web UI == Sign in - Google Accounts
+24/05/2018 12:42:48 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:42:48 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Not Login email2 Verified
+24/05/2018 12:42:48 PM - TestStatus - INFO: Test invalidLogin was successful ### TEST SUCCESSFUL
+24/05/2018 12:42:48 PM - LoginTests - INFO: test_validLogin started
+24/05/2018 12:42:51 PM - LoginPage - INFO: Element not found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:51 PM - LoginPage - INFO: Element not present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:51 PM - LoginPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+24/05/2018 12:42:54 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+24/05/2018 12:42:54 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+24/05/2018 12:42:56 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:42:56 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:42:56 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+24/05/2018 12:42:56 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:42:57 PM - LoginPage - INFO: Sent data (xxPSWD1xx 
+) on element - locator (password) + locatorType (id)
+24/05/2018 12:42:57 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+24/05/2018 12:42:57 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+24/05/2018 12:42:59 PM - Util - INFO: Actual Text From Application Web UI == My Account
+24/05/2018 12:42:59 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+24/05/2018 12:42:59 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+24/05/2018 12:42:59 PM - Util - INFO: Actual Text From Application Web UI == My Account
+24/05/2018 12:42:59 PM - Util - INFO: Expected Text From Application Web UI == My Account
+24/05/2018 12:42:59 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:42:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Login xxuser1xx@gmail.com Verified
+24/05/2018 12:42:59 PM - LoginPage - INFO: expectedURL ( https://myaccount.google.com/?pli=1 ) VS currentURL ( https://myaccount.google.com/?pli=1 )
+24/05/2018 12:42:59 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Login URL verified
+24/05/2018 12:42:59 PM - TestStatus - INFO: Test validLogin was successful ### TEST SUCCESSFUL
+24/05/2018 12:42:59 PM - LoginTests - INFO: test_xcheckGmail started
+24/05/2018 12:42:59 PM - LoginPage - INFO: Element found - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:59 PM - LoginPage - INFO: Element present - locator (//*[@id="gb"]/*[2]/*[3]/*/*[2]/*/*/*) + locatorType (xpath)
+24/05/2018 12:42:59 PM - LoginPage - INFO: Element found - locator (//a[@class='WaidBe']) + locatorType (xpath)
+24/05/2018 12:42:59 PM - LoginPage - INFO: Clicked on element - locator (//a[@class='WaidBe']) + locatorType (xpath)
+24/05/2018 12:43:04 PM - LoginPage - INFO: expectedURL ( https://mail.google.com ) VS currentURL ( https://mail.google.com )
+24/05/2018 12:43:04 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Gmail URL verified
+24/05/2018 12:43:04 PM - LoginPage - INFO: Element found - locator (//div[@class='T-I J-J5-Ji T-I-KE L3']) + locatorType (xpath)
+24/05/2018 12:43:04 PM - LoginPage - INFO: Element present - locator (//div[@class='T-I J-J5-Ji T-I-KE L3']) + locatorType (xpath)
+24/05/2018 12:43:04 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Compose button verified
+24/05/2018 12:43:04 PM - LoginPage - DEBUG: In locator condition
+24/05/2018 12:43:05 PM - LoginPage - INFO: Element found - locator (//div[@id=':i']//span[contains(text(),'Gmail')]) + locatorType (xpath)
+24/05/2018 12:43:05 PM - LoginPage - DEBUG: Before finding text
+24/05/2018 12:43:05 PM - LoginPage - DEBUG: After finding element, size is = 5
+24/05/2018 12:43:05 PM - LoginPage - INFO: Text is on the element - locator (//div[@id=':i']//span[contains(text(),'Gmail')]) + locatorType (xpath)
+24/05/2018 12:43:05 PM - LoginPage - INFO: The text is = 'Gmail'
+24/05/2018 12:43:05 PM - LoginPage - INFO: Info text on element =  
+24/05/2018 12:43:05 PM - LoginPage - INFO: expectedText ( Gmail ) VS pageText ( Gmail )
+24/05/2018 12:43:05 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Gmail button OK
+24/05/2018 12:43:05 PM - TestStatus - INFO: Test test_xcheckGmail was successful ### TEST SUCCESSFUL

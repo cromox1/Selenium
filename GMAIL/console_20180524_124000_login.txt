@@ -1,0 +1,50 @@
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/GMAIL
+$ py.test.exe -v -s tests/home/login_tests.py > consoleoutput1.txt 2>&1
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/GMAIL
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-3.4.2, py-1.5.3, pluggy-0.6.0 -- c:\tools\python36\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.6.1', 'Platform': 'Windows-7-6.1.7601-SP1', 'Packages': {'pytest': '3.4.2', 'py': '1.5.3', 'pluggy': '0.6.0'}, 'Plugins': {'metadata': '1.7.0', 'html': '1.17.0'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk1.8.0_77'}
+rootdir: C:\Users\cromox\Desktop\newselenium\UDEMY\GMAIL, inifile:
+plugins: metadata-1.7.0, html-1.17.0
+collecting ... collected 3 items
+
+tests/home/login_tests.py::LoginTests::test_invalidLogin 
+== > Running one time setUp
+Python Version = 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)]
+
+usrpswd given WAS NOT OK ( None )
+Switch to DEFAULT usrpswd ( xxuser1xx@gmail.com, xxPSWD1xx )
+Browser version ( firefox ) = 52.5.0
+
+--- > Running method level setUp
+Result 1  =  True
+ResultLast = True
+
+PASSED
+--- > Running method level tearDown
+
+tests/home/login_tests.py::LoginTests::test_validLogin 
+--- > Running method level setUp
+Result 1  =  True
+ResultLast = True
+
+PASSED
+--- > Running method level tearDown
+
+tests/home/login_tests.py::LoginTests::test_xcheckGmail 
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+ResultLast = True
+
+PASSED
+--- > Running method level tearDown
+
+== > Running one time tearDown
+
+
+========================== 3 passed in 47.03 seconds ==========================

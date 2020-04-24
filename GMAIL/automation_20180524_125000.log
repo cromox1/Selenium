@@ -1,0 +1,56 @@
+24/05/2018 12:50:34 PM - YoutubePage - INFO: Element not found - locator (//*[@id="img"]) + locatorType (xpath)
+24/05/2018 12:50:34 PM - YoutubePage - INFO: Element not present - locator (//*[@id="img"]) + locatorType (xpath)
+24/05/2018 12:50:34 PM - YoutubePage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+24/05/2018 12:50:38 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+24/05/2018 12:50:38 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+24/05/2018 12:50:40 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:50:40 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:50:40 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+24/05/2018 12:50:40 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:50:40 PM - LoginPage - INFO: Sent data (xxPSWD1xx
+) on element - locator (password) + locatorType (id)
+24/05/2018 12:50:40 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+24/05/2018 12:50:40 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+24/05/2018 12:50:42 PM - Util - INFO: Actual Text From Application Web UI == My Account
+24/05/2018 12:50:42 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+24/05/2018 12:50:42 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+24/05/2018 12:50:42 PM - YoutubeTests - INFO: test_gotoYoutubeRushdi started
+24/05/2018 12:51:00 PM - Util - INFO: Actual Text From Application Web UI == The Land of Gibbery - YouTube
+24/05/2018 12:51:00 PM - Util - INFO: Expected Text From Application Web UI == The Land of Gibbery - YouTube
+24/05/2018 12:51:00 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:51:00 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+24/05/2018 12:51:00 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Views Verified = 253
+24/05/2018 12:51:00 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Likes Verified = 4
+24/05/2018 12:51:00 PM - TestStatus - INFO: test_gotoYoutubeRushdi ### TEST SUCCESSFUL
+24/05/2018 12:51:18 PM - Util - INFO: Actual Text From Application Web UI == Bersih 4.0 & Iklan Merdeka 2015 (Wrecking Ball Parody) - YouTube
+24/05/2018 12:51:18 PM - Util - INFO: Expected Text From Application Web UI == Bersih 4.0 & Iklan Merdeka 2015 (Wrecking Ball Parody) - YouTube
+24/05/2018 12:51:18 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:51:18 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+24/05/2018 12:51:18 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Views Verified = 1094
+24/05/2018 12:51:18 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Likes Verified = 4
+24/05/2018 12:51:18 PM - TestStatus - INFO: test_gotoYoutubeRushdi ### TEST SUCCESSFUL
+24/05/2018 12:51:36 PM - Util - INFO: Actual Text From Application Web UI == FOOTBALL CHALLENGES (with Messi) - YouTube
+24/05/2018 12:51:36 PM - Util - INFO: Expected Text From Application Web UI == FOOTBALL CHALLENGES (with Messi) - YouTube
+24/05/2018 12:51:36 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:51:36 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+24/05/2018 12:51:36 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Views Verified = 155
+24/05/2018 12:51:36 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Number of Likes Verified = 7
+24/05/2018 12:51:36 PM - TestStatus - INFO: test_gotoYoutubeRushdi ### TEST SUCCESSFUL
+24/05/2018 12:51:36 PM - YoutubePage - INFO: Element found - locator (//*[@id="img"]) + locatorType (xpath)
+24/05/2018 12:51:36 PM - YoutubePage - INFO: Element present - locator (//*[@id="img"]) + locatorType (xpath)
+24/05/2018 12:51:36 PM - YoutubeTests - INFO: test_userloginEmailId started
+24/05/2018 12:51:36 PM - YoutubePage - INFO: Element found - locator (//*[@id="img"]) + locatorType (xpath)
+24/05/2018 12:51:36 PM - YoutubePage - INFO: Clicked on element - locator (//*[@id="img"]) + locatorType (xpath)
+24/05/2018 12:51:36 PM - YoutubePage - DEBUG: In locator condition
+24/05/2018 12:51:36 PM - YoutubePage - INFO: Element found - locator (yt-formatted-string.ytd-active-account-header-renderer:nth-child(2)) + locatorType (css)
+24/05/2018 12:51:36 PM - YoutubePage - DEBUG: Before finding text
+24/05/2018 12:51:36 PM - YoutubePage - DEBUG: After finding element, size is = 26
+24/05/2018 12:51:36 PM - YoutubePage - INFO: Text is on the element - locator (yt-formatted-string.ytd-active-account-header-renderer:nth-child(2)) + locatorType (css)
+24/05/2018 12:51:36 PM - YoutubePage - INFO: The text is = 'xxuser1xx@gmail.com'
+24/05/2018 12:51:36 PM - YoutubePage - INFO: Info text on element =  
+24/05/2018 12:51:36 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Email id Verified = xxuser1xx@gmail.com
+24/05/2018 12:51:38 PM - Util - INFO: Actual Text From Application Web UI == Email
+24/05/2018 12:51:38 PM - Util - INFO: Expected Text From Application Web UI == Email
+24/05/2018 12:51:38 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:51:38 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Email page Verified
+24/05/2018 12:51:38 PM - TestStatus - INFO: test_userloginEmailId ### TEST SUCCESSFUL

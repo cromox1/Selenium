@@ -1,0 +1,55 @@
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ py.test.exe -v -s tests/p01google/p01searchpixitmedia_tests.py > consoleoutput1.txt 2>&1
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-3.4.2, py-1.5.3, pluggy-0.6.0 -- c:\tools\python36\python.exe
+cachedir: .pytest_cache
+sensitiveurl: .*
+metadata: {'Python': '3.6.1', 'Platform': 'Windows-7-6.1.7601-SP1', 'Packages': {'pytest': '3.4.2', 'py': '1.5.3', 'pluggy': '0.6.0'}, 'Plugins': {'variables': '1.7.1', 'selenium': '1.14.0', 'metadata': '1.7.0', 'html': '1.17.0', 'bdd': '2.21.0', 'base-url': '1.4.1'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk8u172', 'Base URL': '', 'Driver': None, 'Capabilities': {}}
+rootdir: C:\Users\cromox\Desktop\newselenium\UDEMY\PixitMedia, inifile:
+plugins: variables-1.7.1, selenium-1.14.0, metadata-1.7.0, html-1.17.0, bdd-2.21.0, base-url-1.4.1
+collecting ... collected 3 items
+
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test1_google_pixitmedia_page 
+== > Running one time setUp
+Python Version = 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)]
+Browser version ( opera ) = 55.0.2994.61
+
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+Result 3  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test2_products_page 
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+Result 3  =  True
+Result 4  =  True
+Result 5  =  True
+Result 6  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test3_contactus_page 
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+Result 3  =  True
+Result 4  =  True
+Result 5  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+== > Running one time tearDown
+
+
+========================== 3 passed in 30.07 seconds ==========================

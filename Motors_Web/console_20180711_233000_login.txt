@@ -1,0 +1,144 @@
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/Motors_Web
+$ py.test.exe -v -s tests/home/login_tests.py > consoleoutput1.txt 2>&1
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/Motors_Web
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-3.4.2, py-1.5.3, pluggy-0.6.0 -- c:\tools\python36\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.6.1', 'Platform': 'Windows-7-6.1.7601-SP1', 'Packages': {'pytest': '3.4.2', 'py': '1.5.3', 'pluggy': '0.6.0'}, 'Plugins': {'metadata': '1.7.0', 'html': '1.17.0'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk8u172'}
+rootdir: C:\Users\cromox\Desktop\newselenium\UDEMY\Motors_Web, inifile:
+plugins: metadata-1.7.0, html-1.17.0
+collecting ... collected 6 items
+
+tests/home/login_tests.py::LoginTests::test1Main_NoLogin_InvalidPost 
+== > Running one time setUp
+Python Version = 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)]
+Browser version ( firefox ) = 52.5.0
+
+--- > Running method level setUp
+
+Motors URL : https://www.motors.co.uk
+VALUE = 
+PASSED test1Main_NoLogin_InvalidPost
+PASSED
+--- > Running method level tearDown
+
+tests/home/login_tests.py::LoginTests::test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax 
+--- > Running method level setUp
+
+Motors URL : https://www.motors.co.uk
+VALUE = 
+Result 1  =  True
+Result 2  =  True
+Result 3  =  False
+
+FAILED
+--- > Running method level tearDown
+
+tests/home/login_tests.py::LoginTests::test3Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax 
+--- > Running method level setUp
+
+Motors URL : https://www.motors.co.uk
+VALUE = OX30LF
+PASSED test3Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax
+PASSED
+--- > Running method level tearDown
+
+tests/home/login_tests.py::LoginTests::test4Main_NoLogin_ValidPost_Make_XModel_XMin_Max 
+--- > Running method level setUp
+
+Motors URL : https://www.motors.co.uk
+VALUE = OX30LF
+PASSED test4Main_NoLogin_ValidPost_Make_XModel_XMin_Max
+PASSED
+--- > Running method level tearDown
+
+tests/home/login_tests.py::LoginTests::test5Main_NoLogin_ValidPost_Make_Model_Min_XMax 
+--- > Running method level setUp
+
+Motors URL : https://www.motors.co.uk
+VALUE = OX30LF
+PASSED test5Main_NoLogin_ValidPost_Make_Model_Min_XMax
+PASSED
+--- > Running method level tearDown
+
+tests/home/login_tests.py::LoginTests::test6Main_NoLogin_ValidPost_Make_Model_XMin_XMax 
+--- > Running method level setUp
+
+Motors URL : https://www.motors.co.uk
+VALUE = OX30LF
+PASSED test6Main_NoLogin_ValidPost_Make_Model_XMin_XMax
+PASSED
+--- > Running method level tearDown
+
+== > Running one time tearDown
+
+
+================================== FAILURES ===================================
+________ LoginTests.test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax ________
+
+self = <tests.home.login_tests.LoginTests testMethod=test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax>
+
+    @pytest.mark.run(order=2)
+    def test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax(self):
+        mytestname = str(sys._getframe().f_code.co_name)
+        self.log.info(mytestname + ' start')
+        self.loginpage.gotoMotorsMainSite('OX3 0LF')
+        time.sleep(3)
+        result = self.loginpage.verifyPageTitle('Motors.co.uk makes searching for a used car simple!') # Test 1
+        self.tstatus.recordStatus(result, "Page's Title verified")
+        result = self.loginpage.verifyPageURLlow('https://www.motors.co.uk')# Test 2
+        self.tstatus.recordStatus(result, "Page's URL base verified")
+        result = self.loginpage.verifyPageURL('https://www.motors.co.uk/search/car1/')# Test 3
+>       self.tstatus.recordStatus(result, "Page's URL exact verified", True, mytestname + ' was successful')
+
+tests\home\login_tests.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+utilities\teststatus.py:80: in recordStatus
+    self.markFinal(FinalText, result, infoText)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <utilities.teststatus.TestStatus object at 0x0000000004253588>
+testName = 'test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax was successful'
+result = False, resultMessage = "Page's URL exact verified"
+
+    def markFinal(self, testName, result, resultMessage):
+        """
+            Mark the final result of the verification point in a test case
+            This needs to be called at least once in a test case
+            This should be final test status of the test case
+            """
+        self.setResult(result, resultMessage)
+    
+        if "FAIL" in self.resultList:
+            self.log.error(testName +  " ### TEST FAILED")
+            self.resultList.clear()
+>           assert True == False
+E           AssertionError
+
+utilities\teststatus.py:63: AssertionError
+------------------------------ Captured log call ------------------------------
+login_tests.py              38 INFO     test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax start
+login_page.py               63 INFO     Motors URL : https://www.motors.co.uk
+selenium_driver.py         159 DEBUG    In locator condition
+selenium_driver.py          70 INFO     Element found - locator (//input[@type='text']) + locatorType (xpath)
+selenium_driver.py         161 DEBUG    Before finding value
+selenium_driver.py         163 DEBUG    After finding element, size is = 0
+selenium_driver.py          70 INFO     Element found - locator (//input[@type='text']) + locatorType (xpath)
+selenium_driver.py         120 INFO     Sent data (OX3 0LF) on element - locator (//input[@type='text']) + locatorType (xpath)
+selenium_driver.py         236 INFO     Waiting for maximum / 5 / seconds for element - locator (//span[@class='sp__btn-title']) + locatorType (xpath)
+selenium_driver.py         239 INFO     Element appeared on the web page
+selenium_driver.py         106 INFO     Clicked on element - locator () + locatorType (id)
+util.py                     78 INFO     Actual Text From Application Web UI == Motors.co.uk makes searching for a used car simple!
+util.py                     79 INFO     Expected Text From Application Web UI == Motors.co.uk makes searching for a used car simple!
+util.py                     81 INFO     ### VERIFICATION CONTAINS !!!
+teststatus.py               31 INFO     ### VERIFICATION SUCCESSFUL -- Page's Title verified
+basepage.py                 55 INFO     expectedURL ( https://www.motors.co.uk ) VS currentURL ( https://www.motors.co.uk )
+teststatus.py               31 INFO     ### VERIFICATION SUCCESSFUL -- Page's URL base verified
+basepage.py                 46 INFO     expectedURL ( https://www.motors.co.uk/search/car1/ ) VS currentURL ( https://www.motors.co.uk/search/car/ )
+teststatus.py               34 ERROR    ### VERIFICATION FAILED -- Page's URL exact verified's ERROR
+selenium_driver.py          38 INFO     Screenshot save to directory: C:\Users\cromox\Desktop\newselenium\UDEMY\Motors_Web\base\..\screenshots\Page's_URL_exact_verified_20180711_233024_313270.png
+teststatus.py               61 ERROR    test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax was successful ### TEST FAILED
+===================== 1 failed, 5 passed in 36.13 seconds =====================

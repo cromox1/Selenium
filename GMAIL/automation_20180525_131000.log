@@ -1,0 +1,46 @@
+25/05/2018 01:11:22 PM - HangOutsPage - INFO: Element not found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+25/05/2018 01:11:22 PM - HangOutsPage - INFO: Element not present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+25/05/2018 01:11:22 PM - HangOutsPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+25/05/2018 01:11:26 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+25/05/2018 01:11:26 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+25/05/2018 01:11:28 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+25/05/2018 01:11:28 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+25/05/2018 01:11:28 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+25/05/2018 01:11:28 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+25/05/2018 01:11:28 PM - LoginPage - INFO: Sent data (xxPSWD1xx) on element - locator (password) + locatorType (id)
+25/05/2018 01:11:28 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+25/05/2018 01:11:28 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+25/05/2018 01:11:30 PM - Util - INFO: Actual Text From Application Web UI == My Account
+25/05/2018 01:11:30 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+25/05/2018 01:11:30 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+25/05/2018 01:11:30 PM - HangOutsTests - INFO: test_gotoHangOutsBase started 1
+25/05/2018 01:11:30 PM - HangOutsPage - INFO: Element found - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+25/05/2018 01:11:30 PM - HangOutsPage - INFO: Clicked on element - locator (//*[@id="gbwa"]/*/*/*/*) + locatorType (xpath)
+25/05/2018 01:11:31 PM - HangOutsPage - INFO: Element found - locator (//*[contains(text(),"More")]) + locatorType (xpath)
+25/05/2018 01:11:31 PM - HangOutsPage - INFO: Clicked on element - locator (//*[contains(text(),"More")]) + locatorType (xpath)
+25/05/2018 01:11:32 PM - HangOutsPage - INFO: Element found - locator (//*/span[contains(text(),"Hangouts")]) + locatorType (xpath)
+25/05/2018 01:11:32 PM - HangOutsPage - INFO: Clicked on element - locator (//*/span[contains(text(),"Hangouts")]) + locatorType (xpath)
+25/05/2018 01:11:33 PM - Util - INFO: Actual Text From Application Web UI == Google Hangouts
+25/05/2018 01:11:33 PM - Util - INFO: Expected Text From Application Web UI == Google Hangouts
+25/05/2018 01:11:33 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+25/05/2018 01:11:33 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+25/05/2018 01:11:33 PM - HangOutsPage - INFO: expectedURL ( https://hangouts.google.com ) VS currentURL ( https://hangouts.google.com )
+25/05/2018 01:11:33 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+25/05/2018 01:11:33 PM - TestStatus - INFO: test_gotoHangOutsBase OK ### TEST SUCCESSFUL
+25/05/2018 01:11:33 PM - HangOutsPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+25/05/2018 01:11:33 PM - HangOutsPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+25/05/2018 01:11:33 PM - HangOutsTests - INFO: test_xcheckMainHangOutsBars started 1
+25/05/2018 01:11:33 PM - HangOutsPage - INFO: expectedURL ( https://hangouts.google.com ) VS currentURL ( https://hangouts.google.com )
+25/05/2018 01:11:33 PM - HangOutsPage - INFO: Element found - locator (//*[@id="yDmH0d"]/*[4]/*[1]) + locatorType (xpath)
+25/05/2018 01:11:33 PM - HangOutsPage - INFO: Element present - locator (//*[@id="yDmH0d"]/*[4]/*[1]) + locatorType (xpath)
+25/05/2018 01:11:33 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Main Bar Verified
+25/05/2018 01:11:33 PM - HangOutsPage - DEBUG: In locator condition
+25/05/2018 01:11:34 PM - HangOutsPage - INFO: Element found - locator (//div[@class="g-Ue-zr-ma"]) + locatorType (xpath)
+25/05/2018 01:11:34 PM - HangOutsPage - DEBUG: Before finding text
+25/05/2018 01:11:34 PM - HangOutsPage - DEBUG: After finding element, size is = 51
+25/05/2018 01:11:34 PM - HangOutsPage - INFO: Text is on the element - locator (//div[@class="g-Ue-zr-ma"]) + locatorType (xpath)
+25/05/2018 01:11:34 PM - HangOutsPage - INFO: The text is = 'Get started by calling or messaging a friend below.'
+25/05/2018 01:11:34 PM - HangOutsPage - INFO: Info text on element =  
+25/05/2018 01:11:34 PM - HangOutsPage - INFO: expectedText ( Get started by calling or messaging a friend below. ) VS pageText ( Get started by calling or messaging a friend below. )
+25/05/2018 01:11:34 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Text Verified
+25/05/2018 01:11:34 PM - TestStatus - INFO: test_checkMainHangOutsBars OK ### TEST SUCCESSFUL

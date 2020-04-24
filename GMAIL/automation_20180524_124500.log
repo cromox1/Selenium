@@ -1,0 +1,126 @@
+24/05/2018 12:45:58 PM - GooglePlayPage - INFO: Element not found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:45:58 PM - GooglePlayPage - INFO: Element not present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:45:58 PM - GooglePlayPage - INFO: GMAIL URL : https://accounts.google.com/signin?Email=xxuser1xx@gmail.com
+24/05/2018 12:46:02 PM - LoginPage - INFO: Element found - locator (identifierNext) + locatorType (id)
+24/05/2018 12:46:02 PM - LoginPage - INFO: Clicked on element - locator (identifierNext) + locatorType (id)
+24/05/2018 12:46:04 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:46:04 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:46:04 PM - LoginPage - INFO: Clicked on element - locator (password) + locatorType (id)
+24/05/2018 12:46:04 PM - LoginPage - INFO: Element found - locator (password) + locatorType (id)
+24/05/2018 12:46:04 PM - LoginPage - INFO: Sent data (xxPSWDxx
+) on element - locator (password) + locatorType (id)
+24/05/2018 12:46:04 PM - LoginPage - INFO: Element found - locator (passwordNext) + locatorType (id)
+24/05/2018 12:46:04 PM - LoginPage - INFO: Clicked on element - locator (passwordNext) + locatorType (id)
+24/05/2018 12:46:06 PM - Util - INFO: Actual Text From Application Web UI == My Account
+24/05/2018 12:46:06 PM - Util - INFO: Expected Text From Application Web UI == Account Recovery Options
+24/05/2018 12:46:06 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+24/05/2018 12:46:06 PM - PlayGoogleTests - INFO: test_gotoGooglePlay started 1
+24/05/2018 12:46:09 PM - Util - INFO: Actual Text From Application Web UI == Google Play
+24/05/2018 12:46:09 PM - Util - INFO: Expected Text From Application Web UI == Google Play
+24/05/2018 12:46:09 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+24/05/2018 12:46:09 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Title Verified
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:09 PM - GooglePlayPage - DEBUG: In locator condition
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div/div[2]) + locatorType (xpath)
+24/05/2018 12:46:09 PM - GooglePlayPage - DEBUG: Before finding text
+24/05/2018 12:46:09 PM - GooglePlayPage - DEBUG: After finding element, size is = 26
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div/div[2]) + locatorType (xpath)
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: The text is = 'xxuser1xx@gmail.com'
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: Info text on element =  
+24/05/2018 12:46:09 PM - PlayGoogleTests - INFO: User's email ( xxuser1xx@gmail.com ) VS Expected email ( xxuser1xx@gmail.com )
+24/05/2018 12:46:09 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Email Verified
+24/05/2018 12:46:09 PM - TestStatus - INFO: test_gotoGooglePlayBase OK ### TEST SUCCESSFUL
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:09 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:09 PM - PlayGoogleTests - INFO: test_moviesFree started 3
+24/05/2018 12:46:13 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:13 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:13 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:13 PM - GooglePlayPage - INFO: Sent data (free movies) on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:13 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+24/05/2018 12:46:13 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: expectedURL ( https://play.google.com/store/search?q=free%20movies&c=movies ) VS currentURL ( https://play.google.com/store/search?q=free%20movies&c=movies )
+24/05/2018 12:46:15 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:15 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Movies Verified
+24/05/2018 12:46:15 PM - GooglePlayPage - DEBUG: In locator condition
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - DEBUG: Before finding text
+24/05/2018 12:46:15 PM - GooglePlayPage - DEBUG: After finding element, size is = 11
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: The text is = 'Free Movies'
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Info text on element =  
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: expectedText ( Free Movies ) VS pageText ( Free Movies )
+24/05/2018 12:46:15 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Movies text Verified
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:15 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Movies Cover Verified
+24/05/2018 12:46:15 PM - GooglePlayPage - DEBUG: In locator condition
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - DEBUG: Before finding text
+24/05/2018 12:46:15 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: The text is = 'Free'
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Info text on element =  
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+24/05/2018 12:46:15 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Movies Verified
+24/05/2018 12:46:15 PM - TestStatus - INFO: test_moviesFree OK ### TEST SUCCESSFUL
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:15 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:15 PM - PlayGoogleTests - INFO: test_musicFree started 2
+24/05/2018 12:46:17 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:17 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:18 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:18 PM - GooglePlayPage - INFO: Sent data (free music) on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:18 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+24/05/2018 12:46:18 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: expectedURL ( https://play.google.com/store/search?q=free%20music&c=music ) VS currentURL ( https://play.google.com/store/search?q=free%20music&c=music )
+24/05/2018 12:46:20 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[1]) + locatorType (xpath)
+24/05/2018 12:46:20 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Albums Verified
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Element found - locator (//*//*[1]/*[1]/*[2]/*[1]/*[1]/*[1]) + locatorType (xpath)
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Element present - locator (//*//*[1]/*[1]/*[2]/*[1]/*[1]/*[1]) + locatorType (xpath)
+24/05/2018 12:46:20 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Album Cover Verified
+24/05/2018 12:46:20 PM - GooglePlayPage - DEBUG: In locator condition
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:20 PM - GooglePlayPage - DEBUG: Before finding text
+24/05/2018 12:46:20 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*[2]/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: The text is = 'Free'
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Info text on element =  
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+24/05/2018 12:46:20 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Musics Verified
+24/05/2018 12:46:20 PM - TestStatus - INFO: test_musicFree OK ### TEST SUCCESSFUL
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:20 PM - GooglePlayPage - INFO: Element present - locator (//*[@id="gb"]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span) + locatorType (xpath)
+24/05/2018 12:46:20 PM - PlayGoogleTests - INFO: test_xbooksFree started 4
+24/05/2018 12:46:23 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:23 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:23 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:23 PM - GooglePlayPage - INFO: Sent data (free books) on element - locator (//*[@id="gbqfq"]) + locatorType (xpath)
+24/05/2018 12:46:23 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+24/05/2018 12:46:23 PM - GooglePlayPage - INFO: Clicked on element - locator (//*[@id="gbqfb"]/span) + locatorType (xpath)
+24/05/2018 12:46:25 PM - GooglePlayPage - INFO: expectedURL ( https://play.google.com/store/search?q=free%20books&c=books ) VS currentURL ( https://play.google.com/store/search?q=free%20books&c=books )
+24/05/2018 12:46:25 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- URL Verified
+24/05/2018 12:46:25 PM - GooglePlayPage - DEBUG: In locator condition
+24/05/2018 12:46:25 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:25 PM - GooglePlayPage - DEBUG: Before finding text
+24/05/2018 12:46:25 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+24/05/2018 12:46:25 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*/*/*[1]/*/*[1]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:25 PM - GooglePlayPage - INFO: The text is = 'Free'
+24/05/2018 12:46:25 PM - GooglePlayPage - INFO: Info text on element =  
+24/05/2018 12:46:25 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+24/05/2018 12:46:25 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Ebooks Verified
+24/05/2018 12:46:25 PM - GooglePlayPage - DEBUG: In locator condition
+24/05/2018 12:46:26 PM - GooglePlayPage - INFO: Element found - locator (//*[@id="body-content"]/*/*/*[1]/*/*[2]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:26 PM - GooglePlayPage - DEBUG: Before finding text
+24/05/2018 12:46:26 PM - GooglePlayPage - DEBUG: After finding element, size is = 0
+24/05/2018 12:46:26 PM - GooglePlayPage - INFO: Text is on the element - locator (//*[@id="body-content"]/*/*/*[1]/*/*[2]/*/*[2]/*[1]/*/*[3]/*/*/*[2]/*/*) + locatorType (xpath)
+24/05/2018 12:46:26 PM - GooglePlayPage - INFO: The text is = 'Free'
+24/05/2018 12:46:26 PM - GooglePlayPage - INFO: Info text on element =  
+24/05/2018 12:46:26 PM - GooglePlayPage - INFO: expectedText ( Free ) VS pageText ( Free )
+24/05/2018 12:46:26 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Free Audiobooks Verified
+24/05/2018 12:46:26 PM - TestStatus - INFO: test_xbooksFree OK ### TEST SUCCESSFUL

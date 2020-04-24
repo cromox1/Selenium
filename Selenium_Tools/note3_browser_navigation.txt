@@ -1,0 +1,111 @@
+Browser Navigation Commands (WebDriver with C## )
+-------------------------------------------------
+
+After successfully running our first test case on Firefox Browser now we are stepping towards grasping the 
+essential Browser Navigation Commands in Selenium. Thus we are going to discuss about various navigation 
+commands that we would be using in our day to day automation testing. The navigate interface exposes the 
+ability to move backwards and forwards in the browser’s history.
+
+To access the navigation’s method, just type driver.navigate().. The intellisence feature of eclipse will 
+automatically display all the public methods of Navigate Interface shown in the below image.
+
+1) Navigate To Command
+
+to(String arg0) : void 
+
+– This method Loads a new web page in the current browser window. It accepts a String parameter and returns 
+nothing.
+
+Command – driver.navigate().to(appUrl);
+
+It does exactly the same thing as the driver.get(appUrl) method. Where appUrl is the website address to 
+load. It is best to use a fully qualified URL.
+
+driver.navigate().to("http://www.DemoQA.com");
+
+2) Forward Command
+
+forward() : void 
+
+– This method does the same operation as clicking on the Forward Button of any browser. It neither accepts 
+nor returns anything.
+
+Command – driver.navigate().forward();
+
+Takes you forward by one page on the browser’s history.
+
+driver.navigate().forward();
+
+3) Back Command
+
+back() : void 
+
+– This method does the same operation as clicking on the Back Button of any browser. It neither accepts nor 
+returns anything.
+
+Command – driver.navigate().back();
+
+Takes youback by one page on the browser’s history.
+
+driver.navigate().back();
+
+4) Refresh Command
+
+refresh() : void 
+
+– This method Refresh the current page. It neither accepts nor returns anything.
+
+Command – driver.navigate().refresh();
+
+Perform the same function as pressing F5 in the browser.
+
+driver.navigate().refresh();
+
+
+Practice Exercise
+-----------------
+
+1) Launch new Browser
+2) Open DemoQA.com website
+3) Click on Registration link using “driver.findElement(By.xpath(“.//*[@id=’menu-item-374′]/a”)).click();“
+4) Come back to Home page (Use ‘Back’ command)
+5) Again go back to Registration page (This time use ‘Forward’ command)
+6) Again come back to Home page (This time use ‘To’ command)
+7) Refresh the Browser (Use ‘Refresh’ command)
+8) Close the Browser
+
+Solution :
+
+package automationFramework;
+ import org.openqa.selenium.By;
+ import org.openqa.selenium.WebDriver;
+ import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class NavigateCommands {
+ public static void main(String[] args) {
+ // Create a new instance of the FireFox driver
+ WebDriver driver = new FirefoxDriver();
+ 
+ // Open ToolsQA web site
+ String appUrl = "http://www.DemoQA.com";
+ driver.get(appUrl);
+ 
+ // Click on Registration link
+ driver.findElement(By.xpath(".//*[@id='menu-item-374']/a")).click();
+ 
+ // Go back to Home Page
+ driver.navigate().back();
+ 
+ // Go forward to Registration page
+ driver.navigate().forward();
+ 
+ // Go back to Home page
+ driver.navigate().to(appUrl);
+ 
+ // Refresh browser
+ driver.navigate().refresh();
+ 
+ // Close browser
+ driver.close();
+ }
+}

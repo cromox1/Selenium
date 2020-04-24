@@ -1,0 +1,163 @@
+1531153965938	geckodriver	INFO	geckodriver 0.18.0
+1531153965986	geckodriver	INFO	Listening on 127.0.0.1:60747
+1531153966628	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531153971563	Marionette	INFO	Listening on port 60751
+1531153972519	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+[Child 4640] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+er C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531154818524	Marionette	INFO	Listening on port 62511
+1531154818779	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+[Child 10104] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+r C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531160477115	Marionette	INFO	Listening on port 58190
+1531160477342	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+0esr\firefox.exe with args ["-marionette"]
+1531160534568	Marionette	INFO	Listening on port 58500
+1531160534788	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1531334874551	geckodriver	INFO	geckodriver 0.18.0
+1531334874596	geckodriver	INFO	Listening on 127.0.0.1:53294
+1531334875159	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531334878996	Marionette	INFO	Listening on port 53298
+1531334879797	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+[Child 9876] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+[Child 9876] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+source.
+Full stack: 
+*************************
+0esr\firefox.exe with args ["-marionette"]
+1531335179459	Marionette	INFO	Listening on port 53560
+1531335179668	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 9368] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+1531335345815	geckodriver	INFO	geckodriver 0.18.0
+1531335345860	geckodriver	INFO	Listening on 127.0.0.1:53674
+1531335346374	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531335348291	Marionette	INFO	Listening on port 53678
+1531335348552	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 8852] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+1531335942945	geckodriver	INFO	geckodriver 0.18.0
+1531335942991	geckodriver	INFO	Listening on 127.0.0.1:53804
+1531335943509	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531335945434	Marionette	INFO	Listening on port 53808
+1531335945648	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1531336892684	geckodriver	INFO	geckodriver 0.18.0
+1531336892730	geckodriver	INFO	Listening on 127.0.0.1:53960
+1531336893254	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531336895141	Marionette	INFO	Listening on port 53964
+1531336895424	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1531341950871	geckodriver	INFO	geckodriver 0.18.0
+1531341950916	geckodriver	INFO	Listening on 127.0.0.1:54460
+1531341951430	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531341953257	Marionette	INFO	Listening on port 54464
+1531341953551	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600AB,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+ ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+[Child 4792] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+1531346755267	geckodriver	INFO	geckodriver 0.18.0
+1531346755313	geckodriver	INFO	Listening on 127.0.0.1:55808
+1531346755835	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531346757866	Marionette	INFO	Listening on port 55812
+1531346758086	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 12268] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+[Child 12268] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+1531346839368	geckodriver	INFO	geckodriver 0.18.0
+1531346839413	geckodriver	INFO	Listening on 127.0.0.1:55958
+1531346839927	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531346842112	Marionette	INFO	Listening on port 55962
+1531346842324	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 106: TypeError: this._recipeManager is null
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1531347517708	geckodriver	INFO	geckodriver 0.18.0
+1531347517754	geckodriver	INFO	Listening on 127.0.0.1:56152
+1531347518272	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531347520172	Marionette	INFO	Listening on port 56156
+1531347520472	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 106: TypeError: this._recipeManager is null
+[Child 5756] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+1531347826086	geckodriver	INFO	geckodriver 0.18.0
+1531347826131	geckodriver	INFO	Listening on 127.0.0.1:56360
+1531347826642	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531347828563	Marionette	INFO	Listening on port 56364
+1531347828780	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 106: TypeError: this._recipeManager is null
+1531347913431	geckodriver	INFO	geckodriver 0.18.0
+1531347913476	geckodriver	INFO	Listening on 127.0.0.1:56516
+1531347914002	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531347915850	Marionette	INFO	Listening on port 56520
+1531347916142	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.bauerassets.com/global-js/motors.bauer-bid.3.1.286-min.js, line 3: TypeError: e is undefined
+1531348208210	geckodriver	INFO	geckodriver 0.18.0
+1531348208256	geckodriver	INFO	Listening on 127.0.0.1:56705
+1531348208769	geckodriver::marionette	INFO	Starting browser C:\tools\MozillaFirefox_52.5.0esr\firefox.exe with args ["-marionette"]
+1531348210627	Marionette	INFO	Listening on port 56709
+1531348210920	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 12868] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+[Child 12868] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w64-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
