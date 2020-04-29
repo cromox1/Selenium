@@ -10,14 +10,15 @@ def logingmail(gmailuser, gmailpswd, browser='chrome', loginoption='option1'):
     gmaillogin = "https://accounts.google.com/signin"
 
     if browser == 'chrome':
+        chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--disable-extensions')
         #chrome_options.add_argument('--profile-directory=Default')
         chrome_options.add_argument("--incognito")
         chrome_options.add_argument("--disable-plugins-discovery")
         chrome_options.add_argument("--start-maximized")
-        driver1 = webdriver.Chrome(chrome_options=chrome_options)
-        strver = 'version'
+        driver1 = webdriver.Chrome(chromedriverpath, options=chrome_options)
+        strver = 'browserVersion'
     elif browser == 'firefox':
         driver1 = webdriver.Firefox()
         strver = 'browserVersion'

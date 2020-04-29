@@ -37,8 +37,9 @@ class WebDriverFactory():
         Returns:
             'WebDriver Instance'
         """
+        # strver = 'version'
+        strver = 'browserVersion'
 
-        strver = 'version'
         if self.browser == "iexplorer" or self.browser == "ie" or self.browser == "IE":
             # Set IE driver
             iedriverserver = r'C:\tools\Python36\Scripts\IEDriverServer_x64_2.42.0.exe'
@@ -62,22 +63,24 @@ class WebDriverFactory():
             driver = webdriver.Opera(executable_path = _operaDriverLoc, options = _operaOpts, desired_capabilities = _operaCaps)
         elif self.browser == "firefox" or self.browser == "ff":
             driver = webdriver.Firefox()
-            strver = 'browserVersion'
+            # strver = 'browserVersion'
         elif self.browser == "chrome":
             # Set chrome driver
-            chromedriver = r'C:\tools\Python36\Scripts\chromedriver.exe'
-            #os.environ["webdriver.chrome.driver"] = chromedriver
+            chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
+            # os.environ["webdriver.chrome.driver"] = chromedriver
             chrome_options = webdriver.ChromeOptions()
             # chrome_options.add_argument('--disable-extensions')
             #chrome_options.add_argument('--profile-directory=Default')
             chrome_options.add_argument("--incognito")
             # chrome_options.add_argument("--disable-plugins-discovery")
             # chrome_options.add_argument("--start-maximized")
-            driver = webdriver.Chrome(chromedriver, chrome_options=chrome_options)
+            driver = webdriver.Chrome(chromedriverpath, options=chrome_options)
             #driver.set_window_size(1440, 900)
         elif self.browser == "headless" or self.browser == "nobrowser" or self.browser == "virtual":
             # This is for running without open Browser UI display - good for Jenkins
-            chromedriver = r'C:\tools\Python36\Scripts\chromedriver.exe'
+            chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
+            x = [2, 'P', 'Q', 7, 5, 'R']
+            integers = [q for q in x if type(q) == int]
             chrome_options = webdriver.ChromeOptions()
             # chrome_options.add_argument('--disable-extensions')
             chrome_options.add_argument("--incognito")
@@ -86,10 +89,10 @@ class WebDriverFactory():
             chrome_options.add_argument('--headless')
             chrome_options.add_argument("--proxy-server='direct://'")
             chrome_options.add_argument("--proxy-bypass-list=*")
-            driver = webdriver.Chrome(chromedriver, chrome_options=chrome_options)
+            driver = webdriver.Chrome(chromedriverpath, options=chrome_options)
         else:
             driver = webdriver.Firefox()
-            strver = 'browserVersion'
+            # strver = 'browserVersion'
 
         # Setting Driver Implicit Time out for An Element
         driver.implicitly_wait(3)
