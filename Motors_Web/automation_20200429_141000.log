@@ -1,0 +1,89 @@
+29/04/2020 02:11:39 PM - LoginTests - INFO: test1Main_NoLogin_InvalidPost start
+29/04/2020 02:11:39 PM - LoginPage - INFO: Motors URL : https://www.motors.co.uk
+29/04/2020 02:11:59 PM - LoginPage - DEBUG: In locator condition
+29/04/2020 02:12:00 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:00 PM - LoginPage - DEBUG: Before finding value
+29/04/2020 02:12:00 PM - LoginPage - DEBUG: After finding element, size is = 0
+29/04/2020 02:12:00 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:00 PM - LoginPage - INFO: Sent data (XX3 7ZZ) on element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:00 PM - LoginPage - INFO: Waiting for maximum / 5 / seconds for element - locator (//span[@class='sp__btn-title']) + locatorType (xpath)
+29/04/2020 02:12:00 PM - LoginPage - INFO: Element appeared on the web page
+29/04/2020 02:12:01 PM - LoginPage - INFO: Cannot click on the element - locator () + locatorType (id)
+29/04/2020 02:12:04 PM - LoginTests - INFO: test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax start
+29/04/2020 02:12:04 PM - LoginPage - INFO: Motors URL : https://www.motors.co.uk
+29/04/2020 02:12:22 PM - LoginPage - DEBUG: In locator condition
+29/04/2020 02:12:22 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:22 PM - LoginPage - DEBUG: Before finding value
+29/04/2020 02:12:22 PM - LoginPage - DEBUG: After finding element, size is = 0
+29/04/2020 02:12:22 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:23 PM - LoginPage - INFO: Sent data (OX3 0LF) on element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:23 PM - LoginPage - INFO: Waiting for maximum / 5 / seconds for element - locator (//span[@class='sp__btn-title']) + locatorType (xpath)
+29/04/2020 02:12:23 PM - LoginPage - INFO: Element appeared on the web page
+29/04/2020 02:12:26 PM - LoginPage - INFO: Cannot click on the element - locator () + locatorType (id)
+29/04/2020 02:12:29 PM - Util - INFO: Actual Text From Application Web UI == Motors.co.uk - buy and sell new & used cars safely
+29/04/2020 02:12:29 PM - Util - INFO: Expected Text From Application Web UI == Motors.co.uk makes searching for a used car simple!
+29/04/2020 02:12:29 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+29/04/2020 02:12:29 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- Page's Title verified's ERROR
+29/04/2020 02:12:30 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\Motors_Web\base\..\screenshots\Page's_Title_verified_20200429_141229_664322.png
+29/04/2020 02:12:30 PM - LoginPage - INFO: expectedURL ( https://www.motors.co.uk ) VS currentURL ( https://www.motors.co.uk )
+29/04/2020 02:12:30 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Page's URL base verified
+29/04/2020 02:12:30 PM - LoginPage - INFO: expectedURL ( https://www.motors.co.uk/search/car/ ) VS currentURL ( https://www.motors.co.uk/ )
+29/04/2020 02:12:30 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- Page's URL exact verified's ERROR
+29/04/2020 02:12:30 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\Motors_Web\base\..\screenshots\Page's_URL_exact_verified_20200429_141230_330360.png
+29/04/2020 02:12:30 PM - TestStatus - ERROR: test2Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax was successful ### TEST FAILED
+29/04/2020 02:12:30 PM - LoginTests - INFO: test3Main_NoLogin_ValidPost_XMake_XModel_XMin_XMax start
+29/04/2020 02:12:30 PM - LoginPage - INFO: Motors URL : https://www.motors.co.uk
+29/04/2020 02:12:35 PM - LoginPage - DEBUG: In locator condition
+29/04/2020 02:12:35 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:35 PM - LoginPage - DEBUG: Before finding value
+29/04/2020 02:12:35 PM - LoginPage - DEBUG: After finding element, size is = 6
+29/04/2020 02:12:35 PM - LoginPage - INFO: Value is on the element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:35 PM - LoginPage - INFO: The value is = 'OX30LF'
+29/04/2020 02:12:35 PM - LoginPage - INFO: Info value on element =  
+29/04/2020 02:12:35 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:35 PM - LoginPage - INFO: Sent data (OX3 0LF) on element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:35 PM - LoginPage - INFO: Waiting for maximum / 5 / seconds for element - locator (//span[@class='sp__btn-title']) + locatorType (xpath)
+29/04/2020 02:12:35 PM - LoginPage - INFO: Element appeared on the web page
+29/04/2020 02:12:36 PM - LoginPage - INFO: Cannot click on the element - locator () + locatorType (id)
+29/04/2020 02:12:39 PM - LoginTests - INFO: test4Main_NoLogin_ValidPost_Make_XModel_XMin_Max start
+29/04/2020 02:12:39 PM - LoginPage - INFO: Motors URL : https://www.motors.co.uk
+29/04/2020 02:12:41 PM - LoginPage - DEBUG: In locator condition
+29/04/2020 02:12:41 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:41 PM - LoginPage - DEBUG: Before finding value
+29/04/2020 02:12:41 PM - LoginPage - DEBUG: After finding element, size is = 6
+29/04/2020 02:12:41 PM - LoginPage - INFO: Value is on the element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:41 PM - LoginPage - INFO: The value is = 'OX30LF'
+29/04/2020 02:12:41 PM - LoginPage - INFO: Info value on element =  
+29/04/2020 02:12:41 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:41 PM - LoginPage - INFO: Sent data (OX3 0LF) on element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:41 PM - LoginPage - INFO: Waiting for maximum / 5 / seconds for element - locator (//span[@class='sp__btn-title']) + locatorType (xpath)
+29/04/2020 02:12:41 PM - LoginPage - INFO: Element appeared on the web page
+29/04/2020 02:12:42 PM - LoginPage - INFO: Cannot click on the element - locator () + locatorType (id)
+29/04/2020 02:12:45 PM - LoginTests - INFO: test5Main_NoLogin_ValidPost_Make_Model_Min_XMax start
+29/04/2020 02:12:45 PM - LoginPage - INFO: Motors URL : https://www.motors.co.uk
+29/04/2020 02:12:55 PM - LoginPage - DEBUG: In locator condition
+29/04/2020 02:12:55 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:55 PM - LoginPage - DEBUG: Before finding value
+29/04/2020 02:12:55 PM - LoginPage - DEBUG: After finding element, size is = 6
+29/04/2020 02:12:55 PM - LoginPage - INFO: Value is on the element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:55 PM - LoginPage - INFO: The value is = 'OX30LF'
+29/04/2020 02:12:55 PM - LoginPage - INFO: Info value on element =  
+29/04/2020 02:12:55 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:55 PM - LoginPage - INFO: Sent data (OX3 0LF) on element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:12:55 PM - LoginPage - INFO: Waiting for maximum / 5 / seconds for element - locator (//span[@class='sp__btn-title']) + locatorType (xpath)
+29/04/2020 02:12:55 PM - LoginPage - INFO: Element appeared on the web page
+29/04/2020 02:12:56 PM - LoginPage - INFO: Cannot click on the element - locator () + locatorType (id)
+29/04/2020 02:12:59 PM - LoginTests - INFO: test6Main_NoLogin_ValidPost_Make_Model_XMin_XMax start
+29/04/2020 02:12:59 PM - LoginPage - INFO: Motors URL : https://www.motors.co.uk
+29/04/2020 02:13:12 PM - LoginPage - DEBUG: In locator condition
+29/04/2020 02:13:13 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:13:13 PM - LoginPage - DEBUG: Before finding value
+29/04/2020 02:13:13 PM - LoginPage - DEBUG: After finding element, size is = 6
+29/04/2020 02:13:13 PM - LoginPage - INFO: Value is on the element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:13:13 PM - LoginPage - INFO: The value is = 'OX30LF'
+29/04/2020 02:13:13 PM - LoginPage - INFO: Info value on element =  
+29/04/2020 02:13:13 PM - LoginPage - INFO: Element found - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:13:13 PM - LoginPage - INFO: Sent data (OX3 0LF) on element - locator (//input[@type='text']) + locatorType (xpath)
+29/04/2020 02:13:13 PM - LoginPage - INFO: Waiting for maximum / 5 / seconds for element - locator (//span[@class='sp__btn-title']) + locatorType (xpath)
+29/04/2020 02:13:13 PM - LoginPage - INFO: Element appeared on the web page
+29/04/2020 02:13:14 PM - LoginPage - INFO: Cannot click on the element - locator () + locatorType (id)

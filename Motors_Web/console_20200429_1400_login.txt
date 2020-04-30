@@ -1,0 +1,6 @@
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/Motors_Web
+$ py.test.exe -v -s tests/home/login_tests.py > consoleoutput1.txt 2>&1
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/Motors_Web
+$ cat consoleoutput1.txt
+

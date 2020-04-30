@@ -38,7 +38,9 @@ class WebDriverFactory():
             'WebDriver Instance'
         """
 
-        strver = 'version'
+        ## strver = 'version'
+        strver = 'browserVersion'
+
         if self.browser == "iexplorer" or self.browser == "ie" or self.browser == "IE":
             # Set IE driver
             iedriverserver = r'C:\tools\Python36\Scripts\IEDriverServer_x64_2.42.0.exe'
@@ -62,18 +64,18 @@ class WebDriverFactory():
             driver = webdriver.Opera(executable_path = _operaDriverLoc, options = _operaOpts, desired_capabilities = _operaCaps)
         elif self.browser == "firefox" or self.browser == "ff":
             driver = webdriver.Firefox()
-            strver = 'browserVersion'
+            #strver = 'browserVersion'
         elif self.browser == "chrome":
             # Set chrome driver
-            chromedriver = r'C:\tools\Python36\Scripts\chromedriver.exe'
-            #os.environ["webdriver.chrome.driver"] = chromedriver
+            chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
+            #os.environ["webdriver.chrome.driver"] = chromedriverpath
             chrome_options = webdriver.ChromeOptions()
             # chrome_options.add_argument('--disable-extensions')
             #chrome_options.add_argument('--profile-directory=Default')
             chrome_options.add_argument("--incognito")
             # chrome_options.add_argument("--disable-plugins-discovery")
             # chrome_options.add_argument("--start-maximized")
-            driver = webdriver.Chrome(chromedriver, chrome_options=chrome_options)
+            driver = webdriver.Chrome(chromedriverpath, chrome_options=chrome_options)
             #driver.set_window_size(1440, 900)
         elif self.browser == 'phantomjs' or self.browser == 'phantom':
             ## Virtual browser 1 -- ERROR -- response = 'status': 500
@@ -83,7 +85,7 @@ class WebDriverFactory():
             # strver = 'browserVersion'
         elif self.browser == "headless":
             ## Virtual browser 2 -- OK - but have problem to login page (if page need login) - e.g. gmail
-            chromedriver = r'C:\tools\Python36\Scripts\chromedriver.exe'
+            chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
             chrome_options = webdriver.ChromeOptions()
             # chrome_options.add_argument('--disable-extensions')
             chrome_options.add_argument("--incognito")
@@ -93,14 +95,14 @@ class WebDriverFactory():
             chrome_options.add_argument("--mute-audio")
             chrome_options.add_argument("--proxy-server='direct://'")
             chrome_options.add_argument("--proxy-bypass-list=*")
-            driver = webdriver.Chrome(chromedriver, chrome_options=chrome_options)
+            driver = webdriver.Chrome(chromedriverpath, chrome_options=chrome_options)
         elif self.browser == "nobrowser":
             ## Virtual browser 3 -- NOT OK - still open Firefox browser
             from selenium.webdriver.firefox.options import Options
             opts = Options()
             opts.set_headless()
             driver = webdriver.Firefox(options=opts)
-            strver = 'browserVersion'
+            #strver = 'browserVersion'
         elif self.browser == 'virtual':
             ## Virtual browser 4 -- NOT OK - still open Opera browser
             # OperaDriver - win64 2.36 - https://github.com/operasoftware/operachromiumdriver/releases
@@ -120,7 +122,7 @@ class WebDriverFactory():
             # driver = webdriver.Chrome(executable_path = _operaDriverLoc, chrome_options = _operaOpts, desired_capabilities = _operaCaps)
         else:
             driver = webdriver.Firefox()
-            strver = 'browserVersion'
+            #strver = 'browserVersion'
 
         # Setting Driver Implicit Time out for An Element
         driver.implicitly_wait(3)

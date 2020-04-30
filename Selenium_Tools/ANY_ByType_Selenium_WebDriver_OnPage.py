@@ -35,14 +35,15 @@ class CheckAnyByType():
 
     def setUp_webdriver(self, browser='chrome'):
         ## Chrome - add_argument='headless' , Firefox - add_argument="--headless"
+        chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
         if browser == 'chrome' or browser == 'ch' or browser == 'google':
             from selenium.webdriver.chrome.options import Options
             myoption = Options()
             # myoption.add_argument('headless')
-            myoption.set_headless(headless=True)
+            # myoption.set_headless(headless=True) -- Deprecated
             myoption.add_argument("--proxy-server='direct://'")
             myoption.add_argument("--proxy-bypass-list=*")
-            self.driver = webdriver.Chrome(options=myoption)
+            self.driver = webdriver.Chrome(chromedriverpath, options=myoption)
         elif browser == 'firefox' or browser == "ff":
             from selenium.webdriver.firefox.options import Options
             myoption = Options()
@@ -51,13 +52,13 @@ class CheckAnyByType():
             myoption.add_argument("--proxy-bypass-list=*")
             self.driver = webdriver.Firefox(options=myoption)
         else:
-            self.driver = webdriver.Chrome()
+            self.driver = webdriver.Chrome(chromedriverpath)
             self.driver.quit()
         self.driver.implicitly_wait(2)
         ### GET python version & Browser version
         print()
         print('Python Version = ' + sys.version)
-        print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['version'])
+        print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['browserVersion'])
         print()
         return self.driver
 
@@ -104,7 +105,7 @@ class CheckAnyByType():
 
     def test_one(self, attribute, elementid, valuetofind):
         print()
-        if len(elementid) >= 1 and elementid is not 'no_element':
+        if len(elementid) >= 1 and elementid != 'no_element':
             print('List of ElementID for -- > ' + attribute + ' = ' + valuetofind + ' :')
             i = 1
             for ii in elementid:
