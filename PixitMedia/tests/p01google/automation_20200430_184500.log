@@ -1,0 +1,44 @@
+30/04/2020 06:46:28 PM - P01SearchPixitMediaTests - INFO: test1_goto_google_page_started
+30/04/2020 06:46:28 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.google.co.uk ) VS currentURL ( https://www.google.co.uk )
+30/04/2020 06:46:28 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Currently At Google Page Verified
+30/04/2020 06:46:28 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- google word Verified
+30/04/2020 06:46:28 PM - P01SearchPixitMedia - INFO: Element found - locator (//*[@title='Search']) + locatorType (xpath)
+30/04/2020 06:46:29 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (//*[@title='Search']) + locatorType (xpath)
+30/04/2020 06:46:39 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:46:39 PM - P01SearchPixitMedia - INFO: Cannot send data (b'pixitmedia') on the element - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:46:49 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:46:49 PM - P01SearchPixitMedia - INFO: Cannot send data (b'+4Ac-') on the element - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:46:49 PM - P01SearchPixitMedia - DEBUG: In locator condition
+30/04/2020 06:46:59 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[contains(text(),'https://www.pixitmedia.com/')]) + locatorType (xpath)
+30/04/2020 06:46:59 PM - P01SearchPixitMedia - DEBUG: Before finding element.text, size = 0
+30/04/2020 06:46:59 PM - P01SearchPixitMedia - ERROR: Failed to get text on element 
+30/04/2020 06:46:59 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- pixitmedia word Verified failed
+30/04/2020 06:46:59 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\pixitmedia_word_Verified_20200430_184659_266900.png
+30/04/2020 06:46:59 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.pixitmedia.com ) VS currentURL ( https://www.google.co.uk )
+30/04/2020 06:46:59 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- test1_google_pixitmedia failed
+30/04/2020 06:47:00 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\test1_google_pixitmedia_20200430_184659_841933.png
+30/04/2020 06:47:00 PM - TestStatus - ERROR: URL pixitmedia verified failed ### TEST FAILED
+30/04/2020 06:47:00 PM - P01SearchPixitMediaTests - INFO: test2_goto_pixstor_page_started
+30/04/2020 06:47:10 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@id="menu-item-48"]/*/*) + locatorType (xpath)
+30/04/2020 06:47:10 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (//*[@id="menu-item-48"]/*/*) + locatorType (xpath)
+30/04/2020 06:47:10 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- products word Verified failed
+30/04/2020 06:47:11 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\products_word_Verified_20200430_184710_548545.png
+30/04/2020 06:47:21 PM - P01SearchPixitMedia - INFO: Element not found - locator (PixStor Search) + locatorType (link)
+30/04/2020 06:47:21 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (PixStor Search) + locatorType (link)
+30/04/2020 06:47:21 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- PixStor-Search word Verified failed
+30/04/2020 06:47:21 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\PixStor_Search_word_Verified_20200430_184721_157152.png
+30/04/2020 06:47:31 PM - P01SearchPixitMedia - INFO: Element not found - locator (//span[@class='elementor-button-text']) + locatorType (xpath)
+30/04/2020 06:47:31 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (//span[@class='elementor-button-text']) + locatorType (xpath)
+30/04/2020 06:47:31 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- Datasheet word Verified failed
+30/04/2020 06:47:32 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\Datasheet_word_Verified_20200430_184731_758758.png
+30/04/2020 06:47:35 PM - P01SearchPixitMediaTests - INFO: test3_fill_in_contactus_page_started
+30/04/2020 06:47:45 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+30/04/2020 06:47:45 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+30/04/2020 06:47:48 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.pixitmedia.com/contact-us/ ) VS currentURL ( https://www.google.co.uk/ )
+30/04/2020 06:47:48 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- ContactUs URL Verified failed
+30/04/2020 06:47:49 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\ContactUs_URL_Verified_20200430_184748_729729.png
+30/04/2020 06:47:49 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- ContactUs word Verified failed
+30/04/2020 06:47:49 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\ContactUs_word_Verified_20200430_184749_279760.png
+30/04/2020 06:47:59 PM - P01SearchPixitMedia - INFO: Element not found - locator (field_qh4icy2) + locatorType (id)
+30/04/2020 06:47:59 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (field_qh4icy2) + locatorType (id)
+30/04/2020 06:48:09 PM - P01SearchPixitMedia - INFO: Element not found - locator (field_qh4icy2) + locatorType (id)

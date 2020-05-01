@@ -59,7 +59,7 @@ class P01SearchPixitMediaTests(unittest.TestCase):
         print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
         time.sleep(3)
         req = urlget(self.driver.current_url)
-        ## validate PDF file
+        # validate PDF file
         # validate1 - simple by check size & header (contain pdf type)
         result = self.googlesearchpage.verifyActualGreaterEqualExpected(int(req.headers['Content-Length']), 1000)
         self.tstatus.mark(result, "File bigger than 1000 bytes")
@@ -81,7 +81,7 @@ class P01SearchPixitMediaTests(unittest.TestCase):
         print("ResultLast = " + str(result))
         self.tstatus.markFinal("View pdf doc verified", result, "test2_products_page")
         self.googlesearchpage.gotosite(self.basepixitmediaurl)
-        ## Finally - remove tmpfile
+        # Finally - remove tmpfile
         try:
             removefile(self.tmpfilename)
         except WindowsError as exxe:

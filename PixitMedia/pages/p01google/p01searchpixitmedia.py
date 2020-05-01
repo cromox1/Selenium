@@ -16,7 +16,7 @@ class P01SearchPixitMedia(BasePage):
 
     ## Locators Google
     _search_area = "//*[@title='Search']"
-    -search_area_type = 'xpath'
+    _search_area_type = 'xpath'
     _search_data = "pixitmedia"
     #_pixitmedia_txt1 = u"pixitmedia – High Performance Software Defined Storage"
     #_pixitmedia_txt2 = u"pixitmedia – High Performance Software Defined Sto"

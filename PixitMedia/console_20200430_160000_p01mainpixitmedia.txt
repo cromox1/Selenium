@@ -1,0 +1,36 @@
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ py.test.exe -v -s tests/p01google/p01searchpixitmedia_tests.py > consoleoutput1.txt 2>&1
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.8.2, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\program files\python38\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia
+collecting ... collected 0 items / 1 error
+
+=================================== ERRORS ====================================
+________ ERROR collecting tests/p01google/p01searchpixitmedia_tests.py ________
+c:\program files\python38\lib\site-packages\_pytest\python.py:513: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+c:\program files\python38\lib\site-packages\py\_path\local.py:701: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:991: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:975: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:671: in _load_unlocked
+    ???
+c:\program files\python38\lib\site-packages\_pytest\assertion\rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+tests\p01google\p01searchpixitmedia_tests.py:3: in <module>
+    from pages.p01google.p01searchpixitmedia import P01SearchPixitMedia
+E     File "C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\pages\p01google\p01searchpixitmedia.py", line 19
+E       -search_area_type = 'xpath'
+E       ^
+E   SyntaxError: cannot assign to operator
+=========================== short test summary info ===========================
+ERROR tests/p01google/p01searchpixitmedia_tests.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+============================== 1 error in 1.09s ===============================

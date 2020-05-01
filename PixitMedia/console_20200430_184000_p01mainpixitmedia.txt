@@ -1,0 +1,1009 @@
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ py.test.exe -v -s tests/p01google/p01searchpixitmedia_tests.py > consoleoutput1.txt 2>&1
+
+PC-TALIBR2+cromox@PC-TALIBR2 /cygdrive/c/Users/cromox/Desktop/newselenium/UDEMY/PixitMedia
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.8.2, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\program files\python38\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia
+collecting ... collected 3 items
+
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test1_google_pixitmedia_page 
+== > Running one time setUp
+Python Version = 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)]
+ERROR
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test2_products_page ERROR
+tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test3_contactus_page ERROR
+
+=================================== ERRORS ====================================
+___ ERROR at setup of P01SearchPixitMediaTests.test1_google_pixitmedia_page ___
+
+self = <selenium.webdriver.firefox.service.Service object at 0x0000000003A125E0>
+
+    def start(self):
+        """
+        Starts the Service.
+    
+        :Exceptions:
+         - WebDriverException : Raised either when it can't start the service
+           or when it can't connect to the service
+        """
+        try:
+            cmd = [self.path]
+            cmd.extend(self.command_line_args())
+>           self.process = subprocess.Popen(cmd, env=self.env,
+                                            close_fds=platform.system() != 'Windows',
+                                            stdout=self.log_file,
+                                            stderr=self.log_file,
+                                            stdin=PIPE)
+
+c:\program files\python38\lib\site-packages\selenium\webdriver\common\service.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <subprocess.Popen object at 0x0000000003A126A0>
+args = ['geckodriver', '--port', '60913'], bufsize = -1, executable = None
+stdin = -1
+stdout = <_io.TextIOWrapper name='geckodriver.log' mode='a+' encoding='cp1252'>
+stderr = <_io.TextIOWrapper name='geckodriver.log' mode='a+' encoding='cp1252'>
+preexec_fn = None, close_fds = False, shell = False, cwd = None
+env = environ({'ACLOCAL_PATH': 'C:\\3rd_party_sw\\GitHub\\Git\\mingw64\\share\\aclocal;C:\\3rd_party_sw\\GitHub\\Git\\usr\\s...TEST': 'tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test1_google_pixitmedia_page (setup)'})
+universal_newlines = None, startupinfo = None, creationflags = 0
+restore_signals = True, start_new_session = False, pass_fds = ()
+
+    def __init__(self, args, bufsize=-1, executable=None,
+                 stdin=None, stdout=None, stderr=None,
+                 preexec_fn=None, close_fds=True,
+                 shell=False, cwd=None, env=None, universal_newlines=None,
+                 startupinfo=None, creationflags=0,
+                 restore_signals=True, start_new_session=False,
+                 pass_fds=(), *, encoding=None, errors=None, text=None):
+        """Create new Popen instance."""
+        _cleanup()
+        # Held while anything is calling waitpid before returncode has been
+        # updated to prevent clobbering returncode if wait() or poll() are
+        # called from multiple threads at once.  After acquiring the lock,
+        # code must re-check self.returncode to see if another thread just
+        # finished a waitpid() call.
+        self._waitpid_lock = threading.Lock()
+    
+        self._input = None
+        self._communication_started = False
+        if bufsize is None:
+            bufsize = -1  # Restore default
+        if not isinstance(bufsize, int):
+            raise TypeError("bufsize must be an integer")
+    
+        if _mswindows:
+            if preexec_fn is not None:
+                raise ValueError("preexec_fn is not supported on Windows "
+                                 "platforms")
+        else:
+            # POSIX
+            if pass_fds and not close_fds:
+                warnings.warn("pass_fds overriding close_fds.", RuntimeWarning)
+                close_fds = True
+            if startupinfo is not None:
+                raise ValueError("startupinfo is only supported on Windows "
+                                 "platforms")
+            if creationflags != 0:
+                raise ValueError("creationflags is only supported on Windows "
+                                 "platforms")
+    
+        self.args = args
+        self.stdin = None
+        self.stdout = None
+        self.stderr = None
+        self.pid = None
+        self.returncode = None
+        self.encoding = encoding
+        self.errors = errors
+    
+        # Validate the combinations of text and universal_newlines
+        if (text is not None and universal_newlines is not None
+            and bool(universal_newlines) != bool(text)):
+            raise SubprocessError('Cannot disambiguate when both text '
+                                  'and universal_newlines are supplied but '
+                                  'different. Pass one or the other.')
+    
+        # Input and output objects. The general principle is like
+        # this:
+        #
+        # Parent                   Child
+        # ------                   -----
+        # p2cwrite   ---stdin--->  p2cread
+        # c2pread    <--stdout---  c2pwrite
+        # errread    <--stderr---  errwrite
+        #
+        # On POSIX, the child objects are file descriptors.  On
+        # Windows, these are Windows file handles.  The parent objects
+        # are file descriptors on both platforms.  The parent objects
+        # are -1 when not using PIPEs. The child objects are -1
+        # when not redirecting.
+    
+        (p2cread, p2cwrite,
+         c2pread, c2pwrite,
+         errread, errwrite) = self._get_handles(stdin, stdout, stderr)
+    
+        # We wrap OS handles *before* launching the child, otherwise a
+        # quickly terminating child could make our fds unwrappable
+        # (see #8458).
+    
+        if _mswindows:
+            if p2cwrite != -1:
+                p2cwrite = msvcrt.open_osfhandle(p2cwrite.Detach(), 0)
+            if c2pread != -1:
+                c2pread = msvcrt.open_osfhandle(c2pread.Detach(), 0)
+            if errread != -1:
+                errread = msvcrt.open_osfhandle(errread.Detach(), 0)
+    
+        self.text_mode = encoding or errors or text or universal_newlines
+    
+        # How long to resume waiting on a child after the first ^C.
+        # There is no right value for this.  The purpose is to be polite
+        # yet remain good for interactive users trying to exit a tool.
+        self._sigint_wait_secs = 0.25  # 1/xkcd221.getRandomNumber()
+    
+        self._closed_child_pipe_fds = False
+    
+        if self.text_mode:
+            if bufsize == 1:
+                line_buffering = True
+                # Use the default buffer size for the underlying binary streams
+                # since they don't support line buffering.
+                bufsize = -1
+            else:
+                line_buffering = False
+    
+        try:
+            if p2cwrite != -1:
+                self.stdin = io.open(p2cwrite, 'wb', bufsize)
+                if self.text_mode:
+                    self.stdin = io.TextIOWrapper(self.stdin, write_through=True,
+                            line_buffering=line_buffering,
+                            encoding=encoding, errors=errors)
+            if c2pread != -1:
+                self.stdout = io.open(c2pread, 'rb', bufsize)
+                if self.text_mode:
+                    self.stdout = io.TextIOWrapper(self.stdout,
+                            encoding=encoding, errors=errors)
+            if errread != -1:
+                self.stderr = io.open(errread, 'rb', bufsize)
+                if self.text_mode:
+                    self.stderr = io.TextIOWrapper(self.stderr,
+                            encoding=encoding, errors=errors)
+    
+>           self._execute_child(args, executable, preexec_fn, close_fds,
+                                pass_fds, cwd, env,
+                                startupinfo, creationflags, shell,
+                                p2cread, p2cwrite,
+                                c2pread, c2pwrite,
+                                errread, errwrite,
+                                restore_signals, start_new_session)
+
+c:\program files\python38\lib\subprocess.py:854: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <subprocess.Popen object at 0x0000000003A126A0>
+args = 'geckodriver --port 60913', executable = None, preexec_fn = None
+close_fds = False, pass_fds = (), cwd = None
+env = environ({'ACLOCAL_PATH': 'C:\\3rd_party_sw\\GitHub\\Git\\mingw64\\share\\aclocal;C:\\3rd_party_sw\\GitHub\\Git\\usr\\s...TEST': 'tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test1_google_pixitmedia_page (setup)'})
+startupinfo = <subprocess.STARTUPINFO object at 0x0000000003A12730>
+creationflags = 0, shell = False, p2cread = Handle(368), p2cwrite = 10
+c2pread = -1, c2pwrite = Handle(352), errread = -1, errwrite = Handle(356)
+unused_restore_signals = True, unused_start_new_session = False
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       unused_restore_signals, unused_start_new_session):
+        """Execute program (MS Windows version)"""
+    
+        assert not pass_fds, "pass_fds not supported on Windows."
+    
+        if isinstance(args, str):
+            pass
+        elif isinstance(args, bytes):
+            if shell:
+                raise TypeError('bytes args is not allowed on Windows')
+            args = list2cmdline([args])
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = list2cmdline([args])
+        else:
+            args = list2cmdline(args)
+    
+        if executable is not None:
+            executable = os.fsdecode(executable)
+    
+        # Process startup details
+        if startupinfo is None:
+            startupinfo = STARTUPINFO()
+        else:
+            # bpo-34044: Copy STARTUPINFO since it is modified above,
+            # so the caller can reuse it multiple times.
+            startupinfo = startupinfo.copy()
+    
+        use_std_handles = -1 not in (p2cread, c2pwrite, errwrite)
+        if use_std_handles:
+            startupinfo.dwFlags |= _winapi.STARTF_USESTDHANDLES
+            startupinfo.hStdInput = p2cread
+            startupinfo.hStdOutput = c2pwrite
+            startupinfo.hStdError = errwrite
+    
+        attribute_list = startupinfo.lpAttributeList
+        have_handle_list = bool(attribute_list and
+                                "handle_list" in attribute_list and
+                                attribute_list["handle_list"])
+    
+        # If we were given an handle_list or need to create one
+        if have_handle_list or (use_std_handles and close_fds):
+            if attribute_list is None:
+                attribute_list = startupinfo.lpAttributeList = {}
+            handle_list = attribute_list["handle_list"] = \
+                list(attribute_list.get("handle_list", []))
+    
+            if use_std_handles:
+                handle_list += [int(p2cread), int(c2pwrite), int(errwrite)]
+    
+            handle_list[:] = self._filter_handle_list(handle_list)
+    
+            if handle_list:
+                if not close_fds:
+                    warnings.warn("startupinfo.lpAttributeList['handle_list'] "
+                                  "overriding close_fds", RuntimeWarning)
+    
+                # When using the handle_list we always request to inherit
+                # handles but the only handles that will be inherited are
+                # the ones in the handle_list
+                close_fds = False
+    
+        if shell:
+            startupinfo.dwFlags |= _winapi.STARTF_USESHOWWINDOW
+            startupinfo.wShowWindow = _winapi.SW_HIDE
+            comspec = os.environ.get("COMSPEC", "cmd.exe")
+            args = '{} /c "{}"'.format (comspec, args)
+    
+        if cwd is not None:
+            cwd = os.fsdecode(cwd)
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        # Start the process
+        try:
+>           hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                                     # no special security
+                                     None, None,
+                                     int(not close_fds),
+                                     creationflags,
+                                     env,
+                                     cwd,
+                                     startupinfo)
+E                                    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+c:\program files\python38\lib\subprocess.py:1307: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+request = <SubRequest 'oneTimeSetUp' for <TestCaseFunction test1_google_pixitmedia_page>>
+browser = 'firefox'
+
+    @pytest.yield_fixture(scope="class")
+    def oneTimeSetUp(request, browser):
+        print("\n== > Running one time setUp")
+        print('Python Version = ' + sys.version)
+    
+        googleURL = "https://www.google.co.uk"
+    
+        wdf = webbrowser(browser)
+>       driver = wdf.getWebDriverInstance(googleURL)
+
+tests\conftest.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+base\webdriverfactory.py:76: in getWebDriverInstance
+    driver = webdriver.Firefox()
+c:\program files\python38\lib\site-packages\selenium\webdriver\firefox\webdriver.py:164: in __init__
+    self.service.start()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <selenium.webdriver.firefox.service.Service object at 0x0000000003A125E0>
+
+    def start(self):
+        """
+        Starts the Service.
+    
+        :Exceptions:
+         - WebDriverException : Raised either when it can't start the service
+           or when it can't connect to the service
+        """
+        try:
+            cmd = [self.path]
+            cmd.extend(self.command_line_args())
+            self.process = subprocess.Popen(cmd, env=self.env,
+                                            close_fds=platform.system() != 'Windows',
+                                            stdout=self.log_file,
+                                            stderr=self.log_file,
+                                            stdin=PIPE)
+        except TypeError:
+            raise
+        except OSError as err:
+            if err.errno == errno.ENOENT:
+>               raise WebDriverException(
+                    "'%s' executable needs to be in PATH. %s" % (
+                        os.path.basename(self.path), self.start_error_message)
+E                       selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH.
+
+c:\program files\python38\lib\site-packages\selenium\webdriver\common\service.py:81: WebDriverException
+_______ ERROR at setup of P01SearchPixitMediaTests.test2_products_page ________
+
+self = <selenium.webdriver.firefox.service.Service object at 0x0000000003A125E0>
+
+    def start(self):
+        """
+        Starts the Service.
+    
+        :Exceptions:
+         - WebDriverException : Raised either when it can't start the service
+           or when it can't connect to the service
+        """
+        try:
+            cmd = [self.path]
+            cmd.extend(self.command_line_args())
+>           self.process = subprocess.Popen(cmd, env=self.env,
+                                            close_fds=platform.system() != 'Windows',
+                                            stdout=self.log_file,
+                                            stderr=self.log_file,
+                                            stdin=PIPE)
+
+c:\program files\python38\lib\site-packages\selenium\webdriver\common\service.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <subprocess.Popen object at 0x0000000003A126A0>
+args = ['geckodriver', '--port', '60913'], bufsize = -1, executable = None
+stdin = -1
+stdout = <_io.TextIOWrapper name='geckodriver.log' mode='a+' encoding='cp1252'>
+stderr = <_io.TextIOWrapper name='geckodriver.log' mode='a+' encoding='cp1252'>
+preexec_fn = None, close_fds = False, shell = False, cwd = None
+env = environ({'ACLOCAL_PATH': 'C:\\3rd_party_sw\\GitHub\\Git\\mingw64\\share\\aclocal;C:\\3rd_party_sw\\GitHub\\Git\\usr\\s..._CURRENT_TEST': 'tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test2_products_page (setup)'})
+universal_newlines = None, startupinfo = None, creationflags = 0
+restore_signals = True, start_new_session = False, pass_fds = ()
+
+    def __init__(self, args, bufsize=-1, executable=None,
+                 stdin=None, stdout=None, stderr=None,
+                 preexec_fn=None, close_fds=True,
+                 shell=False, cwd=None, env=None, universal_newlines=None,
+                 startupinfo=None, creationflags=0,
+                 restore_signals=True, start_new_session=False,
+                 pass_fds=(), *, encoding=None, errors=None, text=None):
+        """Create new Popen instance."""
+        _cleanup()
+        # Held while anything is calling waitpid before returncode has been
+        # updated to prevent clobbering returncode if wait() or poll() are
+        # called from multiple threads at once.  After acquiring the lock,
+        # code must re-check self.returncode to see if another thread just
+        # finished a waitpid() call.
+        self._waitpid_lock = threading.Lock()
+    
+        self._input = None
+        self._communication_started = False
+        if bufsize is None:
+            bufsize = -1  # Restore default
+        if not isinstance(bufsize, int):
+            raise TypeError("bufsize must be an integer")
+    
+        if _mswindows:
+            if preexec_fn is not None:
+                raise ValueError("preexec_fn is not supported on Windows "
+                                 "platforms")
+        else:
+            # POSIX
+            if pass_fds and not close_fds:
+                warnings.warn("pass_fds overriding close_fds.", RuntimeWarning)
+                close_fds = True
+            if startupinfo is not None:
+                raise ValueError("startupinfo is only supported on Windows "
+                                 "platforms")
+            if creationflags != 0:
+                raise ValueError("creationflags is only supported on Windows "
+                                 "platforms")
+    
+        self.args = args
+        self.stdin = None
+        self.stdout = None
+        self.stderr = None
+        self.pid = None
+        self.returncode = None
+        self.encoding = encoding
+        self.errors = errors
+    
+        # Validate the combinations of text and universal_newlines
+        if (text is not None and universal_newlines is not None
+            and bool(universal_newlines) != bool(text)):
+            raise SubprocessError('Cannot disambiguate when both text '
+                                  'and universal_newlines are supplied but '
+                                  'different. Pass one or the other.')
+    
+        # Input and output objects. The general principle is like
+        # this:
+        #
+        # Parent                   Child
+        # ------                   -----
+        # p2cwrite   ---stdin--->  p2cread
+        # c2pread    <--stdout---  c2pwrite
+        # errread    <--stderr---  errwrite
+        #
+        # On POSIX, the child objects are file descriptors.  On
+        # Windows, these are Windows file handles.  The parent objects
+        # are file descriptors on both platforms.  The parent objects
+        # are -1 when not using PIPEs. The child objects are -1
+        # when not redirecting.
+    
+        (p2cread, p2cwrite,
+         c2pread, c2pwrite,
+         errread, errwrite) = self._get_handles(stdin, stdout, stderr)
+    
+        # We wrap OS handles *before* launching the child, otherwise a
+        # quickly terminating child could make our fds unwrappable
+        # (see #8458).
+    
+        if _mswindows:
+            if p2cwrite != -1:
+                p2cwrite = msvcrt.open_osfhandle(p2cwrite.Detach(), 0)
+            if c2pread != -1:
+                c2pread = msvcrt.open_osfhandle(c2pread.Detach(), 0)
+            if errread != -1:
+                errread = msvcrt.open_osfhandle(errread.Detach(), 0)
+    
+        self.text_mode = encoding or errors or text or universal_newlines
+    
+        # How long to resume waiting on a child after the first ^C.
+        # There is no right value for this.  The purpose is to be polite
+        # yet remain good for interactive users trying to exit a tool.
+        self._sigint_wait_secs = 0.25  # 1/xkcd221.getRandomNumber()
+    
+        self._closed_child_pipe_fds = False
+    
+        if self.text_mode:
+            if bufsize == 1:
+                line_buffering = True
+                # Use the default buffer size for the underlying binary streams
+                # since they don't support line buffering.
+                bufsize = -1
+            else:
+                line_buffering = False
+    
+        try:
+            if p2cwrite != -1:
+                self.stdin = io.open(p2cwrite, 'wb', bufsize)
+                if self.text_mode:
+                    self.stdin = io.TextIOWrapper(self.stdin, write_through=True,
+                            line_buffering=line_buffering,
+                            encoding=encoding, errors=errors)
+            if c2pread != -1:
+                self.stdout = io.open(c2pread, 'rb', bufsize)
+                if self.text_mode:
+                    self.stdout = io.TextIOWrapper(self.stdout,
+                            encoding=encoding, errors=errors)
+            if errread != -1:
+                self.stderr = io.open(errread, 'rb', bufsize)
+                if self.text_mode:
+                    self.stderr = io.TextIOWrapper(self.stderr,
+                            encoding=encoding, errors=errors)
+    
+>           self._execute_child(args, executable, preexec_fn, close_fds,
+                                pass_fds, cwd, env,
+                                startupinfo, creationflags, shell,
+                                p2cread, p2cwrite,
+                                c2pread, c2pwrite,
+                                errread, errwrite,
+                                restore_signals, start_new_session)
+
+c:\program files\python38\lib\subprocess.py:854: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <subprocess.Popen object at 0x0000000003A126A0>
+args = 'geckodriver --port 60913', executable = None, preexec_fn = None
+close_fds = False, pass_fds = (), cwd = None
+env = environ({'ACLOCAL_PATH': 'C:\\3rd_party_sw\\GitHub\\Git\\mingw64\\share\\aclocal;C:\\3rd_party_sw\\GitHub\\Git\\usr\\s..._CURRENT_TEST': 'tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test2_products_page (setup)'})
+startupinfo = <subprocess.STARTUPINFO object at 0x0000000003A12730>
+creationflags = 0, shell = False, p2cread = Handle(368), p2cwrite = 10
+c2pread = -1, c2pwrite = Handle(352), errread = -1, errwrite = Handle(356)
+unused_restore_signals = True, unused_start_new_session = False
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       unused_restore_signals, unused_start_new_session):
+        """Execute program (MS Windows version)"""
+    
+        assert not pass_fds, "pass_fds not supported on Windows."
+    
+        if isinstance(args, str):
+            pass
+        elif isinstance(args, bytes):
+            if shell:
+                raise TypeError('bytes args is not allowed on Windows')
+            args = list2cmdline([args])
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = list2cmdline([args])
+        else:
+            args = list2cmdline(args)
+    
+        if executable is not None:
+            executable = os.fsdecode(executable)
+    
+        # Process startup details
+        if startupinfo is None:
+            startupinfo = STARTUPINFO()
+        else:
+            # bpo-34044: Copy STARTUPINFO since it is modified above,
+            # so the caller can reuse it multiple times.
+            startupinfo = startupinfo.copy()
+    
+        use_std_handles = -1 not in (p2cread, c2pwrite, errwrite)
+        if use_std_handles:
+            startupinfo.dwFlags |= _winapi.STARTF_USESTDHANDLES
+            startupinfo.hStdInput = p2cread
+            startupinfo.hStdOutput = c2pwrite
+            startupinfo.hStdError = errwrite
+    
+        attribute_list = startupinfo.lpAttributeList
+        have_handle_list = bool(attribute_list and
+                                "handle_list" in attribute_list and
+                                attribute_list["handle_list"])
+    
+        # If we were given an handle_list or need to create one
+        if have_handle_list or (use_std_handles and close_fds):
+            if attribute_list is None:
+                attribute_list = startupinfo.lpAttributeList = {}
+            handle_list = attribute_list["handle_list"] = \
+                list(attribute_list.get("handle_list", []))
+    
+            if use_std_handles:
+                handle_list += [int(p2cread), int(c2pwrite), int(errwrite)]
+    
+            handle_list[:] = self._filter_handle_list(handle_list)
+    
+            if handle_list:
+                if not close_fds:
+                    warnings.warn("startupinfo.lpAttributeList['handle_list'] "
+                                  "overriding close_fds", RuntimeWarning)
+    
+                # When using the handle_list we always request to inherit
+                # handles but the only handles that will be inherited are
+                # the ones in the handle_list
+                close_fds = False
+    
+        if shell:
+            startupinfo.dwFlags |= _winapi.STARTF_USESHOWWINDOW
+            startupinfo.wShowWindow = _winapi.SW_HIDE
+            comspec = os.environ.get("COMSPEC", "cmd.exe")
+            args = '{} /c "{}"'.format (comspec, args)
+    
+        if cwd is not None:
+            cwd = os.fsdecode(cwd)
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        # Start the process
+        try:
+>           hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                                     # no special security
+                                     None, None,
+                                     int(not close_fds),
+                                     creationflags,
+                                     env,
+                                     cwd,
+                                     startupinfo)
+E                                    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+c:\program files\python38\lib\subprocess.py:1307: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+request = <SubRequest 'oneTimeSetUp' for <TestCaseFunction test1_google_pixitmedia_page>>
+browser = 'firefox'
+
+    @pytest.yield_fixture(scope="class")
+    def oneTimeSetUp(request, browser):
+        print("\n== > Running one time setUp")
+        print('Python Version = ' + sys.version)
+    
+        googleURL = "https://www.google.co.uk"
+    
+        wdf = webbrowser(browser)
+>       driver = wdf.getWebDriverInstance(googleURL)
+
+tests\conftest.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+base\webdriverfactory.py:76: in getWebDriverInstance
+    driver = webdriver.Firefox()
+c:\program files\python38\lib\site-packages\selenium\webdriver\firefox\webdriver.py:164: in __init__
+    self.service.start()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <selenium.webdriver.firefox.service.Service object at 0x0000000003A125E0>
+
+    def start(self):
+        """
+        Starts the Service.
+    
+        :Exceptions:
+         - WebDriverException : Raised either when it can't start the service
+           or when it can't connect to the service
+        """
+        try:
+            cmd = [self.path]
+            cmd.extend(self.command_line_args())
+            self.process = subprocess.Popen(cmd, env=self.env,
+                                            close_fds=platform.system() != 'Windows',
+                                            stdout=self.log_file,
+                                            stderr=self.log_file,
+                                            stdin=PIPE)
+        except TypeError:
+            raise
+        except OSError as err:
+            if err.errno == errno.ENOENT:
+>               raise WebDriverException(
+                    "'%s' executable needs to be in PATH. %s" % (
+                        os.path.basename(self.path), self.start_error_message)
+E                       selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH.
+
+c:\program files\python38\lib\site-packages\selenium\webdriver\common\service.py:81: WebDriverException
+_______ ERROR at setup of P01SearchPixitMediaTests.test3_contactus_page _______
+
+self = <selenium.webdriver.firefox.service.Service object at 0x0000000003A125E0>
+
+    def start(self):
+        """
+        Starts the Service.
+    
+        :Exceptions:
+         - WebDriverException : Raised either when it can't start the service
+           or when it can't connect to the service
+        """
+        try:
+            cmd = [self.path]
+            cmd.extend(self.command_line_args())
+>           self.process = subprocess.Popen(cmd, env=self.env,
+                                            close_fds=platform.system() != 'Windows',
+                                            stdout=self.log_file,
+                                            stderr=self.log_file,
+                                            stdin=PIPE)
+
+c:\program files\python38\lib\site-packages\selenium\webdriver\common\service.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <subprocess.Popen object at 0x0000000003A126A0>
+args = ['geckodriver', '--port', '60913'], bufsize = -1, executable = None
+stdin = -1
+stdout = <_io.TextIOWrapper name='geckodriver.log' mode='a+' encoding='cp1252'>
+stderr = <_io.TextIOWrapper name='geckodriver.log' mode='a+' encoding='cp1252'>
+preexec_fn = None, close_fds = False, shell = False, cwd = None
+env = environ({'ACLOCAL_PATH': 'C:\\3rd_party_sw\\GitHub\\Git\\mingw64\\share\\aclocal;C:\\3rd_party_sw\\GitHub\\Git\\usr\\s...CURRENT_TEST': 'tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test3_contactus_page (setup)'})
+universal_newlines = None, startupinfo = None, creationflags = 0
+restore_signals = True, start_new_session = False, pass_fds = ()
+
+    def __init__(self, args, bufsize=-1, executable=None,
+                 stdin=None, stdout=None, stderr=None,
+                 preexec_fn=None, close_fds=True,
+                 shell=False, cwd=None, env=None, universal_newlines=None,
+                 startupinfo=None, creationflags=0,
+                 restore_signals=True, start_new_session=False,
+                 pass_fds=(), *, encoding=None, errors=None, text=None):
+        """Create new Popen instance."""
+        _cleanup()
+        # Held while anything is calling waitpid before returncode has been
+        # updated to prevent clobbering returncode if wait() or poll() are
+        # called from multiple threads at once.  After acquiring the lock,
+        # code must re-check self.returncode to see if another thread just
+        # finished a waitpid() call.
+        self._waitpid_lock = threading.Lock()
+    
+        self._input = None
+        self._communication_started = False
+        if bufsize is None:
+            bufsize = -1  # Restore default
+        if not isinstance(bufsize, int):
+            raise TypeError("bufsize must be an integer")
+    
+        if _mswindows:
+            if preexec_fn is not None:
+                raise ValueError("preexec_fn is not supported on Windows "
+                                 "platforms")
+        else:
+            # POSIX
+            if pass_fds and not close_fds:
+                warnings.warn("pass_fds overriding close_fds.", RuntimeWarning)
+                close_fds = True
+            if startupinfo is not None:
+                raise ValueError("startupinfo is only supported on Windows "
+                                 "platforms")
+            if creationflags != 0:
+                raise ValueError("creationflags is only supported on Windows "
+                                 "platforms")
+    
+        self.args = args
+        self.stdin = None
+        self.stdout = None
+        self.stderr = None
+        self.pid = None
+        self.returncode = None
+        self.encoding = encoding
+        self.errors = errors
+    
+        # Validate the combinations of text and universal_newlines
+        if (text is not None and universal_newlines is not None
+            and bool(universal_newlines) != bool(text)):
+            raise SubprocessError('Cannot disambiguate when both text '
+                                  'and universal_newlines are supplied but '
+                                  'different. Pass one or the other.')
+    
+        # Input and output objects. The general principle is like
+        # this:
+        #
+        # Parent                   Child
+        # ------                   -----
+        # p2cwrite   ---stdin--->  p2cread
+        # c2pread    <--stdout---  c2pwrite
+        # errread    <--stderr---  errwrite
+        #
+        # On POSIX, the child objects are file descriptors.  On
+        # Windows, these are Windows file handles.  The parent objects
+        # are file descriptors on both platforms.  The parent objects
+        # are -1 when not using PIPEs. The child objects are -1
+        # when not redirecting.
+    
+        (p2cread, p2cwrite,
+         c2pread, c2pwrite,
+         errread, errwrite) = self._get_handles(stdin, stdout, stderr)
+    
+        # We wrap OS handles *before* launching the child, otherwise a
+        # quickly terminating child could make our fds unwrappable
+        # (see #8458).
+    
+        if _mswindows:
+            if p2cwrite != -1:
+                p2cwrite = msvcrt.open_osfhandle(p2cwrite.Detach(), 0)
+            if c2pread != -1:
+                c2pread = msvcrt.open_osfhandle(c2pread.Detach(), 0)
+            if errread != -1:
+                errread = msvcrt.open_osfhandle(errread.Detach(), 0)
+    
+        self.text_mode = encoding or errors or text or universal_newlines
+    
+        # How long to resume waiting on a child after the first ^C.
+        # There is no right value for this.  The purpose is to be polite
+        # yet remain good for interactive users trying to exit a tool.
+        self._sigint_wait_secs = 0.25  # 1/xkcd221.getRandomNumber()
+    
+        self._closed_child_pipe_fds = False
+    
+        if self.text_mode:
+            if bufsize == 1:
+                line_buffering = True
+                # Use the default buffer size for the underlying binary streams
+                # since they don't support line buffering.
+                bufsize = -1
+            else:
+                line_buffering = False
+    
+        try:
+            if p2cwrite != -1:
+                self.stdin = io.open(p2cwrite, 'wb', bufsize)
+                if self.text_mode:
+                    self.stdin = io.TextIOWrapper(self.stdin, write_through=True,
+                            line_buffering=line_buffering,
+                            encoding=encoding, errors=errors)
+            if c2pread != -1:
+                self.stdout = io.open(c2pread, 'rb', bufsize)
+                if self.text_mode:
+                    self.stdout = io.TextIOWrapper(self.stdout,
+                            encoding=encoding, errors=errors)
+            if errread != -1:
+                self.stderr = io.open(errread, 'rb', bufsize)
+                if self.text_mode:
+                    self.stderr = io.TextIOWrapper(self.stderr,
+                            encoding=encoding, errors=errors)
+    
+>           self._execute_child(args, executable, preexec_fn, close_fds,
+                                pass_fds, cwd, env,
+                                startupinfo, creationflags, shell,
+                                p2cread, p2cwrite,
+                                c2pread, c2pwrite,
+                                errread, errwrite,
+                                restore_signals, start_new_session)
+
+c:\program files\python38\lib\subprocess.py:854: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <subprocess.Popen object at 0x0000000003A126A0>
+args = 'geckodriver --port 60913', executable = None, preexec_fn = None
+close_fds = False, pass_fds = (), cwd = None
+env = environ({'ACLOCAL_PATH': 'C:\\3rd_party_sw\\GitHub\\Git\\mingw64\\share\\aclocal;C:\\3rd_party_sw\\GitHub\\Git\\usr\\s...CURRENT_TEST': 'tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test3_contactus_page (setup)'})
+startupinfo = <subprocess.STARTUPINFO object at 0x0000000003A12730>
+creationflags = 0, shell = False, p2cread = Handle(368), p2cwrite = 10
+c2pread = -1, c2pwrite = Handle(352), errread = -1, errwrite = Handle(356)
+unused_restore_signals = True, unused_start_new_session = False
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       unused_restore_signals, unused_start_new_session):
+        """Execute program (MS Windows version)"""
+    
+        assert not pass_fds, "pass_fds not supported on Windows."
+    
+        if isinstance(args, str):
+            pass
+        elif isinstance(args, bytes):
+            if shell:
+                raise TypeError('bytes args is not allowed on Windows')
+            args = list2cmdline([args])
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = list2cmdline([args])
+        else:
+            args = list2cmdline(args)
+    
+        if executable is not None:
+            executable = os.fsdecode(executable)
+    
+        # Process startup details
+        if startupinfo is None:
+            startupinfo = STARTUPINFO()
+        else:
+            # bpo-34044: Copy STARTUPINFO since it is modified above,
+            # so the caller can reuse it multiple times.
+            startupinfo = startupinfo.copy()
+    
+        use_std_handles = -1 not in (p2cread, c2pwrite, errwrite)
+        if use_std_handles:
+            startupinfo.dwFlags |= _winapi.STARTF_USESTDHANDLES
+            startupinfo.hStdInput = p2cread
+            startupinfo.hStdOutput = c2pwrite
+            startupinfo.hStdError = errwrite
+    
+        attribute_list = startupinfo.lpAttributeList
+        have_handle_list = bool(attribute_list and
+                                "handle_list" in attribute_list and
+                                attribute_list["handle_list"])
+    
+        # If we were given an handle_list or need to create one
+        if have_handle_list or (use_std_handles and close_fds):
+            if attribute_list is None:
+                attribute_list = startupinfo.lpAttributeList = {}
+            handle_list = attribute_list["handle_list"] = \
+                list(attribute_list.get("handle_list", []))
+    
+            if use_std_handles:
+                handle_list += [int(p2cread), int(c2pwrite), int(errwrite)]
+    
+            handle_list[:] = self._filter_handle_list(handle_list)
+    
+            if handle_list:
+                if not close_fds:
+                    warnings.warn("startupinfo.lpAttributeList['handle_list'] "
+                                  "overriding close_fds", RuntimeWarning)
+    
+                # When using the handle_list we always request to inherit
+                # handles but the only handles that will be inherited are
+                # the ones in the handle_list
+                close_fds = False
+    
+        if shell:
+            startupinfo.dwFlags |= _winapi.STARTF_USESHOWWINDOW
+            startupinfo.wShowWindow = _winapi.SW_HIDE
+            comspec = os.environ.get("COMSPEC", "cmd.exe")
+            args = '{} /c "{}"'.format (comspec, args)
+    
+        if cwd is not None:
+            cwd = os.fsdecode(cwd)
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        # Start the process
+        try:
+>           hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                                     # no special security
+                                     None, None,
+                                     int(not close_fds),
+                                     creationflags,
+                                     env,
+                                     cwd,
+                                     startupinfo)
+E                                    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+c:\program files\python38\lib\subprocess.py:1307: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+request = <SubRequest 'oneTimeSetUp' for <TestCaseFunction test1_google_pixitmedia_page>>
+browser = 'firefox'
+
+    @pytest.yield_fixture(scope="class")
+    def oneTimeSetUp(request, browser):
+        print("\n== > Running one time setUp")
+        print('Python Version = ' + sys.version)
+    
+        googleURL = "https://www.google.co.uk"
+    
+        wdf = webbrowser(browser)
+>       driver = wdf.getWebDriverInstance(googleURL)
+
+tests\conftest.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+base\webdriverfactory.py:76: in getWebDriverInstance
+    driver = webdriver.Firefox()
+c:\program files\python38\lib\site-packages\selenium\webdriver\firefox\webdriver.py:164: in __init__
+    self.service.start()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <selenium.webdriver.firefox.service.Service object at 0x0000000003A125E0>
+
+    def start(self):
+        """
+        Starts the Service.
+    
+        :Exceptions:
+         - WebDriverException : Raised either when it can't start the service
+           or when it can't connect to the service
+        """
+        try:
+            cmd = [self.path]
+            cmd.extend(self.command_line_args())
+            self.process = subprocess.Popen(cmd, env=self.env,
+                                            close_fds=platform.system() != 'Windows',
+                                            stdout=self.log_file,
+                                            stderr=self.log_file,
+                                            stdin=PIPE)
+        except TypeError:
+            raise
+        except OSError as err:
+            if err.errno == errno.ENOENT:
+>               raise WebDriverException(
+                    "'%s' executable needs to be in PATH. %s" % (
+                        os.path.basename(self.path), self.start_error_message)
+E                       selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH.
+
+c:\program files\python38\lib\site-packages\selenium\webdriver\common\service.py:81: WebDriverException
+============================== warnings summary ===============================
+base\selenium_driver.py:28
+  C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\selenium_driver.py:28: DeprecationWarning: invalid escape sequence \s
+    screenshotDirectory = "..\screenshots\\"
+
+tests\p01google\p01searchpixitmedia_tests.py:25
+  C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\tests\p01google\p01searchpixitmedia_tests.py:25: PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.run(order=1)
+
+tests\p01google\p01searchpixitmedia_tests.py:44
+  C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\tests\p01google\p01searchpixitmedia_tests.py:44: PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.run(order=2)
+
+tests\p01google\p01searchpixitmedia_tests.py:90
+  C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\tests\p01google\p01searchpixitmedia_tests.py:90: PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.run(order=3)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+=========================== short test summary info ===========================
+ERROR tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test1_google_pixitmedia_page
+ERROR tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test2_products_page
+ERROR tests/p01google/p01searchpixitmedia_tests.py::P01SearchPixitMediaTests::test3_contactus_page
+======================== 4 warnings, 3 errors in 2.58s ========================

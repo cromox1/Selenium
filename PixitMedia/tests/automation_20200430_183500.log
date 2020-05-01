@@ -1,0 +1,47 @@
+30/04/2020 06:37:59 PM - P01SearchPixitMediaTests - INFO: test1_goto_google_page_started
+30/04/2020 06:37:59 PM - P01SearchPixitMediaTests - INFO: test2_goto_pixstor_page_started
+30/04/2020 06:37:59 PM - P01SearchPixitMediaTests - INFO: test3_fill_in_contactus_page_started
+30/04/2020 06:38:39 PM - P01SearchPixitMediaTests - INFO: test1_goto_google_page_started
+30/04/2020 06:38:39 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.google.co.uk ) VS currentURL ( https://www.google.co.uk )
+30/04/2020 06:38:39 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Currently At Google Page Verified
+30/04/2020 06:38:39 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- google word Verified
+30/04/2020 06:38:39 PM - P01SearchPixitMedia - INFO: Element found - locator (//*[@title='Search']) + locatorType (xpath)
+30/04/2020 06:38:39 PM - P01SearchPixitMedia - INFO: Clicked on element - locator (//*[@title='Search']) + locatorType (xpath)
+30/04/2020 06:38:49 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:38:50 PM - P01SearchPixitMedia - INFO: Cannot send data (b'pixitmedia') on the element - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:39:00 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:39:00 PM - P01SearchPixitMedia - INFO: Cannot send data (b'+4Ac-') on the element - locator (//*[@title='Search']) + locatorType (id)
+30/04/2020 06:39:00 PM - P01SearchPixitMedia - DEBUG: In locator condition
+30/04/2020 06:39:10 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[contains(text(),'https://www.pixitmedia.com/')]) + locatorType (xpath)
+30/04/2020 06:39:10 PM - P01SearchPixitMedia - DEBUG: Before finding element.text, size = 0
+30/04/2020 06:39:10 PM - P01SearchPixitMedia - ERROR: Failed to get text on element 
+30/04/2020 06:39:10 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- pixitmedia word Verified failed
+30/04/2020 06:39:10 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\pixitmedia_word_Verified_20200430_183910_205071.png
+30/04/2020 06:39:10 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.pixitmedia.com ) VS currentURL ( https://www.google.co.uk )
+30/04/2020 06:39:10 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- test1_google_pixitmedia failed
+30/04/2020 06:39:11 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\test1_google_pixitmedia_20200430_183910_796105.png
+30/04/2020 06:39:11 PM - TestStatus - ERROR: URL pixitmedia verified failed ### TEST FAILED
+30/04/2020 06:39:11 PM - P01SearchPixitMediaTests - INFO: test2_goto_pixstor_page_started
+30/04/2020 06:39:21 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@id="menu-item-48"]/*/*) + locatorType (xpath)
+30/04/2020 06:39:21 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (//*[@id="menu-item-48"]/*/*) + locatorType (xpath)
+30/04/2020 06:39:21 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- products word Verified failed
+30/04/2020 06:39:21 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\products_word_Verified_20200430_183921_465715.png
+30/04/2020 06:39:32 PM - P01SearchPixitMedia - INFO: Element not found - locator (PixStor Search) + locatorType (link)
+30/04/2020 06:39:32 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (PixStor Search) + locatorType (link)
+30/04/2020 06:39:32 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- PixStor-Search word Verified failed
+30/04/2020 06:39:32 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\PixStor_Search_word_Verified_20200430_183932_057321.png
+30/04/2020 06:39:42 PM - P01SearchPixitMedia - INFO: Element not found - locator (//span[@class='elementor-button-text']) + locatorType (xpath)
+30/04/2020 06:39:42 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (//span[@class='elementor-button-text']) + locatorType (xpath)
+30/04/2020 06:39:42 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- Datasheet word Verified failed
+30/04/2020 06:39:43 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\Datasheet_word_Verified_20200430_183942_714930.png
+30/04/2020 06:39:49 PM - P01SearchPixitMediaTests - INFO: test3_fill_in_contactus_page_started
+30/04/2020 06:39:59 PM - P01SearchPixitMedia - INFO: Element not found - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+30/04/2020 06:39:59 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (//*[@id="menu-item-8974"]/*/*) + locatorType (xpath)
+30/04/2020 06:40:02 PM - P01SearchPixitMedia - INFO: expectedURL ( https://www.pixitmedia.com/contact-us/ ) VS currentURL ( https://www.google.co.uk/ )
+30/04/2020 06:40:02 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- ContactUs URL Verified failed
+30/04/2020 06:40:03 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\ContactUs_URL_Verified_20200430_184002_498062.png
+30/04/2020 06:40:03 PM - TestStatus - ERROR: ### VERIFICATION FAILED -- ContactUs word Verified failed
+30/04/2020 06:40:03 PM - TestStatus - INFO: Screenshot save to directory: C:\Users\penggunabiasa\python3_projects\Selenium\PixitMedia\base\..\screenshots\ContactUs_word_Verified_20200430_184003_026092.png
+30/04/2020 06:40:13 PM - P01SearchPixitMedia - INFO: Element not found - locator (field_qh4icy2) + locatorType (id)
+30/04/2020 06:40:13 PM - P01SearchPixitMedia - INFO: Cannot click on the element - locator (field_qh4icy2) + locatorType (id)
+30/04/2020 06:40:24 PM - P01SearchPixitMedia - INFO: Element not found - locator (field_qh4icy2) + locatorType (id)
