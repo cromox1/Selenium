@@ -68,6 +68,7 @@ class SeleniumDriver():
             byType = self.getByType(locatorType)
             element = self.driver.find_element(byType, locator)
             self.log.info("Element found - locator (" + locator + ") + locatorType (" + locatorType + ")")
+            self.log.info('Element = ' + str(element))
         except:
             self.log.info("Element not found - locator (" + locator + ") + locatorType (" + locatorType + ")")
         return element
@@ -83,6 +84,7 @@ class SeleniumDriver():
             byType = self.getByType(locatorType)
             element = self.driver.find_elements(byType, locator)
             self.log.info("ElementList found - locator (" + locator + ") + locatorType (" + locatorType + ")")
+            self.log.info('ElementList = ' + str(element))
         except:
             self.log.info("ElementList NOT found - locator (" + locator + ") + locatorType (" + locatorType + ")")
         return element

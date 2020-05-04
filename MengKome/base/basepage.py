@@ -41,9 +41,9 @@ class BasePage(SeleniumDriver):
             return False
 
     def verifyPageURL(self, expectedURL):
-        currentURL = self.driver.current_url
-        self.log.info("expectedURL ( " + expectedURL + " ) VS currentURL ( " + currentURL + " )")
-        return currentURL == expectedURL
+        currentURL = self.driver.current_url.rstrip('/')
+        self.log.info("expectedURL ( " + expectedURL.rstrip('/') + " ) VS currentURL ( " + currentURL + " )")
+        return currentURL == expectedURL.rstrip('/')
 
     def verifyPageURLlow(self, expectedURL):
         currentURL1 = self.driver.current_url

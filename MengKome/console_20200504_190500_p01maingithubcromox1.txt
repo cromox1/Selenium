@@ -1,0 +1,50 @@
+penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome
+$ py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py > consoleoutput1.txt 2>&1
+
+penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.8.2, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\program files\python38\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\penggunabiasa\python3_projects\Selenium\MengKome
+collecting ... collected 2 items
+
+tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test1_google_github_cromox1_page 
+== > Running one time setUp
+Python Version = 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)]
+Browser version ( chrome ) = 81.0.4044.129
+
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+Number GITHUB LINK = 1
+CURRENT URL = https://github.com/cromox1
+Result 3  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test2_github_cromox1_repo 
+--- > Running method level setUp
+CROMOX1_URL = https://github.com/cromox1
+CURRENT URL = https://github.com/cromox1?tab=repositories
+LIST = []
+NUMBER OF REPO = 0
+PASSED
+--- > Running method level tearDown
+
+== > Running one time tearDown
+
+
+============================== warnings summary ===============================
+tests\p01google\p01searchgithubcromox1_test1.py:20
+  C:\Users\penggunabiasa\python3_projects\Selenium\MengKome\tests\p01google\p01searchgithubcromox1_test1.py:20: PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.run(order=1)
+
+tests\p01google\p01searchgithubcromox1_test1.py:40
+  C:\Users\penggunabiasa\python3_projects\Selenium\MengKome\tests\p01google\p01searchgithubcromox1_test1.py:40: PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.run(order=2)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+======================= 2 passed, 2 warnings in 35.48s ========================
