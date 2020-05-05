@@ -15,8 +15,12 @@ Assignment 1 (Test1) :
 Assignment 2 (Test2) :
 
 - Go to main page https://mengkome.pythonanywhere.com/
-- Login (with admin username & passwd)
+- Login (with admin username / passwd = bacaone / qawsed123456 )
 - Check some infos inside 
+  - go & click Users button
+  - click at your own user
+  - check email address & date joined
+  - go back to home page
 - Logout
 
 ## 1) Basic UnitTest :
