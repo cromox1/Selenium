@@ -76,9 +76,15 @@ class BasePage(SeleniumDriver):
         return str(result.lower()) == str(expectedText.lower())
 
     def verifyActualGreaterEqualExpected(self, Actual, Expected):
+        self.log.info("Actual ( " + str(Actual) + " ) >= Expected ( " + str(Expected) + " )")
         return Actual >= Expected
 
+    def verifyActualEqualExpected(self, Actual, Expected):
+        self.log.info("Actual ( " + str(Actual) + " ) == Expected ( " + str(Expected) + " )")
+        return Actual == Expected
+
     def verifyTextEqual(self, Text, Expected):
+        self.log.info("Text = " + Text)
         return Text == Expected
 
     def verifyEmailFormat(self, email):

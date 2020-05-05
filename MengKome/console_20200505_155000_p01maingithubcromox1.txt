@@ -28,22 +28,25 @@ PASSED
 tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test2_github_cromox1_repo 
 --- > Running method level setUp
 CROMOX1_URL = https://github.com/cromox1
+Result 1  =  True
 CURRENT URL = https://github.com/cromox1?tab=repositories
-NUMBER OF REPO = 0
+Result 2  =  True
+NUMBER OF REPO = 9
+Result 3  =  True
+1) Selenium
+2) Selenium_Csharp
+3) Selenium_Java
+4) sementara
+5) my_notes
+6) Django
+7) rosalind
+8) Appium
+9) martini_suse
+ResultLast = True
 PASSED
 --- > Running method level tearDown
 
 == > Running one time tearDown
 
 
-============================== warnings summary ===============================
-tests\p01google\p01searchgithubcromox1_test1.py:20
-  C:\Users\penggunabiasa\python3_projects\Selenium\MengKome\tests\p01google\p01searchgithubcromox1_test1.py:20: PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.run(order=1)
-
-tests\p01google\p01searchgithubcromox1_test1.py:40
-  C:\Users\penggunabiasa\python3_projects\Selenium\MengKome\tests\p01google\p01searchgithubcromox1_test1.py:40: PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.run(order=2)
-
--- Docs: https://docs.pytest.org/en/latest/warnings.html
-======================= 2 passed, 2 warnings in 29.41s ========================
+============================= 2 passed in 15.08s ==============================
