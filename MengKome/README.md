@@ -4,13 +4,20 @@
 
 ### https://mengkome.pythonanywhere.com/ 
 
-Assignment :
+Assignment 1 (Test1) :
 
 - Launch Google Website
 - Search for "github cromox1"
 - Select the main cromox1 github link
 - Go to main page github cromox1
 - Check all the repositories that cromox1 has
+
+Assignment 2 (Test2) :
+
+- Go to main page https://mengkome.pythonanywhere.com/
+- Login (with admin username & passwd)
+- Check some infos inside 
+- Logout
 
 ## 1) Basic UnitTest :
 
@@ -20,7 +27,7 @@ To run :
 
 ## 2) pytest Automation Framework
 
-PixitMedia Automation Framework consise these directories:
+MengKome Automation Framework consise these directories:
 
 1) apps
 2) base
@@ -33,7 +40,7 @@ PixitMedia Automation Framework consise these directories:
 
 To run tests (example) :
 
-### py.test -v -s tests/p01google/p01searchpixitmedia_tests.py --browser "$browser"
+### py.test -v -s tests/p01google/p01searchgithubcromox1_test1.py --browser "$browser"
 
 "$browser" = [ ie / chrome / firefox / opera ]
 
