@@ -18,7 +18,7 @@ Assignment 2 (Test2) :
 - Login (with admin username / passwd = bacaone / qawsed123456 )
 - Check some infos inside 
   - go & click Users button
-  - click at your own user
+  - click at your username
   - check email address & date joined
   - go back to home page
 - Logout
