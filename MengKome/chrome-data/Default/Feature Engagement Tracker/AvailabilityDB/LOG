@@ -1,0 +1,4 @@
+2020/05/06-15:08:21.328 1ebc Reusing MANIFEST C:\Users\penggunabiasa\python3_projects\Selenium\MengKome\chrome-data\Default\Feature Engagement Tracker\AvailabilityDB/MANIFEST-000001
+2020/05/06-15:08:21.373 1ebc Recovering log #3
+2020/05/06-15:08:21.426 1ebc (ignoring error) C:\Users\penggunabiasa\python3_projects\Selenium\MengKome\chrome-data\Default\Feature Engagement Tracker\AvailabilityDB/000003.log: dropping 83 bytes; Corruption: checksum mismatch
+2020/05/06-15:08:21.476 1ebc Reusing old log C:\Users\penggunabiasa\python3_projects\Selenium\MengKome\chrome-data\Default\Feature Engagement Tracker\AvailabilityDB/000003.log 

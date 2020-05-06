@@ -40,35 +40,15 @@ class TestMengkome1(unittest.TestCase):
         # driver.find_element_by_class_name('model-user').click()
         driver.find_element_by_xpath("//*[contains(text(), 'Users')]").click()
         driver.find_element_by_xpath("//*[contains(text(), '" + user1 + "')]").click()
-        # join1 = driver.find_element_by_xpath("//*[contains(text(), 'Date joined:')]").text
         # email1 = driver.find_element_by_xpath('//*[@id="user_form"]/div/fieldset[2]/div[3]/div/div').text
         # join1 = driver.find_element_by_xpath('//*[@id="user_form"]/div/fieldset[4]/div[2]/div/div').text
         email1 = driver.find_element_by_xpath('//*[@class="form-row field-email"]/*/*[@class="readonly"]').text
         join1 = driver.find_element_by_xpath('//*[@class="form-row field-date_joined"]/*/*[@class="readonly"]').text
         print('User email = ' + email1)
         print('User Joined date = ' + join1)
-        # i = 1
-        # for element in join1:
-        #     print(str(i) + ') ' + element.text)
-        #     i = i + 1
-
+        # logout
         driver.find_element_by_xpath("//*[contains(text(), 'Home')]").click()
         driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
-
-        ############# TUNGGU DULU... SKRG GUNA ONE BIG TEST
-    #     self.__class__.kome_url =  driver.current_url
-    #
-    # def test_two_checkinfo(self):
-    #     driver = self.driver
-    #     driver.get(self.__class__.kome_url)
-    #     print('CURRENT URL = ' + driver.current_url)
-    #     user1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
-    #     print('Name of the user = ' + user1)
-    #
-    # def test_zxy_logout(self):
-    #     driver = self.driver
-    #     driver.get(self.__class__.kome_url)
-    #     driver.find_element_by_link_text('Log out').click()
 
     def tearDown(self):
         self.driver.quit()
