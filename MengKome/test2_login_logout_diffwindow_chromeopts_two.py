@@ -14,21 +14,21 @@ class TestMengkome1(unittest.TestCase):
 
     def setUp(self):
         self.base_url = "https://mengkome.pythonanywhere.com/admin/login/"
-        self.chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
-        self.driver = webdriver.Chrome(self.chromedriverpath)
-        print('------ >> SETUP')
+        self.chromedriverpath = r'C:\Users\taverner\Documents\chromedriver\chromedriver.exe'
+        # self.driver = webdriver.Chrome(self.chromedriverpath)
+        print('\n--- >> SETUP')
 
     def test_one_login(self):
         print('\n---->  ' + str(self._testMethodName) + '\n')
         # GET python version & Browser version
-        driver = self.driver
+        driver = webdriver.Chrome(self.chromedriverpath)
         from sys import version as pythonversion
         print('Python Version = ' + pythonversion)
         print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['browserVersion'])
         print()
 
         chrome_options = Options()
-        chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
@@ -44,7 +44,7 @@ class TestMengkome1(unittest.TestCase):
         driver.find_element_by_name('username').send_keys(user1 + Keys.ENTER)
         driver.find_element_by_name('password').click()
         driver.find_element_by_name('password').send_keys(pswd1 + Keys.ENTER)
-        sleep(5)
+        # sleep(5)
 
         ## current URL
         print('CURRENT URL = ' + driver.current_url)
@@ -53,12 +53,13 @@ class TestMengkome1(unittest.TestCase):
         # driver.quit()
 
     def test_two_relogin_chkinfos(self):
+        sleep(5)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.userone
         urlone = self.__class__.mengkome_url
 
         chrome_options = Options()
-        chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
 
@@ -73,15 +74,17 @@ class TestMengkome1(unittest.TestCase):
         print('User Joined date = ' + join1)
         print('CURRENT URL = ' + driver.current_url)
         self.__class__.mengkome_url = driver.current_url
-        driver.close()
-        # driver.quit()
+        # driver.close()
+        # sleep(5)
+        driver.quit()
 
     def test_x_relogin_then_logout(self):
+        sleep(10)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         urlone = self.__class__.mengkome_url
 
         chrome_options = Options()
-        chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
 
@@ -89,12 +92,12 @@ class TestMengkome1(unittest.TestCase):
         driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
         if driver.find_element_by_xpath("//*[@id='content']/h1").text == 'Logged out':
             print('User ' + self.__class__.userone + ' successfully LOGGED OUT')
-        driver.close()
-        # driver.quit()
+        # driver.close()
+        driver.quit()
 
     def tearDown(self):
-        self.driver.quit()
-        print('------ >> TEARDOWN')
+        # driver.quit()
+        print('\n--- >> TEARDOWN')
         # self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
