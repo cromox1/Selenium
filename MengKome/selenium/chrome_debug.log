@@ -1,2 +1,0 @@
-[8396:7544:0506/135934.492:ERROR:browser_switcher_service.cc(238)] XXX Init()
-[8396:7544:0506/135936.968:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://mengkome.pythonanywhere.com/admin/login/?next=/admin/ (0)

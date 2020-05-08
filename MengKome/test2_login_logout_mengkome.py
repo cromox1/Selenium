@@ -34,7 +34,7 @@ class TestMengkome1(unittest.TestCase):
         driver.find_element_by_name('password').click()
         driver.find_element_by_name('password').send_keys(pswd1 + Keys.ENTER)
         print('CURRENT URL = ' + driver.current_url)
-        # this from test_two and test_zxy_logout
+        # this from test_two and test_x_relogin_then_logout
         userpage1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
         print('Name of the user = ' + userpage1)
         # driver.find_element_by_class_name('model-user').click()
