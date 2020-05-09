@@ -1,35 +1,47 @@
 __author__ = 'cromox'
 
-from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from os import remove as removefile
+from selenium.webdriver.chrome.options import Options
+from time import sleep
 import unittest
-import pickle
 
 class TestMengkome1(unittest.TestCase):
     mengkome_url = ''
-    cookies = []
+    chromedatadir = "chrome-data"
     userone = 'bacaone'
     pswdone = 'qawsed123456'
 
-    def setUp(self):
-        chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
-        self.driver = webdriver.Chrome(chromedriverpath)
-        # self.driver = webdriver.Firefox()
-        self.driver.implicitly_wait(10)
+    @classmethod
+    def setUpClass(self):
         self.base_url = "https://mengkome.pythonanywhere.com/admin/login/"
-        self.verificationErrors = []
+        self.chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
+        self.driver = webdriver.Chrome(self.chromedriverpath)
+        print('\n--- >> SETUP')
 
     def test_one_login(self):
         print('\n---->  ' + str(self._testMethodName) + '\n')
         # GET python version & Browser version
-        driver = self.driver
         from sys import version as pythonversion
         print('Python Version = ' + pythonversion)
-        print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['version']) # Python 3.7 and below
-        # print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['browserVersion']) # Python 3.8 & above
+        from selenium import __version__ as seleniumversion
+        print('Selenium version = ' + seleniumversion)
+
+        chrome_options = Options()
+        # chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
+        # new one
+        experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
+        chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
+        chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
+        # print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['version'])  # Python 3.7 and below
+        print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['browserVersion']) # Python 3.8 & above
         print()
+        print("CHROME_OPTIONS = " + str(chrome_options.arguments))
+        # print("CHROME_OPTIONS = " + str(driver.desired_capabilities))
+        driver.implicitly_wait(10)
 
         user1 = self.__class__.userone
         pswd1 = self.__class__.pswdone
@@ -40,38 +52,24 @@ class TestMengkome1(unittest.TestCase):
         driver.find_element_by_name('username').send_keys(user1 + Keys.ENTER)
         driver.find_element_by_name('password').click()
         driver.find_element_by_name('password').send_keys(pswd1 + Keys.ENTER)
-        ## write login username/pswd to cookie file
-        filename = "cookies.pkl"
-        cookiesfile_w = open(filename, "wb")
-        pickle.dump(driver.get_cookies(), cookiesfile_w)
-        print('GET COOKIES = ' + str(driver.get_cookies()))
-        sleep(1)
-        cookiesfile_w.close()
+
+        ## current URL
         print('CURRENT URL = ' + driver.current_url)
         self.__class__.mengkome_url = driver.current_url
-        ## read cookie data and put to cookies variable at the top of the class
-        cookiesfile_r = open(filename, "rb")
-        self.__class__.cookies = pickle.load(cookiesfile_r)
-        cookiesfile_r.close()
-        sleep(2)
-        ## remove cookie file
-        try:
-            removefile(filename)
-            print('  Successfully remove tmp file ' + filename)
-        except WindowsError as exx:
-            print('  Error = ' + str(exx) + ' / file = ' + filename)
+        # driver.close()
+        # driver.quit()
 
     def test_two_relogin_chkinfos(self):
         print('\n---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.userone
         urlone = self.__class__.mengkome_url
-        driver = self.driver
-        driver.get(urlone)
-        for cookie in self.__class__.cookies:
-            if 'expiry' in cookie:
-                cookie['expiry'] = int(cookie['expiry'])
-            driver.add_cookie(cookie)
-        sleep(1)
+
+        chrome_options = Options()
+        # chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
+        # sleep(5)
+
         driver.get(urlone)
         userpage1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
         print('Name of the user = ' + userpage1)
@@ -81,25 +79,33 @@ class TestMengkome1(unittest.TestCase):
         join1 = driver.find_element_by_xpath('//*[@class="form-row field-date_joined"]/*/*[@class="readonly"]').text
         print('User email = ' + email1)
         print('User Joined date = ' + join1)
+        print('CURRENT URL = ' + driver.current_url)
+        self.__class__.mengkome_url = driver.current_url
+        # driver.close()
+        # driver.quit()
 
     def test_x_relogin_then_logout(self):
+        sleep(10)
         print('\n---->  ' + str(self._testMethodName) + '\n')
-        driver = self.driver
         urlone = self.__class__.mengkome_url
+
+        chrome_options = Options()
+        # chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
+        # sleep(5)
+
         driver.get(urlone)
-        for cookie in self.__class__.cookies:
-            if 'expiry' in cookie:
-                cookie['expiry'] = int(cookie['expiry'])
-            driver.add_cookie(cookie)
-        sleep(1)
-        driver.get(urlone)
-        # driver.find_element_by_xpath('//*[@id="user-tools"]/a[3]').click()
         driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
         if driver.find_element_by_xpath("//*[@id='content']/h1").text == 'Logged out':
             print('User ' + self.__class__.userone + ' successfully LOGGED OUT')
+        # driver.close()
+        # driver.quit()
 
-    def tearDown(self):
-        self.driver.quit()
+    @classmethod
+    def tearDownClass(self):
+        driver.quit()
+        print('\n--- >> TEARDOWN')
         # self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
