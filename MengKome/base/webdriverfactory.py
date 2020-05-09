@@ -77,7 +77,7 @@ class WebDriverFactory():
             # strver = 'browserVersion'
         elif self.browser == "headless" or self.browser == "nobrowser" or self.browser == "virtual":
             # This is for running without open Browser UI display - good for Jenkins
-            chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
+            chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
             chrome_options = webdriver.ChromeOptions()
             # chrome_options.add_argument('--disable-extensions')
             chrome_options.add_argument("--incognito")
@@ -90,7 +90,7 @@ class WebDriverFactory():
         else:
             # Set chrome driver
             # self.browser == "chrome":
-            chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
+            chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
             #os.environ["webdriver.chrome.driver"] = chromedriverpath
             chrome_options = webdriver.ChromeOptions()
             # chrome_options.add_argument('--disable-extensions')

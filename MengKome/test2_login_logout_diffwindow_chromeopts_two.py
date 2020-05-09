@@ -14,7 +14,7 @@ class TestMengkome1(unittest.TestCase):
 
     def setUp(self):
         self.base_url = "https://mengkome.pythonanywhere.com/admin/login/"
-        self.chromedriverpath = r'C:\Users\taverner\Documents\chromedriver\chromedriver.exe'
+        self.chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
         # self.driver = webdriver.Chrome(self.chromedriverpath)
         print('\n--- >> SETUP')
 

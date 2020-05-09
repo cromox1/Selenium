@@ -18,7 +18,7 @@ class TestMengkome1(unittest.TestCase):
     pswdone = 'qawsed123456'
 
     def setUp(self):
-        chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
+        chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
         # self.driver = webdriver.Firefox()
         chrome_options = Options()
         # chrome_options.add_argument("user-data-dir=selenium")
