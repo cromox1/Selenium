@@ -3,12 +3,13 @@ __author__ = 'cromox'
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from shutil import rmtree as removedir
 from time import sleep
 import unittest
 
 class TestMengkome1(unittest.TestCase):
     mengkome_url = ''
-    chromedatadir = "chrome-data"
+    chromedatadir = 'chrome-data'
     userone = 'bacaone'
     pswdone = 'qawsed123456'
 
@@ -59,7 +60,7 @@ class TestMengkome1(unittest.TestCase):
         # driver.quit()
 
     def test_02_relogin_chkinfos(self):
-        sleep(5)
+        sleep(2)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.userone
         urlone = self.__class__.mengkome_url
@@ -85,7 +86,7 @@ class TestMengkome1(unittest.TestCase):
         # driver.quit()
 
     def test_99_relogin_then_logout(self):
-        sleep(5)
+        sleep(2)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         urlone = self.__class__.mengkome_url
 
@@ -105,8 +106,20 @@ class TestMengkome1(unittest.TestCase):
 
     def tearDown(self):
         # driver.quit()
-        print('\n--- >> TEARDOWN')
+        print('--- >> TEARDOWN')
         # self.assertEqual([], self.verificationErrors)
+
+    @classmethod
+    def tearDownClass(self):
+        print('\n---->  tearDownClass -- ')
+        try:
+            # sleep(5)
+            print(type(self.__class__.chromedatadir))
+            removedir(str(self.__class__.chromedatadir))
+            print('  Successfully remove tmp file ' + str(self.__class__.chromedatadir))
+        except Exception as exx:  # except WindowsError as exx:
+            print('Failed to delete %s' % (str(self.__class__.chromedatadir)))
+            print('==  Error = ' + str(exx))
 
 if __name__ == "__main__":
     unittest.main()
