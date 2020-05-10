@@ -13,5 +13,6 @@
 8) PixitMedia - **On-Hold** (75%)
 
 ### Note
-1) my projects using **python3** ( 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) ) 
-2) Firefox browser v 52.5.0 / Chrome browser v 67.0.3396.79 / Opera browser v 53.0.2907.68 / IE browser v 11.0.9600.18792
+1) my projects using **python3** ( 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] ) 
+2) Chrome browser v 81.0.4044.138 / Firefox browser v 52.5.0 / Opera browser v 53.0.2907.68 / IE browser v 11.0.9600.18792
+3) Selenium version 3.141.0
