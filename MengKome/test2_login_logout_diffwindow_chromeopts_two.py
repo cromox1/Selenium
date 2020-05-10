@@ -31,15 +31,24 @@ class TestMengkome1(unittest.TestCase):
         # chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument('--SameSite=None')
         # new one
         experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
         chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        # chrome_options.add_argument('--ignore-certificate-errors')
+        # chrome_options.add_argument("--disable-web-security")
+        # chrome_options.add_argument("--allow-running-insecure-content")
+        # chrome_options.add_argument("--allow-cross-origin-auth-prompt")
+        # chrome_options.add_argument("--disable-cookie-encryption")
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
-        # print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['version'])  # Python 3.7 and below
-        print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['browserVersion']) # Python 3.8 & above
+        try:
+            print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['version']) # Python 3.7 and below
+        except:
+            print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['browserVersion']) # Python 3.8 & above
         print()
-        # print("CHROME_OPTIONS = " + str(chrome_options.arguments))
+
+        print("CHROME_OPTIONS = " + str(chrome_options.arguments))
         # print("CHROME_OPTIONS = " + str(driver.desired_capabilities))
         driver.implicitly_wait(10)
 
@@ -60,7 +69,7 @@ class TestMengkome1(unittest.TestCase):
         # driver.quit()
 
     def test_02_relogin_chkinfos(self):
-        sleep(2)
+        # sleep(2)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.userone
         urlone = self.__class__.mengkome_url
@@ -68,9 +77,19 @@ class TestMengkome1(unittest.TestCase):
         chrome_options = Options()
         # chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        chrome_options.add_argument('SameSite=None')
+        # chrome_options.add_argument('--Secure')
+        chrome_options.add_argument("--autocomplete=current-password")
+        # new one
+        experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
+        chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
+        chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        # now add chrome_options
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         # sleep(5)
 
+        # headersx = {'autocomplete' : 'current-password'}
+        # driver.get(urlone, headers=headersx)
         driver.get(urlone)
         userpage1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
         print('Name of the user = ' + userpage1)
@@ -85,23 +104,23 @@ class TestMengkome1(unittest.TestCase):
         driver.close()
         # driver.quit()
 
-    def test_99_relogin_then_logout(self):
-        sleep(2)
-        print('\n---->  ' + str(self._testMethodName) + '\n')
-        urlone = self.__class__.mengkome_url
-
-        chrome_options = Options()
-        # chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
-        driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
-        # sleep(5)
-
-        driver.get(urlone)
-        driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
-        if driver.find_element_by_xpath("//*[@id='content']/h1").text == 'Logged out':
-            print('User ' + self.__class__.userone + ' successfully LOGGED OUT')
-            print('CURRENT URL = ' + driver.current_url)
-        driver.close()
+    # def test_99_relogin_then_logout(self):
+    #     sleep(2)
+    #     print('\n---->  ' + str(self._testMethodName) + '\n')
+    #     urlone = self.__class__.mengkome_url
+    #
+    #     chrome_options = Options()
+    #     # chrome_options.add_argument("--no-sandbox")
+    #     chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+    #     driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
+    #     # sleep(5)
+    #
+    #     driver.get(urlone)
+    #     driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
+    #     if driver.find_element_by_xpath("//*[@id='content']/h1").text == 'Logged out':
+    #         print('User ' + self.__class__.userone + ' successfully LOGGED OUT')
+    #         print('CURRENT URL = ' + driver.current_url)
+    #     driver.close()
         # driver.quit()
 
     def tearDown(self):
@@ -109,17 +128,17 @@ class TestMengkome1(unittest.TestCase):
         print('--- >> TEARDOWN')
         # self.assertEqual([], self.verificationErrors)
 
-    @classmethod
-    def tearDownClass(self):
-        print('\n---->  tearDownClass -- ')
-        try:
-            # sleep(5)
-            print(type(self.__class__.chromedatadir))
-            removedir(str(self.__class__.chromedatadir))
-            print('  Successfully remove tmp file ' + str(self.__class__.chromedatadir))
-        except Exception as exx:  # except WindowsError as exx:
-            print('Failed to delete %s' % (str(self.__class__.chromedatadir)))
-            print('==  Error = ' + str(exx))
+    # @classmethod
+    # def tearDownClass(self):
+    #     print('\n---->  tearDownClass -- ')
+    #     try:
+    #         # sleep(5)
+    #         print(type(self.__class__.chromedatadir))
+    #         removedir(str(self.__class__.chromedatadir))
+    #         print('  Successfully remove tmp file ' + str(self.__class__.chromedatadir))
+    #     except Exception as exx:  # except WindowsError as exx:
+    #         print('Failed to delete %s' % (str(self.__class__.chromedatadir)))
+    #         print('==  Error = ' + str(exx))
 
 if __name__ == "__main__":
     unittest.main()

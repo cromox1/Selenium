@@ -27,8 +27,10 @@ class TestMengkome1(unittest.TestCase):
         driver = self.driver
         from sys import version as pythonversion
         print('Python Version = ' + pythonversion)
-        print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['version']) # Python 3.7 and below
-        # print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['browserVersion']) # Python 3.8 & above
+        try:
+            print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['version']) # Python 3.7 and below
+        except:
+            print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['browserVersion']) # Python 3.8 & above
         print()
 
         user1 = self.__class__.userone
