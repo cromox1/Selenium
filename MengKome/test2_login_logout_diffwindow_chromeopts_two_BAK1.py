@@ -29,11 +29,15 @@ class TestMengkome1(unittest.TestCase):
 
         chrome_options = Options()
         # chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument("--profile-directory=Akula")
         chrome_options.add_argument("--disable-extensions")
+        chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument('--SameSite=None')
         # new one
-        experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
-        chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
-        chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
+        # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
+        # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
         # chrome_options.add_argument('--ignore-certificate-errors')
         # chrome_options.add_argument("--disable-web-security")
         # chrome_options.add_argument("--allow-running-insecure-content")
@@ -47,6 +51,7 @@ class TestMengkome1(unittest.TestCase):
         print()
 
         print("CHROME_OPTIONS = " + str(chrome_options.arguments))
+        # print("CHROME_OPTIONS = " + str(driver.desired_capabilities))
         driver.implicitly_wait(10)
 
         user1 = self.__class__.userone
@@ -66,7 +71,6 @@ class TestMengkome1(unittest.TestCase):
         # driver.quit()
 
     def test_02_relogin_chkinfos(self):
-        import browser_cookie3
         # sleep(2)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.userone
@@ -74,22 +78,22 @@ class TestMengkome1(unittest.TestCase):
 
         chrome_options = Options()
         # chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir + "/Akula")
+        chrome_options.add_argument("--profile-directory=Akula")
         chrome_options.add_argument("--disable-extensions")
+        # chrome_options.add_argument('SameSite=None')
+        # chrome_options.add_argument('--Secure')
+        # chrome_options.add_argument("--autocomplete=current-password")
         # new one
-        experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
-        chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
-        chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
+        # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
+        # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
         # now add chrome_options
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
-        driver.get(urlone)
-        # cookies
-        urlx = str(urlone.split('://')[1].split('/')[0])
-        cookies = browser_cookie3.chrome(domain_name=urlx)
-        cookie = {}
-        for c in cookies:
-            cookie = {'domain': c.domain, 'name': c.name, 'value': c.value, 'secure': c.secure and True or False}
-        print('COOKIE1 = ' + str(cookie))
-        driver.add_cookie(cookie)
+        # sleep(5)
+
+        # headersx = {'autocomplete' : 'current-password'}
+        # driver.get(urlone, headers=headersx)
         driver.get(urlone)
         userpage1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
         print('Name of the user = ' + userpage1)
