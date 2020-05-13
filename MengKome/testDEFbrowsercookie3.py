@@ -1,3 +1,6 @@
+import glob
+import os
+
 import browser_cookie3
 import requests
 
@@ -11,14 +14,27 @@ headers = {
 }
 
 # urlx = '.pythonanywhere.com'
-# urlx = 'mengkome.pythonanywhere.com'
-urlx = '.google.com'
-cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file='C:/Users/cromox/Desktop/newselenium/Selenium/MengKome/chrome-data/Default/Cookies')
+urlx = 'mengkome.pythonanywhere.com'
+# urlx = '.google.com'
+# cookie_exefile = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\Cookies'))
+cookie_exefile = 'C:\\Users\\cromox\\Desktop\\newselenium\\Selenium\\MengKome\\chromedata\\Default\\Cookies'
+cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=cookie_exefile)
 # response = requests.get('http://www.google.com', verify=False, headers=headers, cookies=cookies, timeout=3)
 
 cookie = {}
-for c in cookies:
-    cookie = {'domain': c.domain, 'name': c.name, 'value': c.value, 'secure': c.secure and True or False}
+if len(cookies) >= 1:
+    # cookie = {}
+    for c in cookies:
+        cookie = {'domain': c.domain,
+                                 'name': c.name,
+                                 'value': c.value,
+                                 'expiry': c.expires,
+                                 'path': c.path,
+                                 'httpOnly': False,
+                                 'HostOnly': False,
+                                 'secure': c.secure and True or False}
+else:
+    cookie = {'domain': urlx}
 
 print('COOKIE1 = ' + str(cookie))
 #     driver.add_cookie(cookie)
@@ -26,11 +42,22 @@ print('COOKIE1 = ' + str(cookie))
 
 # urlx = 'mengkome.pythonanywhere.com'
 # urlx = '.google.com'
-cookies = browser_cookie3.chrome(cookie_file='C:/Users/cromox/Desktop/newselenium/Selenium/MengKome/chrome-data/Default/Cookies')
+cookies = browser_cookie3.chrome(cookie_file=cookie_exefile)
 # response = requests.get('http://www.google.com', verify=False, headers=headers, cookies=cookies, timeout=3)
 
 cookie = {}
-for c in cookies:
-    cookie = {'domain': c.domain, 'name': c.name, 'value': c.value, 'secure': c.secure and True or False}
+if len(cookies) >= 1:
+    # cookie = {}
+    for c in cookies:
+        cookie = {'domain': c.domain,
+                                 'name': c.name,
+                                 'value': c.value,
+                                 'expiry': c.expires,
+                                 'path': c.path,
+                                 'httpOnly': False,
+                                 'HostOnly': False,
+                                 'secure': c.secure and True or False}
+else:
+    cookie = {}
 
 print('COOKIE2 = ' + str(cookie))

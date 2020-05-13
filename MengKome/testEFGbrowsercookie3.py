@@ -10,6 +10,7 @@ for c in cookies:
     i=i+1
 
 base_url = "https://mengkome.pythonanywhere.com/admin/login/"
+print('\n-- > > URL ' + base_url + ' ---- ')
 urlx = str(base_url.split('://')[1].split('/')[0])
 print('URLX = ' + urlx)
 # urlx = '.pythonanywhere.com'
@@ -29,7 +30,7 @@ else:
 urlx = '.google.com'
 # cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file='C:/Users/cromox/Desktop/newselenium/Selenium/MengKome/chrome-data/Default/Cookies')
 cookies = browser_cookie3.chrome(domain_name=urlx)
-
+print('\n-- > > URL ' + urlx + ' ---- ')
 if len(cookies) >= 1:
     cookie = {}
     for c in cookies:
