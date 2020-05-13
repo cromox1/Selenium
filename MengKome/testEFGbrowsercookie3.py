@@ -10,7 +10,7 @@ cookies = browser_cookie3.chrome(domain_name=urlx)
 cookie = {}
 for c in cookies:
     cookie = {'domain': c.domain, 'name': c.name, 'value': c.value, 'secure': c.secure and True or False}
-print('COOKIE1 = ' + str(cookie))
+print('COOKIE1 [ ' + urlx + ' ] = ' + str(cookie))
 
 # urlx = 'mengkome.pythonanywhere.com'
 urlx = '.google.com'
@@ -20,4 +20,4 @@ cookies = browser_cookie3.chrome(domain_name=urlx)
 cookie = {}
 for c in cookies:
     cookie = {'domain': c.domain, 'name': c.name, 'value': c.value, 'secure': c.secure and True or False}
-print('COOKIE2 = ' + str(cookie))
+print('COOKIE2 [ ' + urlx + ' ] = ' + str(cookie))
