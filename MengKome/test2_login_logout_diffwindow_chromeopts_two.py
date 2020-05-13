@@ -29,13 +29,14 @@ class TestMengkome1(unittest.TestCase):
 
         chrome_options = Options()
         # chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-extensions")
+        # chrome_options.add_argument("--disable-extensions")
         # new one
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
         # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
-        # chrome_options.add_argument('--ignore-certificate-errors')
-        # chrome_options.add_argument("--disable-web-security")
+        chrome_options.add_argument('--ignore-certificate-errors')
+        chrome_options.add_argument("--disable-web-security")
+        chrome_options.add_argument("--incognito")
         # chrome_options.add_argument("--allow-running-insecure-content")
         # chrome_options.add_argument("--allow-cross-origin-auth-prompt")
         # chrome_options.add_argument("--disable-cookie-encryption")
@@ -74,26 +75,30 @@ class TestMengkome1(unittest.TestCase):
 
         chrome_options = Options()
         # chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-extensions")
+        # chrome_options.add_argument("--disable-extensions")
         # new one
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
         # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        chrome_options.add_argument('--ignore-certificate-errors')
+        chrome_options.add_argument("--disable-web-security")
+        chrome_options.add_argument("--incognito")
+        # chrome_options.add_argument("--allow-running-insecure-content")
+        # chrome_options.add_argument("--allow-cross-origin-auth-prompt")
+        # chrome_options.add_argument("--disable-cookie-encryption")
         # # now add chrome_options
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         driver.get(urlone)
         # cookies
         urlx = str(urlone.split('://')[1].split('/')[0])
         cookies = browser_cookie3.chrome(domain_name=urlx)
-        print('COOKIE_ALL [ ' + urlx + ' ] = ' + str(cookies))
+        # print('COOKIE_ALL [ ' + urlx + ' ] = ' + str(cookies))
         cookie = {}
         for c in cookies:
-            cookie = {'domain': c.domain, 'name': c.name, 'value': c.value, 'secure': c.secure and True or False}
+            cookie = {'domain': c.domain, 'name': c.name, 'value': c.value, 'expiry': c.expires, 'path': c.path, 'secure': c.secure and True or False}
         print('COOKIE [ ' + urlx + ' ] = ' + str(cookie))
         driver.add_cookie(cookie)
-        sleep(5)
         driver.get(urlone)
-        sleep(10)
         userpage1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
         print('Name of the user = ' + userpage1)
         driver.find_element_by_xpath("//*[contains(text(), 'Users')]").click()
