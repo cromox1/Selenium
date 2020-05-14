@@ -33,12 +33,14 @@ class TestMengkome1(unittest.TestCase):
         # chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
-        chrome_options.add_argument("--incognito")
+        # chrome_options.add_argument("--incognito")
         chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
-        # chrome_options.add_argument("--allow-running-insecure-content")
-        # chrome_options.add_argument("--allow-cross-origin-auth-prompt")
-        # chrome_options.add_argument("--disable-cookie-encryption")
+        chrome_options.add_argument("--allow-running-insecure-content")
+        chrome_options.add_argument("--allow-cross-origin-auth-prompt")
+        chrome_options.add_argument("--disable-cookie-encryption")
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument("--test-type")
         ## new one ####
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
@@ -66,12 +68,12 @@ class TestMengkome1(unittest.TestCase):
         ## current URL
         print('CURRENT URL = ' + driver.current_url)
         self.__class__.mengkome_url = driver.current_url
-        # driver.close()
-        driver.quit()
+        driver.close()
+        # driver.quit()
 
     def test_02_relogin_chkinfos(self):
         import browser_cookie3
-        sleep(2)
+        # sleep(2)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.userone
         urlone = self.__class__.mengkome_url
@@ -81,11 +83,13 @@ class TestMengkome1(unittest.TestCase):
         # chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
-        chrome_options.add_argument("--incognito")
+        # chrome_options.add_argument("--incognito")
         chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
-        # chrome_options.add_argument("--allow-running-insecure-content")
-        # chrome_options.add_argument("--allow-cross-origin-auth-prompt")
-        # chrome_options.add_argument("--disable-cookie-encryption")
+        chrome_options.add_argument("--allow-running-insecure-content")
+        chrome_options.add_argument("--allow-cross-origin-auth-prompt")
+        chrome_options.add_argument("--disable-cookie-encryption")
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument("--test-type")
         ## new one ####
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
@@ -95,6 +99,7 @@ class TestMengkome1(unittest.TestCase):
         # cookies
         urlx = str(urlone.split('://')[1].split('/')[0])
         cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
+        # cookies = browser_cookie3.chrome(domain_name=urlx)
         print('COOKIE_ALL [ ' + urlx + ' ] = ' + str(cookies))
         if len(cookies) >= 1:
             # cookie = {}
@@ -106,11 +111,13 @@ class TestMengkome1(unittest.TestCase):
                                          'path': c.path,
                                          'httpOnly': False,
                                          'HostOnly': False,
+                                         'sameSite': 'None',
                                          'secure': c.secure and True or False}
         else:
             self.__class__.cookie = {'domain': urlx}
         print('COOKIE [ ' + urlx + ' ] = ' + str(self.__class__.cookie))
         driver.add_cookie(self.__class__.cookie)
+        # print('COOKIE BEEN ADDED = ' + str(driver.get_cookie()))
         driver.get(urlone)
         userpage1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
         print('Name of the user = ' + userpage1)
@@ -122,8 +129,8 @@ class TestMengkome1(unittest.TestCase):
         print('User Joined date = ' + join1)
         print('CURRENT URL = ' + driver.current_url)
         self.__class__.mengkome_url = driver.current_url
-        # driver.close()
-        driver.quit()
+        driver.close()
+        # driver.quit()
 
     def test_99_relogin_then_logout(self):
         # sleep(2)
@@ -134,8 +141,17 @@ class TestMengkome1(unittest.TestCase):
         # chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
-        chrome_options.add_argument("--incognito")
-        # chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument("--incognito")
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        chrome_options.add_argument("--allow-running-insecure-content")
+        chrome_options.add_argument("--allow-cross-origin-auth-prompt")
+        chrome_options.add_argument("--disable-cookie-encryption")
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument("--test-type")
+        ## new one ####
+        # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
+        # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
+        # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         # sleep(5)
 
@@ -147,7 +163,7 @@ class TestMengkome1(unittest.TestCase):
             print('User ' + self.__class__.userone + ' successfully LOGGED OUT')
             print('CURRENT URL = ' + driver.current_url)
         driver.close()
-        driver.quit()
+        # driver.quit()
 
     def tearDown(self):
         # driver.quit()

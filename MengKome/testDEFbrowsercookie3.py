@@ -17,7 +17,13 @@ headers = {
 urlx = 'mengkome.pythonanywhere.com'
 # urlx = '.google.com'
 # cookie_exefile = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\Cookies'))
-cookie_exefile = 'C:\\Users\\cromox\\Desktop\\newselenium\\Selenium\\MengKome\\chromedata\\Default\\Cookies'
+# cookie_exefile = 'C:\\Users\\penggunabiasa\\python3_projects\\Selenium\\MengKome\\chromedata\\Default\\Cookies'
+cookie_exefile = 'chromedata\\Default\\Cookies'
+# cookie_exefile = 'chromedata\\Default\\History2'
+# cookie_exefile = 'chromedata\\Default\\Login Data'
+# cookie_exefile = 'chromedata\\Default\\Web Data'
+# cookie_exefile = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\Cookies'))
+print('COOKIE_EXE_FILE = ' + str(cookie_exefile))
 cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=cookie_exefile)
 # response = requests.get('http://www.google.com', verify=False, headers=headers, cookies=cookies, timeout=3)
 
