@@ -1,10 +1,10 @@
 chromedatadir = "chrome-data"
 
 import os
-import shutil
-import sys
-import ctypes
-import sqlite3
+# import shutil
+# import sys
+# import ctypes
+# import sqlite3
 
 files = []
 # r=root, d=directories, f = files
