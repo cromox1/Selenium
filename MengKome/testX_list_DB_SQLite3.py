@@ -14,8 +14,11 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    if len(rows) >= 1:
+        for row in rows:
+            print(row)
+    else:
+        print('SQLTABLE ' + DBtable + ' EMPTY - NO DATA')
     sleep(1); con.close(); sleep(1)
     os.remove(filepath+'mytmp123')
 
@@ -23,21 +26,21 @@ def listing_SQLite3_DB(filepath, file, DBtable):
 ##########
 # 1) Chrome Default
 # -- > /cygdrive/c/Users/taverner/AppData/Local/Google/Chrome/User Data/Default
-filepath = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\'))[0]
+# filepath = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\'))[0]
 # 2) chrome specific directory - chromedata
 # -- > 'C:\\Users\\penggunabiasa\\python3_projects\\Selenium\\MengKome\\chromedata\\Default\\Cookies'
-# filepath = 'chromedata\\Default\\'
+filepath = 'chromedata\\Default\\'
 
 # DB file & DB table
 ####################
 # 1) DB of Cookies
-# file = 'Cookies'; dbtable = 'cookies'
+file = 'Cookies'; dbtable = 'cookies'
 #2) DB of Login Data - have username & password
-file = 'Login Data'; dbtable = 'logins'
+# file = 'Login Data'; dbtable = 'logins'
 #3) DB of History
 # file = 'History'; dbtable = 'visits'
 # file = 'History'; dbtable = 'urls'
-#4 DB of Web Data
+#4) DB of Web Data
 # file = 'Web Data'; dbtable = 'autofill'
 # file = 'Web Data'; dbtable = 'token_service'
 # file = 'Web Data'; dbtable = 'unmasked_credit_cards'
