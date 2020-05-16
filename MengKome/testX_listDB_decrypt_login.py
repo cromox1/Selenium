@@ -4,10 +4,11 @@ import sqlite3
 import sys
 from time import sleep
 from shutil import copy2
-
+from Crypto.Cipher import AES
 import pyaes
 # from browser_cookie3 import crypt_unprotect_data
-from pyaes import AES
+# from pyaes import AES
+from pbkdf2 import PBKDF2
 
 def crypt_unprotect_data(cipher_text=b'', entropy=b'', reserved=None, prompt_struct=None, is_key=False
 ):
@@ -57,23 +58,27 @@ def _decrypt_windows_chrome(value, encrypted_value):
     assert isinstance(data, bytes)
     return data.decode()
 
-def _decrypt(self, value, encrypted_value):
+def _decrypt(value, encrypted_value):
     """Decrypt encoded cookies
     """
+    salt = b'saltysalt'
+    iv = b' ' * 16
+    length = 16
+    key = PBKDF2(my_pass, salt, iterations=iterations).read(length)
     if sys.platform == 'win32':
         try:
-            return self._decrypt_windows_chrome(value, encrypted_value)
+            return _decrypt_windows_chrome(value, encrypted_value)
 
         # Fix for change in Chrome 80
         except RuntimeError:  # Failed to decrypt the cipher text with DPAPI
-            if not self.key:
+            if not key:
                 raise RuntimeError(
                     'Failed to decrypt the cipher text with DPAPI and no AES key.')
             # Encrypted cookies should be prefixed with 'v10' according to the
             # Chromium code. Strip it off.
             encrypted_value = encrypted_value[3:]
             nonce, tag = encrypted_value[:12], encrypted_value[-16:]
-            aes = AES.new(self.key, AES.MODE_GCM, nonce=nonce)
+            aes = AES.new(key, AES.MODE_GCM, nonce=nonce)
 
             data = aes.decrypt_and_verify(encrypted_value[12:-16], tag)
             return data.decode()
@@ -87,7 +92,7 @@ def _decrypt(self, value, encrypted_value):
     encrypted_value_half_len = int(len(encrypted_value) / 2)
 
     cipher = pyaes.Decrypter(
-        pyaes.AESModeOfOperationCBC(self.key, self.iv))
+        pyaes.AESModeOfOperationCBC(key, iv))
     decrypted = cipher.feed(encrypted_value[:encrypted_value_half_len])
     decrypted += cipher.feed(encrypted_value[encrypted_value_half_len:])
     decrypted += cipher.feed()
@@ -99,15 +104,18 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     sleep(1)
     con = sqlite3.connect(filepath + 'mytmp123')
     cur = con.cursor()
-    sqlcommand = "SELECT origin_url,action_url,username_value,password_value FROM " + str(DBtable)
+    sqlcommand = "SELECT origin_url,username_value,password_value FROM " + str(DBtable)
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
     names = [description[0] for description in cur.description]
     print(str(names) + '\n')
     rows = cur.fetchall()
+    # print(rows)
     if len(rows) >= 1:
         for row in rows:
-            print(row)
+
+            print(str(row[1]) + '  /=/=/  ' + str(row[2]))
+            print(str())
     else:
         print('SQLTABLE ' + DBtable + ' EMPTY - NO DATA')
     sleep(1); con.close(); sleep(1)
