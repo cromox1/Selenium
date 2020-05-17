@@ -48,8 +48,8 @@ def crypt_unprotect_data(cipher_text=b'', entropy=b'', reserved=None, prompt_str
         return description, buffer_out.value
 
 def _decrypt_windows_chrome(value, encrypted_value):
-    if len(value) != 0:
-        return value
+    # if len(value) != 0:
+    #     return value
 
     if encrypted_value == "":
         return ""
@@ -61,9 +61,12 @@ def _decrypt_windows_chrome(value, encrypted_value):
 def _decrypt(value, encrypted_value):
     """Decrypt encoded cookies
     """
+    from browser_cookie3 import get_linux_pass
     salt = b'saltysalt'
     iv = b' ' * 16
     length = 16
+    my_pass = get_linux_pass(browser="Chrome").encode('utf8')
+    iterations = 1  # number of pbkdf2 iterations on linux
     key = PBKDF2(my_pass, salt, iterations=iterations).read(length)
     if sys.platform == 'win32':
         try:
@@ -78,9 +81,11 @@ def _decrypt(value, encrypted_value):
             # Chromium code. Strip it off.
             encrypted_value = encrypted_value[3:]
             nonce, tag = encrypted_value[:12], encrypted_value[-16:]
+            print('TAG = ' + str(tag) + ' / NONCE = ' + str(nonce))
             aes = AES.new(key, AES.MODE_GCM, nonce=nonce)
-
+            print('AES = ' + str(aes))
             data = aes.decrypt_and_verify(encrypted_value[12:-16], tag)
+            print('DATA = ' + str(data))
             return data.decode()
 
     if value or (encrypted_value[:3] not in [b'v11', b'v10']):
@@ -98,23 +103,64 @@ def _decrypt(value, encrypted_value):
     decrypted += cipher.feed()
     return decrypted.decode("utf-8")
 
+def _update(self, data):
+    assert(len(self._cache) < 16)
+
+    if len(self._cache) > 0:
+        filler = min(16 - len(self._cache), len(data))
+        self._cache += _copy_bytes(None, filler, data)
+        data = data[filler:]
+
+        if len(self._cache) < 16:
+            return
+
+        # The cache is exactly one block
+        self._signer.update(self._cache)
+        self._cache = b""
+
+    update_len = len(data) // 16 * 16
+    self._cache = _copy_bytes(update_len, None, data)
+    if update_len > 0:
+        self._signer.update(data[:update_len])
+
+def tukar(ciphertext, output=None):
+    # Allowed transitions after initialization
+    # _next = [update, encrypt, decrypt, digest, verify]
+    #
+    # if decrypt not in _next:
+    #     raise TypeError("decrypt() can only be called"
+    #                     " after initialization or an update()")
+    _next = [decrypt, verify]
+
+    _update(ciphertext)
+    _msg_len += len(ciphertext)
+
+    return _cipher.decrypt(ciphertext, output=output)
+
 def listing_SQLite3_DB(filepath, file, DBtable):
+    from Crypto.Cipher import _mode_gcm as tukar
     print('\nDB FILE = ' + filepath + file)
     copy2(src=filepath+file, dst=filepath+'mytmp123')
     sleep(1)
     con = sqlite3.connect(filepath + 'mytmp123')
     cur = con.cursor()
-    sqlcommand = "SELECT origin_url,username_value,password_value FROM " + str(DBtable)
+    sqlcommand = "SELECT * FROM " + str(DBtable)
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
     names = [description[0] for description in cur.description]
     print(str(names) + '\n')
     rows = cur.fetchall()
     # print(rows)
+    user1 = 2
+    user2 = 3
+    pswd1 = 4
+    pswd2 = 5
+    print(str(names[user1]) + '  /=/  ' + str(names[user2]) + '  /=/  ' + str(names[pswd1]) + '  /=/  ' + str(names[pswd2]))
     if len(rows) >= 1:
         for row in rows:
-
-            print(str(row[1]) + '  /=/=/  ' + str(row[2]))
+            print(str(_decrypt(row[user1], row[user2])) + '  /=/=/  ' + str(_decrypt(row[pswd1], row[pswd2])))
+            # print('USER = ' + str(tukar()))
+            # print(str(row[user1]) + '  /=/  ' + str(row[user2]) + '  /=/  ' + str(row[pswd1]) + '  /=/  ' + str(row[pswd2]))
             print(str())
     else:
         print('SQLTABLE ' + DBtable + ' EMPTY - NO DATA')
@@ -134,6 +180,3 @@ file = 'Login Data'; dbtable = 'logins'
 
 # EXECUTE command to check the DB
 listing_SQLite3_DB(filepath, file, dbtable)
-
-
-
