@@ -9,7 +9,7 @@ import unittest
 
 class TestMengkome1(unittest.TestCase):
     mengkome_url = ''
-    chromedatadir = 'chromedata'
+    # chromedatadir = 'chromedata'
     userone = 'bacaone'
     pswdone = 'qawsed123456'
     cookie = {}
@@ -34,8 +34,8 @@ class TestMengkome1(unittest.TestCase):
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
         # chrome_options.add_argument("--incognito")
-        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
-        chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
         chrome_options.add_argument("--allow-running-insecure-content")
         chrome_options.add_argument("--allow-cross-origin-auth-prompt")
         chrome_options.add_argument("--disable-cookie-encryption")
@@ -84,7 +84,7 @@ class TestMengkome1(unittest.TestCase):
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
         # chrome_options.add_argument("--incognito")
-        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         chrome_options.add_argument("--allow-running-insecure-content")
         chrome_options.add_argument("--allow-cross-origin-auth-prompt")
         chrome_options.add_argument("--disable-cookie-encryption")
@@ -98,8 +98,8 @@ class TestMengkome1(unittest.TestCase):
         driver.get(urlone)
         # cookies
         urlx = str(urlone.split('://')[1].split('/')[0])
-        cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
-        # cookies = browser_cookie3.chrome(domain_name=urlx)
+        # cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
+        cookies = browser_cookie3.chrome(domain_name=urlx)
         print('COOKIE_ALL [ ' + urlx + ' ] = ' + str(cookies))
         if len(cookies) >= 1:
             # cookie = {}
@@ -142,7 +142,7 @@ class TestMengkome1(unittest.TestCase):
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
         # chrome_options.add_argument("--incognito")
-        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        # chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         chrome_options.add_argument("--allow-running-insecure-content")
         chrome_options.add_argument("--allow-cross-origin-auth-prompt")
         chrome_options.add_argument("--disable-cookie-encryption")

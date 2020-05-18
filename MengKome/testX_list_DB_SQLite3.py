@@ -13,10 +13,14 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     sqlcommand = "SELECT * FROM " + str(DBtable)
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
+    names = [description[0] for description in cur.description]
+    print(str(names) + '\n')
     rows = cur.fetchall()
     if len(rows) >= 1:
+        i = 1
         for row in rows:
-            print(row)
+            print(str(i) + ') ' + str(row))
+            i = i+1
     else:
         print('SQLTABLE ' + DBtable + ' EMPTY - NO DATA')
     sleep(1); con.close(); sleep(1)
@@ -26,17 +30,17 @@ def listing_SQLite3_DB(filepath, file, DBtable):
 ##########
 # 1) Chrome Default
 # -- > /cygdrive/c/Users/taverner/AppData/Local/Google/Chrome/User Data/Default
-# filepath = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\'))[0]
+filepath = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\'))[0]
 # 2) chrome specific directory - chromedata
 # -- > 'C:\\Users\\penggunabiasa\\python3_projects\\Selenium\\MengKome\\chromedata\\Default\\Cookies'
-filepath = 'chromedata\\Default\\'
+# filepath = 'chromedata\\Default\\'
 
 # DB file & DB table
 ####################
 # 1) DB of Cookies
-file = 'Cookies'; dbtable = 'cookies'
+# file = 'Cookies'; dbtable = 'cookies'
 #2) DB of Login Data - have username & password
-# file = 'Login Data'; dbtable = 'logins'
+file = 'Login Data'; dbtable = 'logins'
 #3) DB of History
 # file = 'History'; dbtable = 'visits'
 # file = 'History'; dbtable = 'urls'

@@ -24,10 +24,8 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     print(str(names) + '\n')
     rows = cur.fetchall()
     # print(rows)
-    user1 = 2
-    user2 = 3
-    pswd1 = 4
-    pswd2 = 5
+    user1 = 2; user2 = 3
+    pswd1 = 4; pswd2 = 5
     date1 = 9
     print(str(names[date1]) + '  //  ' + str(names[user1]) + '  //  ' + str(names[user2]) + '  //  ' + str(names[pswd1]) + '  //  ' + str(names[pswd2] + '\n'))
     if len(rows) >= 1:
@@ -40,7 +38,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
                 value2 = (value1/1000000) - 11644473600
                 # print('value1 = ' + str(value1) + ' / value2 = ' + str(value2))
                 masa = strftime('%Y-%m-%d %H:%M:%S', localtime(int(value2)))
-                print(str(i) + ') ' + str(masa) + '  //  ' + str(row[user1]) + '  //  ' + str(row[user2]) + '  //  ' + str(row[pswd1]) + '  //  ' + str(row[pswd2]) + '\n')
+                print(str(i) + ') ' + str(masa) + '  //  ' + str(row[user1]) + '  //  ' + str(row[user2]) + '  //  ' + str(row[pswd1]) + '  //  ' + str(row[pswd2]))
                 i = i+1
     else:
         print('SQLTABLE ' + DBtable + ' EMPTY - NO DATA')
