@@ -2,7 +2,7 @@ import glob
 import os
 import sqlite3
 import sys
-from time import sleep
+from time import sleep, strftime, localtime
 from shutil import copy2
 from Crypto.Cipher import AES
 import pyaes
@@ -144,24 +144,29 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     sleep(1)
     con = sqlite3.connect(filepath + 'mytmp123')
     cur = con.cursor()
-    sqlcommand = "SELECT * FROM " + str(DBtable)
+    sqlcommand = "SELECT * FROM " + str(DBtable) + " ORDER BY date_created ASC"
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
     names = [description[0] for description in cur.description]
     print(str(names) + '\n')
     rows = cur.fetchall()
     # print(rows)
-    user1 = 2
-    user2 = 3
-    pswd1 = 4
-    pswd2 = 5
-    print(str(names[user1]) + '  /=/  ' + str(names[user2]) + '  /=/  ' + str(names[pswd1]) + '  /=/  ' + str(names[pswd2]))
+    user1 = 2; user2 = 3
+    pswd1 = 4; pswd2 = 5
+    date1 = 9
+    print(str(names[date1]) + '  //  ' + str(names[user1]) + '  //  ' + str(names[user2]) + '  //  ' + str(
+        names[pswd1]) + '  //  ' + str(names[pswd2] + '\n'))
     if len(rows) >= 1:
+        i = 0
         for row in rows:
-            print(str(_decrypt(row[user1], row[user2])) + '  /=/=/  ' + str(_decrypt(row[pswd1], row[pswd2])))
-            # print('USER = ' + str(tukar()))
-            # print(str(row[user1]) + '  /=/  ' + str(row[user2]) + '  /=/  ' + str(row[pswd1]) + '  /=/  ' + str(row[pswd2]))
-            print(str())
+            if row[user1] or row[user2]:
+                i = i + 1
+                value1 = row[date1]
+                value2 = (value1 / 1000000) - 11644473600
+                masa = strftime('%Y-%m-%d %H:%M:%S', localtime(int(value2)))
+                dcydata = row[pswd2]
+                print(str(i) + ') ' + str(dcydata))
+                # print(str(i) + ') ' + str(masa) + '  //  ' + str(row[user1]) + '  //  ' + str(row[user2]) + '  //  ' + str(row[pswd1]) + '  //  ' + str(row[pswd2]))
     else:
         print('SQLTABLE ' + DBtable + ' EMPTY - NO DATA')
     sleep(1); con.close(); sleep(1)
