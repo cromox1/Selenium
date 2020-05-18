@@ -17,7 +17,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     sleep(1)
     con = sqlite3.connect(filepath + 'mytmp123')
     cur = con.cursor()
-    sqlcommand = "SELECT * FROM " + str(DBtable)
+    sqlcommand = "SELECT * FROM " + str(DBtable + " ORDER BY date_created ASC")
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
     names = [description[0] for description in cur.description]
@@ -31,7 +31,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     if len(rows) >= 1:
         i = 1
         for row in rows:
-            if row[user2]:
+            if row[user1] or row[user2]:
                 # masa = strftime('%Y-%m-%d %H:%M:%S', localtime(row[date1]))
                 # (130305048577611542 / 10000000) - 11644473600
                 value1 = row[date1]
