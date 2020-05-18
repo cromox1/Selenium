@@ -17,7 +17,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     sleep(1)
     con = sqlite3.connect(filepath + 'mytmp123')
     cur = con.cursor()
-    sqlcommand = "SELECT * FROM " + str(DBtable + " ORDER BY date_created ASC")
+    sqlcommand = "SELECT * FROM " + str(DBtable) + " ORDER BY date_created ASC"
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
     names = [description[0] for description in cur.description]

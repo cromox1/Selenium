@@ -1,4 +1,6 @@
+import base64
 import glob
+import hashlib
 import os
 import sqlite3
 import sys
@@ -31,6 +33,14 @@ def decrypt3(ciphertext, key):
     cipher = AES.new(key, AES.MODE_CBC, iv)
     plaintext = unpad(cipher.decrypt(ciphertext))[AES.block_size:]
     return plaintext
+
+def decrypt4(encryptedB64):
+    encrypted = base64.b64decode(encryptedB64 + '===')
+    iv = encrypted[:AES.block_size]
+    key = hashlib.sha256(base64.encode('utf-8')).digest()
+    cipher = AES.new(key, AES.MODE_CBC, iv )
+    decrypted = cipher.decrypt(encrypted[AES.block_size:]) #<-- error on this line
+    return decrypted
 
 def listing_SQLite3_DB(filepath, file, DBtable):
     # from Crypto.Cipher import _mode_gcm as tukar
@@ -66,6 +76,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
             # print(str(i) + ') ' + str(masa) + ' // ' + str(crypt_unprotect_data(dcydata)))
             # print(str(i) + ') ' + str(masa) + ' // ' + str(GcmMode.decrypt(str(dcydata))))
             key = b'\xbf\xc0\x85)\x10nc\x94\x02)j\xdf\xcb\xc4\x94\x9d(\x9e[EX\xc8\xd5\xbfI{\xa2$\x05(\xd5\x18'
+            key = hashlib.sha256(base64.encode('utf-8')).digest()
             print(str(i) + ') ' + str(masa) + ' // ' + str(decrypt3(dcydata, key)))
 
     else:
