@@ -33,25 +33,60 @@ def listing_SQLite3_DB(filepath, file, DBtable):
 # filepath = glob.glob(os.path.join(os.getenv('APPDATA', ''), '..\Local\\Google\\Chrome\\User Data\\Default\\'))[0]
 # 2) chrome specific directory - chromedata
 # -- > 'C:\\Users\\penggunabiasa\\python3_projects\\Selenium\\MengKome\\chromedata\\Default\\Cookies'
-filepath = 'chromedata\\Default\\'
+# filepath = 'chromedata\\Default\\'
+print('\n1) Default Chrome directory')
+print('2) Specific - chromedata\Default')
+pathchoice = input('CHOOSE DIRECTORY/PATH FOR SQLITE3 DB FILE : ')
+
+try:
+    if str(pathchoice) == str(2) or pathchoice[0].lower() == 's':
+        filepath = 'chromedata\\Default\\'
+    else:
+        filepath = glob.glob(os.path.join(os.getenv('APPDATA', ''),
+                                          '..\Local\\Google\\Chrome\\User Data\\Default\\'))[0]
+except:
+    filepath = glob.glob(os.path.join(os.getenv('APPDATA', ''),
+                                      '..\Local\\Google\\Chrome\\User Data\\Default\\'))[0]
+print('\nDirectory/Path : ' + filepath + '\n')
 
 # DB file & DB table
 ####################
-# 1) DB of Cookies
-file = 'Cookies'; dbtable = 'cookies'
-#2) DB of Login Data - have username & password
-# file = 'Login Data'; dbtable = 'logins'
-# file = 'passwordsDB'; dbtable = 'logins'
-#3) DB of History
-# file = 'History'; dbtable = 'visits'
-# file = 'History'; dbtable = 'urls'
-#4) DB of Web Data
-# file = 'Web Data'; dbtable = 'autofill'
-# file = 'Web Data'; dbtable = 'token_service'
-# file = 'Web Data'; dbtable = 'unmasked_credit_cards'
-# file = 'Web Data'; dbtable = 'masked_credit_cards'
-# file = 'Web Data'; dbtable = 'autofill_profiles'
-# file = 'Web Data'; dbtable = 'credit_cards'
+
+print('1) Cookie DB')
+print('2) Login Data DB')
+print('3) History DB - visits')
+print('4) History DB - urls')
+print('5) Web Data DB - autofill')
+print('6) Web Data DB - token_service')
+print('7) Web Data DB - autofill_profiles')
+print('8) Web Data DB - credit_cards')
+print('9) Web Data DB - unmasked_credit_cards')
+print('10) Web Data DB - masked_credit_cards')
+dbchoice = input('CHOOSE DB & TABLE TO QUERY : ')
+
+try:
+    if str(dbchoice) == str(2) or dbchoice[0].lower() == 'l':
+        file = 'Login Data'; dbtable = 'logins'
+    elif str(dbchoice) == str(3) or dbchoice[0].lower() == 'v':
+        file = 'History'; dbtable = 'visits'
+    elif str(dbchoice) == str(4) or dbchoice[0].lower() == 'u':
+        file = 'History'; dbtable = 'urls'
+    elif str(dbchoice) == str(5) or dbchoice[0].lower() == 'a':
+        file = 'Web Data'; dbtable = 'autofill'
+    elif str(dbchoice) == str(6) or dbchoice[0].lower() == 't':
+        file = 'Web Data'; dbtable = 'token_service'
+    elif str(dbchoice) == str(7) or dbchoice[0].lower() == 'p':
+        file = 'Web Data'; dbtable = 'autofill_profiles'
+    elif str(dbchoice) == str(8) or dbchoice[0].lower() == 'c':
+        file = 'Web Data'; dbtable = 'credit_cards'
+    elif str(dbchoice) == str(9):
+        file = 'Web Data'; dbtable = 'unmasked_credit_cards'
+    elif str(dbchoice) == str(10) or dbchoice[0].lower() == 'm':
+        file = 'Web Data'; dbtable = 'masked_credit_cards'
+    else:
+        file = 'Cookies'; dbtable = 'cookies'
+except:
+    file = 'Cookies'; dbtable = 'cookies'
 
 # EXECUTE command to check the DB
 listing_SQLite3_DB(filepath, file, dbtable)

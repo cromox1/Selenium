@@ -36,8 +36,8 @@ class TestMengkome1(unittest.TestCase):
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
         # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
-        chrome_options.add_experimental_option('prefs', {'credentials_enable_service': True,
-                                                         'profile': {'password_manager_enabled': True}})
+        chrome_options.add_experimental_option('prefs', {'credentials_enable_service': False,
+                                                         'profile': {'password_manager_enabled': False}})
         ## webdriver section
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         try:
@@ -92,7 +92,9 @@ class TestMengkome1(unittest.TestCase):
                                                          'profile': {'password_manager_enabled': True}})
         ## webdriver section
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
-        driver.get(urlone)
+        urlonetwo = urlone.split('//')[0]+'//'+self.__class__.userone+':'+self.__class__.pswdone+'@'+urlone.split('//')[1]
+        print(urlonetwo)
+        driver.get(urlonetwo)
         # cookies
         urlx = str(urlone.split('://')[1].split('/')[0])
         cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
