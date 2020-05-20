@@ -34,6 +34,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
 # 2) chrome specific directory - chromedata
 # -- > 'C:\\Users\\penggunabiasa\\python3_projects\\Selenium\\MengKome\\chromedata\\Default\\Cookies'
 # filepath = 'chromedata\\Default\\'
+
 print('\n1) Default Chrome directory')
 print('2) Specific - chromedata\Default')
 pathchoice = input('CHOOSE DIRECTORY/PATH FOR SQLITE3 DB FILE : ')

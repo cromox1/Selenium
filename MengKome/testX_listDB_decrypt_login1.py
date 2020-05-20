@@ -18,6 +18,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     con = sqlite3.connect(filepath + 'mytmp123')
     cur = con.cursor()
     sqlcommand = "SELECT * FROM " + str(DBtable) + " ORDER BY date_created ASC"
+    # sqlcommand = "SELECT * FROM " + str(DBtable) + " ORDER BY date_last_used ASC"
     print('SQL req = ' + sqlcommand + '\n')
     cur.execute(sqlcommand)
     names = [description[0] for description in cur.description]
@@ -27,6 +28,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
     user1 = 2; user2 = 3
     pswd1 = 4; pswd2 = 5
     date1 = 9
+    # date1 = -1
     print(str(names[date1]) + '  //  ' + str(names[user1]) + '  //  ' + str(names[user2]) + '  //  ' + str(names[pswd1]) + '  //  ' + str(names[pswd2] + '\n'))
     if len(rows) >= 1:
         i = 1
@@ -35,7 +37,9 @@ def listing_SQLite3_DB(filepath, file, DBtable):
                 # masa = strftime('%Y-%m-%d %H:%M:%S', localtime(row[date1]))
                 # (130305048577611542 / 10000000) - 11644473600
                 value1 = row[date1]
-                value2 = (value1/1000000) - 11644473600
+                value2 = (value1 / 1000000) - 11644473600
+                if value2 <= 0:
+                    value2 = 0
                 # print('value1 = ' + str(value1) + ' / value2 = ' + str(value2))
                 masa = strftime('%Y-%m-%d %H:%M:%S', localtime(int(value2)))
                 print(str(i) + ') ' + str(masa) + '  //  ' + str(row[user1]) + '  //  ' + str(row[user2]) + '  //  ' + str(row[pswd1]) + '  //  ' + str(row[pswd2]))
