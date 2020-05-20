@@ -9,6 +9,7 @@ import pyaes
 # from browser_cookie3 import crypt_unprotect_data
 # from pyaes import AES
 from pbkdf2 import PBKDF2
+# import gi
 
 def crypt_unprotect_data(cipher_text=b'', entropy=b'', reserved=None, prompt_struct=None, is_key=False
 ):

@@ -1,19 +1,27 @@
+from shutil import copy2
+from time import sleep, localtime, strftime
+from os import remove as removefile
 import browser_cookie3
-import time
-
 
 def extract_cookie(domainname=""):
     ## Location of Cookie file (specific location + file)
-    cookie_exefile = 'chromedata\\Default\\Cookies'
-    print('\nCOOKIE_EXE_FILE = ' + str(cookie_exefile))
-    cookies = browser_cookie3.chrome(domain_name=domainname, cookie_file=cookie_exefile)
+    filepath = 'chromedata\\Default\\'
+    file = 'Cookies'
+    cookiefile = filepath + file
+    cookietemp = filepath + 'mytmp123'
+    print('\nCOOKIE_EXE_FILE = ' + str(cookiefile))
+    copy2(src=cookiefile, dst=cookietemp)
+    sleep(1)
+    cookies = browser_cookie3.chrome(domain_name=domainname, cookie_file=cookietemp)
     if domainname == "":
-        print()
-        i = 1
-        for c in cookies:
-            timeexpire = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(c.expires))
-            print(str(i) + ') ' + str(c.domain) + ' / ' + str(c.name) + ' / ' + str(c.value) + ' / ' + str(timeexpire))
-            i = i + 1
+        if len(cookies) >= 1:
+            i = 1
+            for c in cookies:
+                timeexpire = strftime('%Y-%m-%d %H:%M:%S', localtime(c.expires))
+                print(str(i) + ') ' + str(c.domain) + ' / ' + str(c.name) + ' / ' + str(c.value) + ' / ' + str(timeexpire))
+                i = i + 1
+        else:
+            print('COOKIE [ all_domain ] = NONE')
         cookie = {}
     else:
         if len(cookies) >= 1:
@@ -30,12 +38,13 @@ def extract_cookie(domainname=""):
                           'sameSite': 'None',
                           'secure': c.secure and True or False}
             print('COOKIE [ ' + domainname + ' / ' + str(
-                time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(cookie['expiry']))) + ' ] = ' + str(cookie))
+                strftime('%Y-%m-%d %H:%M:%S', localtime(cookie['expiry']))) + ' ] = ' + str(cookie))
         else:
             print('COOKIE [ ' + domainname + ' ] = NONE')
             cookie = {}
+    sleep(1)
+    removefile(cookietemp)
     return cookie
-
 
 # ## Location of Cookie file (specific location + file)
 # cookie_exefile = 'chromedata\\Default\\Cookies'

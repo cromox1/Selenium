@@ -9,7 +9,7 @@ import unittest
 
 class TestMengkome1(unittest.TestCase):
     mengkome_url = ''
-    # chromedatadir = 'chromedata'
+    chromedatadir = 'chromedata'
     userone = 'bacaone'
     pswdone = 'qawsed123456'
     cookie = {}
@@ -29,22 +29,16 @@ class TestMengkome1(unittest.TestCase):
         print('Selenium version = ' + seleniumversion)
 
         chrome_options = Options()
-        # chrome_options.add_argument("--no-sandbox")
-        # chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument('--ignore-certificate-errors')
-        chrome_options.add_argument("--disable-web-security")
-        # chrome_options.add_argument("--incognito")
-        # chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
-        # chrome_options.add_argument("user-data-dir=" + self.__class__.chromedatadir)
-        chrome_options.add_argument("--allow-running-insecure-content")
-        chrome_options.add_argument("--allow-cross-origin-auth-prompt")
-        chrome_options.add_argument("--disable-cookie-encryption")
+        # chrome_options.add_argument("--no-sandbox")ASD
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument("--test-type")
         ## new one ####
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
         # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        chrome_options.add_experimental_option('prefs', {'credentials_enable_service': True,
+                                                         'profile': {'password_manager_enabled': True}})
+        ## webdriver section
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         try:
             print('Browser version ( ' + driver.name + ' ) = ' + driver.capabilities['version']) # Python 3.7 and below
@@ -84,7 +78,7 @@ class TestMengkome1(unittest.TestCase):
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
         # chrome_options.add_argument("--incognito")
-        # chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         chrome_options.add_argument("--allow-running-insecure-content")
         chrome_options.add_argument("--allow-cross-origin-auth-prompt")
         chrome_options.add_argument("--disable-cookie-encryption")
@@ -94,12 +88,15 @@ class TestMengkome1(unittest.TestCase):
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
         # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        chrome_options.add_experimental_option('prefs', {'credentials_enable_service': True,
+                                                         'profile': {'password_manager_enabled': True}})
+        ## webdriver section
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         driver.get(urlone)
         # cookies
         urlx = str(urlone.split('://')[1].split('/')[0])
-        # cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
-        cookies = browser_cookie3.chrome(domain_name=urlx)
+        cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
+        # cookies = browser_cookie3.chrome(domain_name=urlx)
         print('COOKIE_ALL [ ' + urlx + ' ] = ' + str(cookies))
         if len(cookies) >= 1:
             # cookie = {}
@@ -142,7 +139,7 @@ class TestMengkome1(unittest.TestCase):
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument("--disable-web-security")
         # chrome_options.add_argument("--incognito")
-        # chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
+        chrome_options.add_argument("--user-data-dir=" + self.__class__.chromedatadir)
         chrome_options.add_argument("--allow-running-insecure-content")
         chrome_options.add_argument("--allow-cross-origin-auth-prompt")
         chrome_options.add_argument("--disable-cookie-encryption")
@@ -152,6 +149,9 @@ class TestMengkome1(unittest.TestCase):
         # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
         # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
         # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        chrome_options.add_experimental_option('prefs', {'credentials_enable_service': True,
+                                                         'profile': {'password_manager_enabled': True}})
+        ## webdriver section
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
         # sleep(5)
 
