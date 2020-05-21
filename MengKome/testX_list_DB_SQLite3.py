@@ -37,7 +37,7 @@ def listing_SQLite3_DB(filepath, file, DBtable):
 
 print('\n1) Default Chrome directory')
 print('2) Specific - chromedata\Default')
-pathchoice = input('CHOOSE DIRECTORY/PATH FOR SQLITE3 DB FILE : ')
+pathchoice = input('CHOOSE DIRECTORY/PATH FOR SQLITE3 DB FILE [1-2] : ')
 
 try:
     if str(pathchoice) == str(2) or pathchoice[0].lower() == 's':
@@ -63,7 +63,7 @@ print('7) Web Data DB - autofill_profiles')
 print('8) Web Data DB - credit_cards')
 print('9) Web Data DB - unmasked_credit_cards')
 print('10) Web Data DB - masked_credit_cards')
-dbchoice = input('CHOOSE DB & TABLE TO QUERY : ')
+dbchoice = input('CHOOSE DB & TABLE TO QUERY [1-10] : ')
 
 try:
     if str(dbchoice) == str(2) or dbchoice[0].lower() == 'l':

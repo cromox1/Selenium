@@ -6,11 +6,15 @@ def extract_cookie(domainname=""):
     cookies = browser_cookie3.chrome(domain_name=domainname)
     if domainname == "":
         print()
-        i = 1
-        for c in cookies:
-            timeexpire = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(c.expires))
-            print(str(i) + ') ' + str(c.domain) + ' / ' + str(c.name) + ' / ' + str(c.value) + ' / ' + str(timeexpire))
-            i = i + 1
+        if len(cookies) >= 1:
+            print('[No]) [Domainname] / [Name] / [Value] / [Expires]')
+            i = 1
+            for c in cookies:
+                timeexpire = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(c.expires))
+                print(str(i) + ') ' + str(c.domain) + ' / ' + str(c.name) + ' / ' + str(c.value) + ' / ' + str(timeexpire))
+                i = i + 1
+        else:
+            print('COOKIE [ all_domain ] = NONE')
         cookie = None
     else:
         if len(cookies) >= 1:
