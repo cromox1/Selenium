@@ -57,11 +57,11 @@ class TestGitHub(unittest.TestCase):
         print('CURRENT URL = ' + driver.current_url)
         list_repo1 = driver.find_elements_by_class_name('wb-break-all')
         print('NUMBER OF REPO = ' + str(len(list_repo1)))
-        i = 1
+        i = 0
         for element in list_repo1:
-            print(str(i) + ') ' + element.text)
             i = i+1
-        self.assertEqual(i - 1, len(list_repo1))
+            print(str(i) + ') ' + element.text)
+        self.assertEqual(i, len(list_repo1))
 
     def tearDown(self):
         self.driver.quit()

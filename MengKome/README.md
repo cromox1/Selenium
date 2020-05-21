@@ -6,11 +6,18 @@
 
 Assignment 1 (Test1) :
 
-- Launch Google Website
-- Search for "github cromox1"
+- Open new web-browser GUI page
+- Launch Google Website on the page
+- Search for "github cromox1" on Google website
 - Select the main cromox1 github link
-- Go to main page github cromox1
-- Check all the repositories that cromox1 has
+- Go to main page "github cromox1" website
+- Close the browser page
+- Open another new web-browser page
+- continue "github cromox1" page at the previous location before browser been closed
+- Check all the repositories that cromox1 has - count & display repos name
+- close the browser page
+
+(This assignment didn't involve authentication of user)
 
 Assignment 2 (Test2) :
 
