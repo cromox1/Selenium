@@ -30,9 +30,9 @@ masani=${date1}${minit1}00
 #
 #py.test.exe -v tests/test_suite_PixitMedia.py --browser "$onbrowser" | tee -a "$file1"
 #
-#elif [ x"$torun" == xp01 -o x"$torun" == xgoogle ]; then
+#elif [ x"$torun" == xp01 ]||[ x"$torun" == xgoogle ]; then
 
-if [ x"$torun" == xp01 -o x"$torun" == xgoogle ]; then
+if [ x"$torun" == xp01 ]||[ x"$torun" == xgoogle ]; then
 
 file1=console_${masani}_p01maingithubcromox1.txt
 echo "penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome" > "$file1"
@@ -45,7 +45,7 @@ echo >> "$file1"
 # py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py --browser "$onbrowser" | tee -a "$file1"
 py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py | tee -a "$file1"
 
-#elif [ x"$torun" == xp02 -o x"$torun" == xproducts ]; then
+#elif [ x"$torun" == xp02 ]||[ x"$torun" == xproducts ]; then
 #
 #file1=console_${masani}_pixitmedia.txt
 #echo "penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome" > "$file1"
@@ -57,7 +57,7 @@ py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py | tee -a "$fil
 #
 #py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py --browser "$onbrowser" | tee -a "$file1"
 
-elif [ x"$torun" == xp01test1 -o x"$torun" == xtest1 ]; then
+elif [ x"$torun" == xp01test1 ]||[ x"$torun" == xtest1 ]; then
 
 # tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test1_google_github_cromox1_page
 
@@ -75,9 +75,9 @@ py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitH
 else
 
 echo
-# echo "./xruntest.sh test_suite  [ testsuite / test_suite / suite ] [ ie / chrome / firefox / opera ] "
-echo "./xruntest.sh p01         [ p01 / google ]                   [ ie / chrome / firefox / opera ] "
-echo "./xruntest.sh p01test1    [ p01test1 / test1 ]               [ ie / chrome / firefox / opera ] "
+# echo "./pytest_xruntest.sh test_suite  [ testsuite / test_suite / suite ] [ ie / chrome / firefox / opera ] "
+echo "./pytest_xruntest.sh p01         [ p01 / google ]                   [ ie / chrome / firefox / opera ] "
+echo "./pytest_xruntest.sh p01test1    [ p01test1 / test1 ]               [ ie / chrome / firefox / opera ] "
 echo
 
 fi
