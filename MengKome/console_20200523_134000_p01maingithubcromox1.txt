@@ -1,0 +1,52 @@
+penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome
+$ py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py > consoleoutput1.txt 2>&1
+
+penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.7.0, pytest-3.9.1, py-1.7.0, pluggy-0.8.0 -- c:\program files\python37\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\taverner\Documents\GitHub\Selenium\MengKome, inifile:
+collecting ... collected 2 items
+
+tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test1_google_github_cromox1_page 
+== > Running one time setUp
+Python Version = 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)]
+Browser version ( chrome ) = 81.0.4044.138
+
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+Number GITHUB LINK = 1
+CURRENT URL = https://github.com/cromox1
+Result 3  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test2_github_cromox1_repo 
+--- > Running method level setUp
+CROMOX1_URL = https://github.com/cromox1
+Result 1  =  True
+CURRENT URL = https://github.com/cromox1?tab=repositories
+Result 2  =  True
+NUMBER OF REPO = 9
+Result 3  =  True
+1) Selenium
+2) Selenium_Csharp
+3) Selenium_Java
+4) sementara
+5) my_notes
+6) Django
+7) rosalind
+8) Appium
+9) martini_suse
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+== > Running one time tearDown
+
+
+========================== 2 passed in 11.97 seconds ==========================

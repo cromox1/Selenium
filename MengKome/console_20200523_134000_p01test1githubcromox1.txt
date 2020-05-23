@@ -1,0 +1,36 @@
+penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome
+$ py.test.exe -v -s tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test1_google_github_cromox1_page > consoleoutput1.txt 2>&1
+
+penggunabiasa@PC-rosli MINGW64 ~/python3_projects/Selenium/MengKome
+$ cat consoleoutput1.txt
+
+============================= test session starts =============================
+platform win32 -- Python 3.7.0, pytest-3.9.1, py-1.7.0, pluggy-0.8.0 -- c:\program files\python37\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\taverner\Documents\GitHub\Selenium\MengKome, inifile:
+collecting ... collected 1 item
+
+tests/p01google/p01searchgithubcromox1_test1.py::P01SearchGitHubCromox1Tests::test1_google_github_cromox1_page 
+== > Running one time setUp
+Python Version = 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)]
+Browser version ( chrome ) = 81.0.4044.138
+
+--- > Running method level setUp
+Result 1  =  True
+Result 2  =  True
+Number GITHUB LINK = 1
+CURRENT URL = https://github.com/cromox1
+Result 3  =  True
+ResultLast = True
+PASSED
+--- > Running method level tearDown
+
+== > Running one time tearDown
+
+
+============================== warnings summary ===============================
+C:\Users\taverner\Documents\GitHub\Selenium\MengKome\base\selenium_driver.py:28: DeprecationWarning: invalid escape sequence \s
+  screenshotDirectory = "..\screenshots\\"
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+==================== 1 passed, 1 warnings in 12.99 seconds ====================

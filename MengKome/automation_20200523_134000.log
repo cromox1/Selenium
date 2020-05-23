@@ -1,0 +1,51 @@
+23/05/2020 01:40:32 PM - P01SearchGitHubCromox1Tests - INFO: === >> test1_google_github_cromox1_page started
+23/05/2020 01:40:32 PM - P01SearchGitHubCromox1 - INFO: expectedURL ( https://www.google.co.uk ) VS currentURL ( https://www.google.co.uk )
+23/05/2020 01:40:32 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Currently At Google Page Verified
+23/05/2020 01:40:32 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- google word Verified
+23/05/2020 01:40:32 PM - P01SearchGitHubCromox1 - INFO: Element found - locator (q) + locatorType (name)
+23/05/2020 01:40:32 PM - P01SearchGitHubCromox1 - INFO: Element = <selenium.webdriver.remote.webelement.WebElement (session="01433740398d5c4e2ef2ec9dde053972", element="dbd96f3f-09e6-49eb-a352-537dbc505b5c")>
+23/05/2020 01:40:33 PM - P01SearchGitHubCromox1 - INFO: Clicked on element - locator (q) + locatorType (name)
+23/05/2020 01:40:33 PM - P01SearchGitHubCromox1 - INFO: Element found - locator (q) + locatorType (name)
+23/05/2020 01:40:33 PM - P01SearchGitHubCromox1 - INFO: Element = <selenium.webdriver.remote.webelement.WebElement (session="01433740398d5c4e2ef2ec9dde053972", element="dbd96f3f-09e6-49eb-a352-537dbc505b5c")>
+23/05/2020 01:40:33 PM - P01SearchGitHubCromox1 - INFO: Sent data (b'github cromox1') on element - locator (q) + locatorType (name)
+23/05/2020 01:40:33 PM - P01SearchGitHubCromox1 - INFO: Element found - locator (q) + locatorType (name)
+23/05/2020 01:40:33 PM - P01SearchGitHubCromox1 - INFO: Element = <selenium.webdriver.remote.webelement.WebElement (session="01433740398d5c4e2ef2ec9dde053972", element="dbd96f3f-09e6-49eb-a352-537dbc505b5c")>
+23/05/2020 01:40:34 PM - P01SearchGitHubCromox1 - INFO: Sent data (b'+4Ac-') on element - locator (q) + locatorType (name)
+23/05/2020 01:40:34 PM - P01SearchGitHubCromox1 - INFO: ElementList found - locator (//*[contains(text(),'cromox1 (Rosli Talib) · GitHub')]) + locatorType (xpath)
+23/05/2020 01:40:34 PM - P01SearchGitHubCromox1 - INFO: ElementList count = 1
+23/05/2020 01:40:36 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- GitHub cromox1 word Verified
+23/05/2020 01:40:36 PM - P01SearchGitHubCromox1 - INFO: expectedURL ( https://github.com/cromox1 ) VS currentURL ( https://github.com/cromox1 )
+23/05/2020 01:40:36 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- test1_google_github_cromox1_page
+23/05/2020 01:40:36 PM - TestStatus - INFO: URL GitHub cromox1 verified passed ### TEST SUCCESSFUL
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1Tests - INFO: === >> test1_google_github_cromox1_page started
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: expectedURL ( https://www.google.co.uk ) VS currentURL ( https://www.google.co.uk )
+23/05/2020 01:42:37 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Currently At Google Page Verified
+23/05/2020 01:42:37 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- google word Verified
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Element found - locator (q) + locatorType (name)
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Element = <selenium.webdriver.remote.webelement.WebElement (session="16269abed1567e04426ba4e6d8d47c40", element="6d5f44ff-0bdc-40c0-a8a4-331fd6c1c606")>
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Clicked on element - locator (q) + locatorType (name)
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Element found - locator (q) + locatorType (name)
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Element = <selenium.webdriver.remote.webelement.WebElement (session="16269abed1567e04426ba4e6d8d47c40", element="6d5f44ff-0bdc-40c0-a8a4-331fd6c1c606")>
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Sent data (b'github cromox1') on element - locator (q) + locatorType (name)
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Element found - locator (q) + locatorType (name)
+23/05/2020 01:42:37 PM - P01SearchGitHubCromox1 - INFO: Element = <selenium.webdriver.remote.webelement.WebElement (session="16269abed1567e04426ba4e6d8d47c40", element="6d5f44ff-0bdc-40c0-a8a4-331fd6c1c606")>
+23/05/2020 01:42:38 PM - P01SearchGitHubCromox1 - INFO: Sent data (b'+4Ac-') on element - locator (q) + locatorType (name)
+23/05/2020 01:42:38 PM - P01SearchGitHubCromox1 - INFO: ElementList found - locator (//*[contains(text(),'cromox1 (Rosli Talib) · GitHub')]) + locatorType (xpath)
+23/05/2020 01:42:38 PM - P01SearchGitHubCromox1 - INFO: ElementList count = 1
+23/05/2020 01:42:40 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- GitHub cromox1 word Verified
+23/05/2020 01:42:40 PM - P01SearchGitHubCromox1 - INFO: expectedURL ( https://github.com/cromox1 ) VS currentURL ( https://github.com/cromox1 )
+23/05/2020 01:42:40 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- test1_google_github_cromox1_page
+23/05/2020 01:42:40 PM - TestStatus - INFO: URL GitHub cromox1 verified passed ### TEST SUCCESSFUL
+23/05/2020 01:42:40 PM - P01SearchGitHubCromox1Tests - INFO: === >> test2_github_cromox1_repo started
+23/05/2020 01:42:40 PM - P01SearchGitHubCromox1 - INFO: expectedURL ( https://github.com/cromox1 ) VS currentURL ( https://github.com/cromox1 )
+23/05/2020 01:42:40 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- GitHub cromox1 URL Verified
+23/05/2020 01:42:41 PM - P01SearchGitHubCromox1 - INFO: expectedURL ( https://github.com/cromox1?tab=repositories ) VS currentURL ( https://github.com/cromox1?tab=repositories )
+23/05/2020 01:42:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- GitHub cromox1 Repositories URL Verified
+23/05/2020 01:42:41 PM - P01SearchGitHubCromox1 - INFO: ElementList found - locator (wb-break-all) + locatorType (class)
+23/05/2020 01:42:41 PM - P01SearchGitHubCromox1 - INFO: ElementList count = 9
+23/05/2020 01:42:41 PM - P01SearchGitHubCromox1 - INFO: Actual ( 9 ) >= Expected ( 1 )
+23/05/2020 01:42:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Repositories exist i.e. more than 0
+23/05/2020 01:42:41 PM - P01SearchGitHubCromox1 - INFO: Actual ( 9 ) == Expected ( 9 )
+23/05/2020 01:42:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- Repositories number verified
+23/05/2020 01:42:41 PM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL -- test2_github_cromox1_repo
+23/05/2020 01:42:41 PM - TestStatus - INFO: GitHub cromox1 repositories verified passed ### TEST SUCCESSFUL
