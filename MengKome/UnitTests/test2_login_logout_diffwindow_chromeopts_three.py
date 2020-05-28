@@ -8,11 +8,10 @@ import unittest
 
 class TestMengkome1(unittest.TestCase):
     mengkome_url = ''
-    userone = 'bacaone'
-    pswdone = 'qawsed123456'
+    user1 = ''
     cookie = {}
     cookies = []
-    ii = 0
+    ixi = 0
 
     def setUp(self):
         self.base_url = "https://mengkome.pythonanywhere.com/admin/login/"
@@ -30,10 +29,13 @@ class TestMengkome1(unittest.TestCase):
         ## webdriver section
         self.driver = webdriver.Chrome(self.chromedriverpath, options=self.chrome_options)
         print('\n--- >> SETUP')
-        self.__class__.ii = self.__class__.ii + 1
+        self.__class__.ixi = self.__class__.ixi + 1
 
     def test_01_login(self):
-        print('\n' + str(self.__class__.ii) + ') ---->  ' + str(self._testMethodName) + '\n')
+        print('\n' + str(self.__class__.ixi) + ') ---->  ' + str(self._testMethodName) + '\n')
+        ## user/pswd
+        user1 = 'bacaone'
+        pswd1 = 'qawsed123456'
         # GET python version & Browser version
         from sys import version as pythonversion
         print('Python Version = ' + pythonversion)
@@ -49,8 +51,6 @@ class TestMengkome1(unittest.TestCase):
         print("CHROME_OPTIONS = " + str(self.chrome_options.arguments))
         self.driver.implicitly_wait(10)
 
-        user1 = self.__class__.userone
-        pswd1 = self.__class__.pswdone
         if self.driver.name == 'chrome':
             self.driver.maximize_window()
         self.driver.get(self.base_url)
@@ -62,6 +62,7 @@ class TestMengkome1(unittest.TestCase):
         ## current URL
         print('CURRENT URL = ' + self.driver.current_url)
         self.__class__.mengkome_url = self.driver.current_url
+        self.__class__.user1 = user1
         # print(driver.get_cookies())
         self.__class__.cookies = self.driver.get_cookies()
         # self.driver.close()
@@ -69,8 +70,8 @@ class TestMengkome1(unittest.TestCase):
 
     def test_02_relogin_chkinfos(self):
         # sleep(2)
-        print('\n' + str(self.__class__.ii) + ') ---->  ' + str(self._testMethodName) + '\n')
-        user1 = self.__class__.userone
+        print('\n' + str(self.__class__.ixi) + ') ---->  ' + str(self._testMethodName) + '\n')
+        user1 = self.__class__.user1
         urlone = self.__class__.mengkome_url
 
         self.driver.get(urlone)
@@ -106,7 +107,8 @@ class TestMengkome1(unittest.TestCase):
 
     def test_99_relogin_then_logout(self):
         # sleep(2)
-        print('\n' + str(self.__class__.ii) + ') ---->  ' + str(self._testMethodName) + '\n')
+        print('\n' + str(self.__class__.ixi) + ') ---->  ' + str(self._testMethodName) + '\n')
+        user1 = self.__class__.user1
         urlone = self.__class__.mengkome_url
 
         # sleep(5)
@@ -115,7 +117,7 @@ class TestMengkome1(unittest.TestCase):
         self.driver.get(urlone)
         self.driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
         if self.driver.find_element_by_xpath("//*[@id='content']/h1").text == 'Logged out':
-            print('User ' + self.__class__.userone + ' successfully LOGGED OUT')
+            print('User ' + user1 + ' successfully LOGGED OUT')
             print('CURRENT URL = ' + self.driver.current_url)
         # driver.close()
         self.driver.quit()
