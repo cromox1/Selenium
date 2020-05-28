@@ -6,7 +6,6 @@ from selenium.webdriver.chrome.options import Options
 from shutil import rmtree as removedir
 from time import sleep
 import unittest
-import browser_cookie3
 
 class TestMengkome1(unittest.TestCase):
     mengkome_url = ''
@@ -14,11 +13,6 @@ class TestMengkome1(unittest.TestCase):
     userone = 'bacaone'
     pswdone = 'qawsed123456'
     cookie = {}
-    cookies = []
-
-    # def __init__(self, *args, **kwargs):
-    #     super().__init__(*args, **kwargs)
-    #     print('TEST INIT')
 
     def setUp(self):
         self.base_url = "https://mengkome.pythonanywhere.com/admin/login/"
@@ -39,9 +33,9 @@ class TestMengkome1(unittest.TestCase):
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument("--test-type")
         ## new one ####
-        experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
-        chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
-        chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
+        # experimentalFlags = ['same-site-by-default-cookies@1', 'cookies-without-same-site-must-be-secure@1']
+        # chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
+        # chrome_options.add_experimental_option('localState', chromeLocalStatePrefs)
         chrome_options.add_experimental_option('prefs', {'credentials_enable_service': False,
                                                          'profile': {'password_manager_enabled': False}})
         ## webdriver section
@@ -68,13 +62,11 @@ class TestMengkome1(unittest.TestCase):
         ## current URL
         print('CURRENT URL = ' + driver.current_url)
         self.__class__.mengkome_url = driver.current_url
-        # print(driver.get_cookies())
-        self.__class__.cookies = driver.get_cookies()
         driver.close()
         # driver.quit()
 
     def test_02_relogin_chkinfos(self):
-        # import browser_cookie3
+        import browser_cookie3
         # sleep(2)
         print('\n---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.userone
@@ -100,35 +92,30 @@ class TestMengkome1(unittest.TestCase):
                                                          'profile': {'password_manager_enabled': True}})
         ## webdriver section
         driver = webdriver.Chrome(self.chromedriverpath, options=chrome_options)
-        # urlonetwo = urlone.split('//')[0]+'//'+self.__class__.userone+':'+self.__class__.pswdone+'@'+urlone.split('//')[1]
-        # print(urlonetwo)
-        # driver.get(urlonetwo)
-        driver.get(urlone)
-        # # cookies
+        urlonetwo = urlone.split('//')[0]+'//'+self.__class__.userone+':'+self.__class__.pswdone+'@'+urlone.split('//')[1]
+        print(urlonetwo)
+        driver.get(urlonetwo)
+        # cookies
         urlx = str(urlone.split('://')[1].split('/')[0])
-        # cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
-        # cookies = browser_cookie3.chrome(domain_name=
-        cookies = self.__class__.cookies
-        # print('COOKIES_ALL = ' + str(cookies))
-        # print('COOKIE_ALL [ ' + urlx + ' ] = ' + str(cookies))
+        cookies = browser_cookie3.chrome(domain_name=urlx, cookie_file=str(self.__class__.chromedatadir)+'\\Default\\Cookies')
+        # cookies = browser_cookie3.chrome(domain_name=urlx)
+        print('COOKIE_ALL [ ' + urlx + ' ] = ' + str(cookies))
         if len(cookies) >= 1:
-            self.__class__.cookie = cookies[0]
             # cookie = {}
-        #     for c in cookies:
-        #         self.__class__.cookie = {'domain': c.domain,
-        #                                  'name': c.name,
-        #                                  'value': c.value,
-        #                                  'expiry': c.expires,
-        #                                  'path': c.path,
-        #                                  'httpOnly': False,
-        #                                  'HostOnly': False,
-        #                                  'sameSite': 'None',
-        #                                  'secure': c.secure and True or False}
+            for c in cookies:
+                self.__class__.cookie = {'domain': c.domain,
+                                         'name': c.name,
+                                         'value': c.value,
+                                         'expiry': c.expires,
+                                         'path': c.path,
+                                         'httpOnly': False,
+                                         'HostOnly': False,
+                                         'sameSite': 'None',
+                                         'secure': c.secure and True or False}
         else:
             self.__class__.cookie = {'domain': urlx}
         print('COOKIE [ ' + urlx + ' ] = ' + str(self.__class__.cookie))
         driver.add_cookie(self.__class__.cookie)
-        # driver.add_cookie(self.__class__.cookies)
         # print('COOKIE BEEN ADDED = ' + str(driver.get_cookie()))
         driver.get(urlone)
         userpage1 = driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
@@ -185,18 +172,17 @@ class TestMengkome1(unittest.TestCase):
         print('--- >> TEARDOWN')
         # self.assertEqual([], self.verificationErrors)
 
-
     # @classmethod
-    def tearDownClass(self):
-        print('\n---->  tearDownClass -- ')
-        try:
-            # sleep(5)
-            print(self.__class__.chromedatadir)
-            removedir(self.__class__.chromedatadir)
-            print('  Successfully remove tmp file ' + self.__class__.chromedatadir)
-        except Exception as exx:  # except WindowsError as exx:
-            print('Failed to delete directory ' + self.__class__.chromedatadir)
-            print('==  Error = ' + str(exx))
+    # def tearDownClass(self):
+    #     print('\n---->  tearDownClass -- ')
+    #     try:
+    #         # sleep(5)
+    #         print(type(self.__class__.chromedatadir))
+    #         removedir(str(self.__class__.chromedatadir))
+    #         print('  Successfully remove tmp file ' + str(self.__class__.chromedatadir))
+    #     except Exception as exx:  # except WindowsError as exx:
+    #         print('Failed to delete %s' % (str(self.__class__.chromedatadir)))
+    #         print('==  Error = ' + str(exx))
 
 if __name__ == "__main__":
     unittest.main()
