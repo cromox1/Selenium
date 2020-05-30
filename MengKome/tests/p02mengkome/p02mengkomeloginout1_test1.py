@@ -1,6 +1,6 @@
 __author__ = 'cromox'
 
-from pages.p01google.p01searchgithubcromox1 import P01SearchGitHubCromox1
+from pages.p02mengkome.p02mengkomeloginout1 import P02LoginLogoutCookie
 from utilities.teststatus import TestStatus as tStatus
 import unittest
 import pytest
@@ -9,25 +9,33 @@ import logging
 import sys
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
-class P01SearchGitHubCromox1Tests(unittest.TestCase):
+class P02MengkomeLoginLogoutTests(unittest.TestCase):
     log = cl.customLogger(logging.DEBUG)
-    urlnow = None
+    mengkome_url = 'https://mengkome.pythonanywhere.com'
+    urlnow = ''
+    cookies = []
+    cookie = {}
 
     @pytest.fixture(autouse=True)
     def objectSetup(self):
-        self.googlesearchpage = P01SearchGitHubCromox1(self.driver)
+        self.mengkomepage = P02LoginLogoutCookie(self.driver)
         self.tstatus = tStatus(self.driver)
 
     # @pytest.mark.run(order=1)
     @pytest.mark.tryfirst
-    def test1_google_github_cromox1_page(self):
+    def test1_login_mengkome_add_cookie_page(self):
+        # login with user/pswd auth & add cookie
         self.log.info("=== >> " + sys._getframe().f_code.co_name + " started")
-        result = self.googlesearchpage.verifyPageURLlow("https://www.google.co.uk")
-        self.tstatus.mark(result, "Currently At Google Page Verified")
+        result = self.mengkomepage.verifyPageURLlow(self.mengkome_url)
+        self.tstatus.mark(result, "Currently At Mengkome Page Verified")
         print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
-        result = self.googlesearchpage.verifyWordExistInURL('google')
-        self.tstatus.mark(result, "google word Verified")
+        result = self.mengkomepage.verifyWordExistInURL('mengkome')
+        self.tstatus.mark(result, "mengkome word Verified")
         print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
+        self.mengkomepage.keyinUserAuthentication()
+        self.cookies = self.mengkomepage.returnCookies()
+        self.cookie = self.mengkomepage.returnLoginCookie(self.cookies, )
+
         self.googlesearchpage.gotoSearchArea()
         self.googlesearchpage.searchGitHubCromox1()
         self.googlesearchpage.gotoGitHubCromox1()
