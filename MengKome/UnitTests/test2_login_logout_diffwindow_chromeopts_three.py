@@ -65,8 +65,6 @@ class TestMengkome1(unittest.TestCase):
         self.__class__.user1 = user1
         # print(driver.get_cookies())
         self.__class__.cookies = self.driver.get_cookies()
-        # self.driver.close()
-        self.driver.quit()
 
     def test_02_relogin_chkinfos(self):
         # sleep(2)
@@ -81,6 +79,8 @@ class TestMengkome1(unittest.TestCase):
         cookies = self.__class__.cookies
         if len(cookies) >= 1:
             self.__class__.cookie = cookies[0]
+            if 'expiry' in self.__class__.cookie:
+                self.__class__.cookie['expiry'] = int(self.__class__.cookie['expiry'])
         else:
             self.__class__.cookie = {'domain': urlx, 'expiry': 0}
 
@@ -103,8 +103,6 @@ class TestMengkome1(unittest.TestCase):
         print('User Joined date = ' + join1)
         print('CURRENT URL = ' + self.driver.current_url)
         self.__class__.mengkome_url = self.driver.current_url
-        # driver.close()
-        self.driver.quit()
 
     def test_99_relogin_then_logout(self):
         # sleep(2)
@@ -121,11 +119,10 @@ class TestMengkome1(unittest.TestCase):
         if self.driver.find_element_by_xpath("//*[@id='content']/h1").text == 'Logged out':
             print('User ' + user1 + ' successfully LOGGED OUT')
             print('CURRENT URL = ' + self.driver.current_url)
-        # driver.close()
-        self.driver.quit()
 
     def tearDown(self):
-        # driver.quit()
+        # self.driver.close()
+        self.driver.quit()
         print('\n--- >> TEARDOWN')
         # self.assertEqual([], self.verificationErrors)
 
