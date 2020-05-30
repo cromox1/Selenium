@@ -36,7 +36,7 @@ class TestMengkome1(unittest.TestCase):
         ## user/pswd
         user1 = 'bacaone'
         pswd1 = 'qawsed123456'
-        # GET python version & Browser version
+        ## GET python version & Browser version
         from sys import version as pythonversion
         print('Python Version = ' + pythonversion)
         from selenium import __version__ as seleniumversion
@@ -75,6 +75,7 @@ class TestMengkome1(unittest.TestCase):
         urlone = self.__class__.mengkome_url
 
         self.driver.get(urlone)
+        print('CURRENT URL = ' + self.driver.current_url)
         # # cookies
         urlx = str(urlone.split('://')[1].split('/')[0])
         cookies = self.__class__.cookies
@@ -88,7 +89,7 @@ class TestMengkome1(unittest.TestCase):
         else:
             print('COOKIE [ ' + urlx + ' ] PROBLEM = ' + str(self.__class__.cookie))
         timeexpire = strftime('%Y-%m-%d %H:%M:%S', localtime(self.__class__.cookie['expiry']))
-        print('EXPIRY = ' + str(timeexpire))
+        print('COOKIE EXPIRY = ' + str(timeexpire))
         self.driver.add_cookie(self.__class__.cookie)
 
         self.driver.get(urlone)
@@ -113,6 +114,7 @@ class TestMengkome1(unittest.TestCase):
 
         # sleep(5)
         self.driver.get(urlone)
+        print('CURRENT URL = ' + self.driver.current_url)
         self.driver.add_cookie(self.__class__.cookie)
         self.driver.get(urlone)
         self.driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
