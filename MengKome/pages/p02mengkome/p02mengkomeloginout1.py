@@ -7,7 +7,6 @@ from selenium.webdriver.common.keys import Keys
 # import datetime
 
 class P02LoginLogoutCookie(BasePage):
-
     log = cl.customLogger(logging.DEBUG)
 
     def __init__(self, driver):

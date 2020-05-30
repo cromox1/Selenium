@@ -34,7 +34,7 @@ class P02MengkomeLoginLogoutTests(unittest.TestCase):
         print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
         self.mengkomepage.keyinUserAuthentication()
         self.cookies = self.mengkomepage.returnCookies()
-        self.cookie = self.mengkomepage.returnLoginCookie(self.cookies, )
+        self.cookie = self.mengkomepage.returnLoginCookie(self.cookies, self.mengkomepage.returnDomainFrURL(self.mengkome_url))
 
         self.googlesearchpage.gotoSearchArea()
         self.googlesearchpage.searchGitHubCromox1()
