@@ -59,11 +59,8 @@ class TestMengkome1(unittest.TestCase):
         self.driver.find_element_by_name('password').click()
         self.driver.find_element_by_name('password').send_keys(pswd1 + Keys.ENTER)
 
-        ## current URL
-        print('CURRENT URL = ' + self.driver.current_url)
         self.__class__.mengkome_url = self.driver.current_url
         self.__class__.user1 = user1
-        # print(driver.get_cookies())
         self.__class__.cookies = self.driver.get_cookies()
 
     def test_02_relogin_chkinfos(self):
@@ -101,7 +98,6 @@ class TestMengkome1(unittest.TestCase):
         join1 = self.driver.find_element_by_xpath('//*[@class="form-row field-date_joined"]/*/*[@class="readonly"]').text
         print('User email = ' + email1)
         print('User Joined date = ' + join1)
-        print('CURRENT URL = ' + self.driver.current_url)
         self.__class__.mengkome_url = self.driver.current_url
 
     def test_99_relogin_then_logout(self):
@@ -110,7 +106,6 @@ class TestMengkome1(unittest.TestCase):
         user1 = self.__class__.user1
         urlone = self.__class__.mengkome_url
 
-        # sleep(5)
         self.driver.get(urlone)
         print('CURRENT URL = ' + self.driver.current_url)
         self.driver.add_cookie(self.__class__.cookie)
@@ -118,9 +113,10 @@ class TestMengkome1(unittest.TestCase):
         self.driver.find_element_by_xpath("//*[contains(text(), 'Log out')]").click()
         if self.driver.find_element_by_xpath("//*[@id='content']/h1").text == 'Logged out':
             print('User ' + user1 + ' successfully LOGGED OUT')
-            print('CURRENT URL = ' + self.driver.current_url)
 
     def tearDown(self):
+        ## current URL before quit/exit
+        print('CURRENT URL = ' + self.driver.current_url)
         # self.driver.close()
         self.driver.quit()
         print('\n--- >> TEARDOWN')
