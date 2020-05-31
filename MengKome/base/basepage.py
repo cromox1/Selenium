@@ -118,7 +118,7 @@ class BasePage(SeleniumDriver):
         currentepoch = int(time())
         currentdate = strftime('%Y-%m-%d %H:%M:%S', localtime(currentepoch))
         futuredate = strftime('%Y-%m-%d %H:%M:%S', localtime(futureepoch))
-        self.log.info("FutureDate ( " + str(futureepoch) + " / " + str(futuredate) + " ) > CurrentDate ( " +
+        self.log.info("FutureDate ( " + str(int(futureepoch)) + " / " + str(futuredate) + " ) > CurrentDate ( " +
                       str(int(currentepoch)) + " / " + str(currentdate)+ " )")
         return int(futureepoch) > int(currentepoch)
 
@@ -127,7 +127,7 @@ class BasePage(SeleniumDriver):
         currentepoch = int(time())
         currentdate = strftime('%Y-%m-%d %H:%M:%S', localtime(currentepoch))
         historydate = strftime('%Y-%m-%d %H:%M:%S', localtime(historyepoch))
-        self.log.info("HistoryDate ( " + str(historyepoch) + " / " + str(historydate) + " ) < CurrentDate ( " +
+        self.log.info("HistoryDate ( " + str(int(historyepoch)) + " / " + str(historydate) + " ) < CurrentDate ( " +
                       str(int(currentepoch)) + " / " + str(currentdate) + " )")
         return int(historyepoch) < int(currentepoch)
 
