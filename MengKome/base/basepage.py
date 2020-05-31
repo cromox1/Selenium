@@ -113,17 +113,23 @@ class BasePage(SeleniumDriver):
                     return result
         return result
 
-    def verifyDateIsFuture(self, futuredate):
-        from time import time
-        currentdate = time()
-        self.log.info("FutureDate ( " + str(futuredate) + " ) > CurrentDate ( " + str(int(currentdate)) + " )")
-        return int(futuredate) > int(currentdate)
+    def verifyDateIsFuture(self, futureepoch):
+        from time import time, strftime, localtime
+        currentepoch = int(time())
+        currentdate = strftime('%Y-%m-%d %H:%M:%S', localtime(currentepoch))
+        futuredate = strftime('%Y-%m-%d %H:%M:%S', localtime(futureepoch))
+        self.log.info("FutureDate ( " + str(futureepoch) + " / " + str(futuredate) + " ) > CurrentDate ( " +
+                      str(int(currentepoch)) + " / " + str(currentdate)+ " )")
+        return int(futureepoch) > int(currentepoch)
 
-    def verifyDateIsHistory(self, historydate):
-        from time import time
-        currentdate = time()
-        self.log.info("HistoryDate ( " + str(historydate) + " ) < CurrentDate ( " + str(int(currentdate)) + " )")
-        return int(historydate) < int(currentdate)
+    def verifyDateIsHistory(self, historyepoch):
+        from time import time, strftime, localtime
+        currentepoch = int(time())
+        currentdate = strftime('%Y-%m-%d %H:%M:%S', localtime(currentepoch))
+        historydate = strftime('%Y-%m-%d %H:%M:%S', localtime(historyepoch))
+        self.log.info("HistoryDate ( " + str(historyepoch) + " / " + str(historydate) + " ) < CurrentDate ( " +
+                      str(int(currentepoch)) + " / " + str(currentdate) + " )")
+        return int(historyepoch) < int(currentepoch)
 
 
 

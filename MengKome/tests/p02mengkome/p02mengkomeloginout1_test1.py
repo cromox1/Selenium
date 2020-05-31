@@ -2,7 +2,6 @@ __author__ = 'cromox'
 
 from pages.p02mengkome.p02mengkomeloginout1 import P02LoginLogoutCookie
 from utilities.teststatus import TestStatus as tStatus
-# import datetime
 import unittest
 import pytest
 import utilities.custom_logger as cl
