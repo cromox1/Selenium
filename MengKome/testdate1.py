@@ -1,4 +1,4 @@
-from time import strftime, strptime, localtime, time
+from time import strftime, strptime, localtime, time, mktime
 
 # print(strftime("%s", localtime()))
 print(int(time()))
@@ -16,8 +16,10 @@ print(text1)
 # timestruct = strptime(text1, "%b. %d, %Y, %I:%M")
 timestruct = strptime(text1, "%b. %d %Y")
 print("TEST1 = " + str(timestruct))
-timeepoch = strftime('%s', localtime(timestruct))
+# timeepoch = strftime('%s', localtime(timestruct))
+timeepoch = mktime(timestruct)
 print("TEST2 = " + str(timeepoch))
+print("TEST3 = " + str(strftime('%Y-%m-%d %H:%M:%S', localtime(timeepoch))))
 
 # time.strftime('%s')
 # from time import time, strftime, localtime

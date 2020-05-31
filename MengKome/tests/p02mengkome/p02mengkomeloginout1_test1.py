@@ -2,6 +2,7 @@ __author__ = 'cromox'
 
 from pages.p02mengkome.p02mengkomeloginout1 import P02LoginLogoutCookie
 from utilities.teststatus import TestStatus as tStatus
+from time import strptime, mktime
 import unittest
 import pytest
 import utilities.custom_logger as cl
@@ -69,13 +70,13 @@ class P02MengkomeLoginLogoutTests(unittest.TestCase):
         result = self.mengkomepage.verifyEmailFormat(userinfos[1])
         self.tstatus.mark(result, "Email (format) Verified")
         print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
-
-        # # date joined format = 'Nov. 8, 2018, 2:08 p.m.'
-        # joineddate = datetime.datetime.strptime(userinfos[2], '%M %d, %Y').strftime("%s")
-        # print('Date1 = ' + str(userinfos[2]) + ' / Date2 = ' + str(joineddate))
-        # result = self.mengkomepage.verifyDateIsHistory(joineddate)
-        # self.tstatus.mark(result, "Date joined Verified")
-        # print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
+        # date joined format = 'Nov. 8, 2018, 2:08 p.m.'
+        textdate = userinfos[2]
+        joineddate = " ".join(textdate.split(",")[:2])
+        joinedepoch = mktime(strptime(joineddate, "%b. %d %Y"))
+        result = self.mengkomepage.verifyDateIsHistory(joinedepoch)
+        self.tstatus.mark(result, "Date joined Verified")
+        print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
 
         # result = self.googlesearchpage.verifyActualEqualExpected(i - 1, len(list_repo1))
         # self.tstatus.mark(result, "Repositories number verified")
