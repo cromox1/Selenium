@@ -50,6 +50,7 @@ class P02LoginLogoutCookie(BasePage):
         joindate = self.getText(self._join_date, locatorType=self._main_type)
         print('User email = ' + emailuser)
         print('User Joined date = ' + joindate)
+        return nameuser, emailuser, joindate
 
     # logout (after login)
     def userLogout(self):

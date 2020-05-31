@@ -84,12 +84,13 @@ class BasePage(SeleniumDriver):
         return Actual == Expected
 
     def verifyTextEqual(self, Text, Expected):
-        self.log.info("Text = " + Text)
+        self.log.info("Text ( " + str(Text) + " ) == Expected ( " + str(Expected) + " )")
         return Text == Expected
 
     def verifyEmailFormat(self, email):
         list1 = [x for x in email.split('@') if x]
         list2 = [x for x in email.split('.') if x]
+        self.log.info("Email ( " + email + ' ) in correct email format')
         if len(list1) == 2 and len(list2) >= 2:
             return True
         else:
@@ -111,3 +112,18 @@ class BasePage(SeleniumDriver):
                     result = False
                     return result
         return result
+
+    def verifyDateIsFuture(self, futuredate):
+        from time import time
+        currentdate = time()
+        self.log.info("FutureDate ( " + str(futuredate) + " ) > CurrentDate ( " + str(int(currentdate)) + " )")
+        return int(futuredate) > int(currentdate)
+
+    def verifyDateIsHistory(self, historydate):
+        from time import time
+        currentdate = time()
+        self.log.info("HistoryDate ( " + str(historydate) + " ) < CurrentDate ( " + str(int(currentdate)) + " )")
+        return int(historydate) < int(currentdate)
+
+
+
