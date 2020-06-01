@@ -34,8 +34,10 @@ class TestMengkome1(unittest.TestCase):
     def test_01_login(self):
         print('\n' + str(self.__class__.ixi) + ') ---->  ' + str(self._testMethodName) + '\n')
         ## user/pswd
-        user1 = 'bacaone'
-        pswd1 = 'qawsed123456'
+        # user1 = 'bacaone'
+        # pswd1 = 'qawsed123456'
+        user1 = 'bacatiga'
+        pswd1 = 'lkjhgf098765'
         ## GET python version & Browser version
         from sys import version as pythonversion
         print('Python Version = ' + pythonversion)
