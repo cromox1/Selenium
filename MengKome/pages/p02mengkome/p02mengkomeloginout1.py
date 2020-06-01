@@ -14,8 +14,10 @@ class P02LoginLogoutCookie(BasePage):
         self.driver = driver
 
     ## user/pswd
-    user1 = 'bacaone'
-    pswd1 = 'qawsed123456'
+    # user1 = 'bacaone'
+    # pswd1 = 'qawsed123456'
+    user1 = 'bacatiga'
+    pswd1 = 'lkjhgf098765'
     # Locators login auth (mengkome main page)
     _user_area = 'username'
     _pswd_area = 'password'
