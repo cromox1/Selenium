@@ -14,10 +14,10 @@ class P02LoginLogoutCookie(BasePage):
         self.driver = driver
 
     ## user/pswd
-    # user1 = 'bacaone'
-    # pswd1 = 'qawsed123456'
-    user1 = 'bacatiga'
-    pswd1 = 'lkjhgf098765'
+    user1 = 'bacaone'
+    pswd1 = 'qawsed123456'
+    # user1 = 'bacatiga'
+    # pswd1 = 'lkjhgf098765'
     # Locators login auth (mengkome main page)
     _user_area = 'username'
     _pswd_area = 'password'
@@ -26,7 +26,8 @@ class P02LoginLogoutCookie(BasePage):
     _main_type = 'xpath'
     _first_page = '//*[@id="user-tools"]/strong'
     _users_page = "//*[contains(text(), 'Users')]"
-    _user_info = "//*[contains(text(), '" + user1 + "')]"
+    _user_info = str(user1)
+    _user_info_type = 'link'
     _email_info = '//*[@class="form-row field-email"]/*/*[@class="readonly"]'
     _join_date = '//*[@class="form-row field-date_joined"]/*/*[@class="readonly"]'
     # Locators logout
@@ -47,7 +48,8 @@ class P02LoginLogoutCookie(BasePage):
         # go to Users page
         self.elementClick(self._users_page, locatorType=self._main_type)
         # go to User to check info
-        self.elementClick(self._user_info, locatorType=self._main_type)
+        # self.elementClick(self._user_info, locatorType=self._main_type)
+        self.getElementList(self._user_info, locatorType=self._user_info_type)[-1].click()
         emailuser = self.getText(self._email_info, locatorType=self._main_type)
         joindate = self.getText(self._join_date, locatorType=self._main_type)
         print('User email = ' + emailuser)

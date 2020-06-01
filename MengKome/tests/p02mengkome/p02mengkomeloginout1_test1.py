@@ -71,9 +71,12 @@ class P02MengkomeLoginLogoutTests(unittest.TestCase):
         self.tstatus.mark(result, "Email (format) Verified")
         print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))
         # date joined format = 'Nov. 8, 2018, 2:08 p.m.'
-        textdate = userinfos[2]
-        joineddate = " ".join(textdate.split(",")[:2])
-        joinedepoch = mktime(strptime(joineddate, "%b. %d %Y"))
+        textdate = userinfos[2].replace(',', '').replace('p.m.', 'pm').replace('a.m.', 'am')
+        joineddate = " ".join(textdate.split(" ")[:])
+        try:
+            joinedepoch = mktime(strptime(joineddate, "%b. %d %Y %I:%M %p"))
+        except:
+            joinedepoch = mktime(strptime(joineddate, "%B %d %Y %I:%M %p"))
         result = self.mengkomepage.verifyDateIsHistory(joinedepoch)
         self.tstatus.mark(result, "Date joined Verified")
         print("Result " + str(len(self.tstatus.resultList)) + "  =  " + str(result))

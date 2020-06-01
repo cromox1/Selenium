@@ -1,5 +1,7 @@
 __author__ = 'cromox'
 
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -95,7 +97,9 @@ class TestMengkome1(unittest.TestCase):
         userpage1 = self.driver.find_element_by_xpath('//*[@id="user-tools"]/strong').text
         print('Name of the user = ' + userpage1)
         self.driver.find_element_by_xpath("//*[contains(text(), 'Users')]").click()
-        self.driver.find_element_by_xpath("//*[contains(text(), '" + user1 + "')]").click()
+        print('CHECK USER1 = ' + str(user1))
+        # self.driver.find_element_by_xpath("//*[contains(text(), '" + str(user1) + "')]").click()
+        self.driver.find_elements_by_link_text(str(user1))[-1].click() # user has grp with the same name
         email1 = self.driver.find_element_by_xpath('//*[@class="form-row field-email"]/*/*[@class="readonly"]').text
         join1 = self.driver.find_element_by_xpath('//*[@class="form-row field-date_joined"]/*/*[@class="readonly"]').text
         print('User email = ' + email1)
