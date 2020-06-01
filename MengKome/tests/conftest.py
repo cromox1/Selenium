@@ -11,14 +11,13 @@ def setUp():
     print("\n--- > Running method level tearDown")
 
 @pytest.yield_fixture(scope="class")
-def oneTimeSetUp(request, browser):
+def oneTimeSetUp(request, browser, mainURL="https://www.google.co.uk"):
+
     print("\n== > Running one time setUp")
     print('Python Version = ' + sys.version)
 
-    googleURL = "https://www.google.co.uk"
-
     wdf = webbrowser(browser)
-    driver = wdf.getWebDriverInstance(googleURL)
+    driver = wdf.getWebDriverInstance(mainURL)
 
     if request.cls is not None:
         request.cls.driver = driver

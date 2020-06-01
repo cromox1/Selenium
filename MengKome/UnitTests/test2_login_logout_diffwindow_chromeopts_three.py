@@ -1,7 +1,5 @@
 __author__ = 'cromox'
 
-import time
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -68,7 +66,6 @@ class TestMengkome1(unittest.TestCase):
         self.__class__.cookies = self.driver.get_cookies()
 
     def test_02_relogin_chkinfos(self):
-        # sleep(2)
         print('\n' + str(self.__class__.ixi) + ') ---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.user1
         urlone = self.__class__.mengkome_url
@@ -107,7 +104,6 @@ class TestMengkome1(unittest.TestCase):
         self.__class__.mengkome_url = self.driver.current_url
 
     def test_99_relogin_then_logout(self):
-        # sleep(2)
         print('\n' + str(self.__class__.ixi) + ') ---->  ' + str(self._testMethodName) + '\n')
         user1 = self.__class__.user1
         urlone = self.__class__.mengkome_url
