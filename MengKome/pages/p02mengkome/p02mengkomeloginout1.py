@@ -60,7 +60,7 @@ class P02LoginLogoutCookie(BasePage):
     def userLogout(self):
         self.elementClick(self._logout_tb, locatorType=self._main_type)
         if self.getText(self._logout_chk, locatorType=self._main_type) == 'Logged out':
-            print('User' + self.user1 + ' successfully LOGGED OUT')
+            print('User ' + self.user1 + ' successfully LOGGED OUT')
 
     ## General
     def returnCurrentURL(self):
