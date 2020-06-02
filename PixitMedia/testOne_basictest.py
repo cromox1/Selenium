@@ -9,10 +9,11 @@ from os import remove as removefile
 
 class TestOne(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome()
         # self.driver = webdriver.Firefox()
-        self.driver.implicitly_wait(20)
-        self.base_url = "https://www.google.com"
+        self.chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
+        self.driver = webdriver.Chrome(self.chromedriverpath)
+        self.driver.implicitly_wait(10)
+        self.base_url = "https://www.google.co.uk"
         self.verificationErrors = []
         self.tmpfilename = 'tmptest123.pdf'
 
@@ -21,11 +22,16 @@ class TestOne(unittest.TestCase):
         if driver.name == 'chrome':
             driver.maximize_window()
         driver.get(self.base_url)
-        driver.find_element_by_id("lst-ib").click()
-        driver.find_element_by_id("lst-ib").send_keys("pixitmedia" + Keys.ENTER)
-        if driver.find_element_by_xpath("//*[contains(text(),'https://www.pixitmedia.com/')]").text == "https://www.pixitmedia.com/":
-            driver.get("https://www.pixitmedia.com/")
+        driver.find_element_by_name('q').click()
+        driver.find_element_by_name('q').send_keys("pixitmedia" + Keys.ENTER)
+        list_pixitmedia = driver.find_elements_by_xpath("//*[contains(text(),'Pixit Media')]")
+        for element in list_pixitmedia:
+            if element.text == "https://www.pixitmedia.com/":
+                element.click()
+        # if driver.find_element_by_xpath("//*[contains(text(),'https://www.pixitmedia.com/')]").text == "https://www.pixitmedia.com/":
+        #     driver.get("https://www.pixitmedia.com/")
         basepixitmediaurl = driver.current_url
+        print('PIXITMEDIA URL = ' + str(basepixitmediaurl))
         # Products
         driver.find_element_by_xpath('//*[@id="menu-item-48"]/a/span').click()
         # PixStor Search
