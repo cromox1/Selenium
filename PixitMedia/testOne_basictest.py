@@ -2,21 +2,32 @@ __author__ = 'cromox'
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 import unittest
-from requests import get as urlget
-from PyPDF2 import PdfFileReader as PDFread
-from os import remove as removefile
+# from requests import get as urlget
+# from PyPDF2 import PdfFileReader as PDFread
+# from os import remove as removefile
 from selenium.webdriver.common.action_chains import ActionChains as hoover
 
 class TestOne(unittest.TestCase):
     def setUp(self):
         # self.driver = webdriver.Firefox()
         self.chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
-        self.driver = webdriver.Chrome(self.chromedriverpath)
+        self.chrome_options = Options()
+        self.chrome_options.add_argument('--ignore-certificate-errors')
+        self.chrome_options.add_argument("--disable-web-security")
+        self.chrome_options.add_argument("--incognito")
+        self.chrome_options.add_argument("--allow-running-insecure-content")
+        self.chrome_options.add_argument("--allow-cross-origin-auth-prompt")
+        self.chrome_options.add_argument("--disable-cookie-encryption")
+        self.chrome_options.add_argument('--disable-dev-shm-usage')
+        self.chrome_options.add_argument("--test-type")
+        ## webdriver section
+        self.driver = webdriver.Chrome(self.chromedriverpath, options=self.chrome_options)
         self.driver.implicitly_wait(10)
         self.base_url = "https://www.google.co.uk"
         self.verificationErrors = []
-        self.tmpfilename = 'tmptest123.pdf'
+        # self.tmpfilename = 'tmptest123.pdf'
 
     def test_one(self):
         driver = self.driver
@@ -68,45 +79,61 @@ class TestOne(unittest.TestCase):
         # Contact Us Form
         driver.get(basepixitmediaurl)
         driver.find_element_by_xpath("//*[contains(text(),'Contact Us')]").click()
-        print("URL Contact Us = " + str(driver.current_url))
-        driver.find_element_by_xpath('//*[@placeholder="First Name"]').click()
-        driver.find_element_by_xpath('//*[@placeholder="First Name"]').clear()
-        driver.find_element_by_xpath('//*[@placeholder="First Name"]').send_keys("Rosli")
-        # driver.find_element_by_id("input_2_1_3").click()
-        # driver.find_element_by_id("input_2_1_3").clear()
-        # driver.find_element_by_id("input_2_1_3").send_keys("Rosli")
-        # driver.find_element_by_id("input_2_1_3").send_keys("TesterOne")
-        driver.find_element_by_id("input_2_1_6").click()
-        driver.find_element_by_id("input_2_1_6").clear()
-        driver.find_element_by_id("input_2_1_6").send_keys("Talib")
-        # driver.find_element_by_id("input_2_1_6").send_keys("LastNameOne")
-        driver.find_element_by_id("input_2_2").click()
-        driver.find_element_by_id("input_2_2").clear()
-        driver.find_element_by_id("input_2_2").send_keys("roslitalib2017@gmail.com")
-        driver.find_element_by_id("input_2_3").click()
-        driver.find_element_by_id("input_2_3").clear()
-        driver.find_element_by_id("input_2_3").send_keys("Ranorexxx")
-        driver.find_element_by_id("input_2_7").click()
-        driver.find_element_by_id("input_2_7").clear()
-        # driver.find_element_by_id("input_2_7").send_keys("xxxxxxxxxxxxx")
-        driver.find_element_by_id("input_2_7").send_keys("07777999111")
-        driver.find_element_by_id("input_2_4").click()
-        driver.find_element_by_id("input_2_4").clear()
-        driver.find_element_by_id("input_2_4").send_keys("Test1")
-        driver.find_element_by_id("field_9jv0r12").click()
-        driver.find_element_by_id("field_9jv0r12").clear()
-        # driver.find_element_by_id("field_9jv0r12").send_keys("This is a test for Jez")
-        driver.find_element_by_id("field_9jv0r12").send_keys("abcdefghijkl1234567890")
-        # driver.find_element_by_xpath("//button[@type='submit']").click()
+        # print("URL Contact Us = " + str(driver.current_url))
+        # Full Page scroll down
+        # driver.find_element_by_xpath("//*[contains(text(),'Contact Us')]").send_keys(Keys.PAGE_DOWN)
+        # driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        # driver.execute_script("window.scrollTo(0, Y)")
+        element_firstname = driver.find_element_by_name('input_1.3')
+        hoover(driver).move_to_element(element_firstname).perform()
+        element_firstname.clear()
+        element_firstname.send_keys('Rosli')
+        element_lastname = driver.find_element_by_id("input_2_1_6")
+        hoover(driver).move_to_element(element_lastname).perform()
+        # element_lastname.click()
+        element_lastname.clear()
+        element_lastname.send_keys("Talib")
+        element_email = driver.find_element_by_id("input_2_2")
+        hoover(driver).move_to_element(element_email).perform()
+        # element_email.click()
+        element_email.clear()
+        element_email.send_keys("roslitalib2017@gmail.com")
+        element_company = driver.find_element_by_id("input_2_3")
+        hoover(driver).move_to_element(element_company).perform()
+        element_company.clear()
+        element_company.send_keys("Ranorexxx")
+        element_phone = driver.find_element_by_id("input_2_7")
+        hoover(driver).move_to_element(element_phone).perform()
+        element_phone.clear()
+        element_phone.send_keys("07777999111")
+        element_subject = driver.find_element_by_id("input_2_4")
+        hoover(driver).move_to_element(element_subject).perform()
+        element_subject.clear()
+        element_subject.send_keys("Test1")
+        element_message = driver.find_element_by_id("input_2_6")
+        hoover(driver).move_to_element(element_message).perform()
+        element_message.clear()
+        element_message.send_keys("This is a test for Jez")
+        # Half page scroll down
+        last_height = driver.execute_script("return document.body.scrollHeight")
+        print('HEIGHT = ' + str(last_height))
+        half_height = int(0.5*last_height)
+        print('0.5HEIGHT = ' + str(half_height))
+        driver.execute_script("window.scrollTo(0, " + str(half_height) + ");")
+        driver.find_element_by_name('input_8.1').click()
+        element_send = driver.find_element_by_xpath("//*[@value='Send']")
+        hoover(driver).move_to_element(element_send).perform()
+        element_send.click()
 
     def tearDown(self):
+        print('--- > tearDown')
         self.driver.quit()
         self.assertEqual([], self.verificationErrors)
-        try:
-            removefile(self.tmpfilename)
-            # print('  Successfully remove tmp file ' + str(self.tmpfilename))
-        except WindowsError as exx:
-            print('  Error = ' + str(exx) + ' / file = ' + str(self.tmpfilename))
+        # try:
+        #     removefile(self.tmpfilename)
+        #     # print('  Successfully remove tmp file ' + str(self.tmpfilename))
+        # except WindowsError as exx:
+        #     print('  Error = ' + str(exx) + ' / file = ' + str(self.tmpfilename))
 
 if __name__ == "__main__":
     unittest.main()
