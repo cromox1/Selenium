@@ -13,6 +13,15 @@ class TestMengkome1(unittest.TestCase):
     cookies = []
     ixi = 0
 
+    @classmethod
+    def setUpClass(cls):
+        print('\n--- >> SETUPCLASS\n')
+        ## GET python version & Selenium version
+        from sys import version as pythonversion
+        print('Python Version = ' + pythonversion)
+        from selenium import __version__ as seleniumversion
+        print('Selenium version = ' + seleniumversion)
+
     def setUp(self):
         self.base_url = "https://mengkome.pythonanywhere.com/admin/login/"
         self.chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
@@ -38,11 +47,6 @@ class TestMengkome1(unittest.TestCase):
         # pswd1 = 'qawsed123456'
         user1 = 'bacatiga'
         pswd1 = 'lkjhgf098765'
-        ## GET python version & Browser version
-        from sys import version as pythonversion
-        print('Python Version = ' + pythonversion)
-        from selenium import __version__ as seleniumversion
-        print('Selenium version = ' + seleniumversion)
 
         try:
             print('Browser version ( ' + self.driver.name + ' ) = ' + self.driver.capabilities['version']) # Python 3.7 and below
@@ -123,6 +127,10 @@ class TestMengkome1(unittest.TestCase):
         self.driver.quit()
         print('\n--- >> TEARDOWN')
         # self.assertEqual([], self.verificationErrors)
+
+    @classmethod
+    def tearDownClass(cls):
+        print('\n--- >> TEARDOWNCLASS\n')
 
 if __name__ == "__main__":
     unittest.main()
