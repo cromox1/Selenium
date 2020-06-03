@@ -10,7 +10,12 @@ import unittest
 from selenium.webdriver.common.action_chains import ActionChains as hoover
 
 class TestOne(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        print('\n--- > setUpClass\n')
+
     def setUp(self):
+        print('\n--- > setUp\n')
         # self.driver = webdriver.Firefox()
         self.chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
         self.chrome_options = Options()
@@ -84,6 +89,12 @@ class TestOne(unittest.TestCase):
         # driver.find_element_by_xpath("//*[contains(text(),'Contact Us')]").send_keys(Keys.PAGE_DOWN)
         # driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         # driver.execute_script("window.scrollTo(0, Y)")
+        # Half page scroll down
+        last_height = driver.execute_script("return document.body.scrollHeight")
+        print('HEIGHT = ' + str(last_height))
+        half_height = int(0.5 * last_height)
+        print('0.5HEIGHT = ' + str(half_height))
+        driver.execute_script("window.scrollTo(0, " + str(half_height) + ");")
         element_firstname = driver.find_element_by_name('input_1.3')
         hoover(driver).move_to_element(element_firstname).perform()
         element_firstname.clear()
@@ -115,10 +126,6 @@ class TestOne(unittest.TestCase):
         element_message.clear()
         element_message.send_keys("This is a test for Jez")
         # Half page scroll down
-        last_height = driver.execute_script("return document.body.scrollHeight")
-        print('HEIGHT = ' + str(last_height))
-        half_height = int(0.5*last_height)
-        print('0.5HEIGHT = ' + str(half_height))
         driver.execute_script("window.scrollTo(0, " + str(half_height) + ");")
         driver.find_element_by_name('input_8.1').click()
         element_send = driver.find_element_by_xpath("//*[@value='Send']")
@@ -126,7 +133,7 @@ class TestOne(unittest.TestCase):
         element_send.click()
 
     def tearDown(self):
-        print('--- > tearDown')
+        print('\n--- > tearDown\n')
         self.driver.quit()
         self.assertEqual([], self.verificationErrors)
         # try:
@@ -134,6 +141,10 @@ class TestOne(unittest.TestCase):
         #     # print('  Successfully remove tmp file ' + str(self.tmpfilename))
         # except WindowsError as exx:
         #     print('  Error = ' + str(exx) + ' / file = ' + str(self.tmpfilename))
+
+    @classmethod
+    def tearDownClass(cls):
+        print('\n--- > tearDownClass\n')
 
 if __name__ == "__main__":
     unittest.main()
