@@ -7,10 +7,10 @@
 2) letskodeit - **OK** (my example Project - use Automation Framework)
 3) GMAIL - **OK** (My own project on Google products - Gmail, Youtube, GooglePlay, GoogleHangouts, etc...)
 4) Selenium_Tools - **In-Progress** (75% - Tools that I use to make my Selenium projects run more easier)
-5) plusNetFirewall - **In-Progress** (75%)
+5) plusNetFirewall - **In-Progress** (75%) - NOW STOPPED (as I no longer using PlusNet broadband at home)
 6) jobSearch - **In-Progress** (35%)
 7) Motors_Web - **On-Hold** (50%)
-8) PixitMedia - **On-Hold** (75%)
+8) PixitMedia - **On-Hold** (75%) -- has mousemove / hoover mouse option
 
 ### Note
 1) my projects using **python3** ( 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] ) 
