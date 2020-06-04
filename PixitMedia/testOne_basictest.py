@@ -90,11 +90,16 @@ class TestOne(unittest.TestCase):
         # driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         # driver.execute_script("window.scrollTo(0, Y)")
         # Half page scroll down
-        last_height = driver.execute_script("return document.body.scrollHeight")
+        try:
+            last_height = driver.execute_script("return document.body.scrollHeight")
+        except:
+            last_height = 1800
+        if last_height <= 1800:
+            last_height = 1900
         print('HEIGHT = ' + str(last_height))
-        half_height = int(0.5 * last_height)
-        print('0.5HEIGHT = ' + str(half_height))
-        driver.execute_script("window.scrollTo(0, " + str(half_height) + ");")
+        one_height = int(0.5 * last_height)
+        print('0.5HEIGHT = ' + str(one_height))
+        driver.execute_script("window.scrollTo(0, " + str(one_height) + ");")
         element_firstname = driver.find_element_by_name('input_1.3')
         hoover(driver).move_to_element(element_firstname).perform()
         element_firstname.clear()
@@ -126,7 +131,7 @@ class TestOne(unittest.TestCase):
         element_message.clear()
         element_message.send_keys("This is a test for Jez")
         # Half page scroll down
-        driver.execute_script("window.scrollTo(0, " + str(half_height) + ");")
+        driver.execute_script("window.scrollTo(0, " + str(one_height) + ");")
         driver.find_element_by_name('input_8.1').click()
         element_send = driver.find_element_by_xpath("//*[@value='Send']")
         hoover(driver).move_to_element(element_send).perform()
