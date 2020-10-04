@@ -33,6 +33,7 @@ class ReadableHTML(HTMLParser):
     def __init__(self):
         HTMLParser.__init__(self)
         self.numtabbar = 0
+        self.maxword = 150
 
     def handle_starttag(self, tag, attrs):        
         print("  "*self.numtabbar + '/' + str(tag))
@@ -46,18 +47,18 @@ class ReadableHTML(HTMLParser):
         print("  "*self.numtabbar + str(tag) + '/')        
 
     def handle_data(self, data):
-        if len(data) > 200:
+        if len(data) > self.maxword:
             endone = ' ...(cont)...'
         else:
             endone = ''
-        print("  "*self.numtabbar + str(data.replace('\n', ' ').replace('  ', ' ').replace('   ', ' ')[:200]) + endone)
+        print("  "*self.numtabbar + str(data.replace('\n', ' ').replace('  ', ' ').replace('   ', ' ')[:self.maxword]) + endone)
 
     def handle_comment(self, data):
-        if len(data) > 200:
+        if len(data) > self.maxword:
             endone = ' ...(cont)...'
         else:
             endone = ''
-        print("  "*self.numtabbar + str(data.replace('\n', ' ').replace('  ', ' ').replace('   ', ' ')[:200]) + endone)
+        print("  "*self.numtabbar + str(data.replace('\n', ' ').replace('  ', ' ').replace('   ', ' ')[:self.maxword]) + endone)
 
     def handle_entityref(self, name):
         c = chr(name2codepoint[name])
@@ -71,11 +72,11 @@ class ReadableHTML(HTMLParser):
         print("  "*self.numtabbar + str(c))
 
     def handle_decl(self, data):
-        if len(data) > 200:
+        if len(data) > self.maxword:
             endone = ' ...(cont)...'
         else:
             endone = ''
-        print("DECL     : " + str(data.replace('\n', ' ').replace('  ', ' ').replace('   ', ' ')[:200]) + endone)
+        print("DECL     : " + str(data.replace('\n', ' ').replace('  ', ' ').replace('   ', ' ')[:self.maxword]) + endone)
         # print()
 
 print()

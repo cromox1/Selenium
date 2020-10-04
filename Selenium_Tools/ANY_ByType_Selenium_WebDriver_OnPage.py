@@ -35,7 +35,7 @@ class CheckAnyByType():
 
     def setUp_webdriver(self, browser='chrome'):
         ## Chrome - add_argument='headless' , Firefox - add_argument="--headless"
-        chromedriverpath = r'C:\tools\python3\Scripts\chromedriver.exe'
+        chromedriverpath = r'C:\tools\chromedriver\chromedriver.exe'
         if browser == 'chrome' or browser == 'ch' or browser == 'google':
             from selenium.webdriver.chrome.options import Options
             myoption = Options()

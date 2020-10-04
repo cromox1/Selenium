@@ -28,6 +28,10 @@ if base_url.split('://')[0] == base_url and base_url is not None:
 print('URL = ' + base_url)
 
 class ReadableHTML(HTMLParser):
+    def __init__(self):
+        HTMLParser.__init__(self)
+        self.maxword = 150
+
     def handle_starttag(self, tag, attrs):
         print("START tag: " + str(tag))
         for attr in attrs:
@@ -39,18 +43,18 @@ class ReadableHTML(HTMLParser):
         return 'END'
 
     def handle_data(self, data):
-        if len(data) > 200:
+        if len(data) > self.maxword:
             endone = ' ...(cont)...'
         else:
             endone = ''
-        print("    Data : " + str(data.replace('\n', '\ENTER\ ').replace('  ', ' ').replace('   ', ' ')[:200]) + endone)
+        print("    Data : " + str(data.replace('\n', '\ENTER\ ').replace('  ', ' ').replace('   ', ' ')[:self.maxword]) + endone)
 
     def handle_comment(self, data):
-        if len(data) > 200:
+        if len(data) > self.maxword:
             endone = ' ...(cont)...'
         else:
             endone = ''
-        print(" Comment : " + str(data.replace('\n', '\ENTER\ ').replace('  ', ' ').replace('   ', ' ')[:200]) + endone)
+        print(" Comment : " + str(data.replace('\n', '\ENTER\ ').replace('  ', ' ').replace('   ', ' ')[:self.maxword]) + endone)
 
     def handle_entityref(self, name):
         c = chr(name2codepoint[name])
@@ -64,11 +68,11 @@ class ReadableHTML(HTMLParser):
         print(" Num ent : " + str(c))
 
     def handle_decl(self, data):
-        if len(data) > 200:
+        if len(data) > self.maxword:
             endone = ' ...(cont)...'
         else:
             endone = ''
-        print("DECL     : " + str(data.replace('\n', '\ENTER\ ').replace('  ', ' ').replace('   ', ' ')[:200]) + endone)
+        print("DECL     : " + str(data.replace('\n', '\ENTER\ ').replace('  ', ' ').replace('   ', ' ')[:self.maxword]) + endone)
 
 print()
 data1 = req_get(base_url)._content
