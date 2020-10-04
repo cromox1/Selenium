@@ -1,0 +1,505 @@
+C:\tools\Python38\python.exe C:/Users/cromox/Desktop/newselenium/Selenium/Selenium_Tools/PAGESOURCE_IndentView_Req_GET_OnPage.py
+Python Version = 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)]
+
+Put URL = gmail.com
+URL = https://gmail.com
+
+ 
+DECL     : DOCTYPE html
+ 
+/html
+  ('lang', 'en')
+    
+  /head
+      
+    /meta
+      ('charset', 'utf-8')
+        
+      /meta
+        ('content', 'width=300, initial-scale=1')
+        ('name', 'viewport')
+          
+        /meta
+          ('name', 'description')
+          ('content', "Gmail is email that's intuitive, efficient and useful. 15 GB of storage, less spam and mobile access.")
+            
+          /meta
+            ('name', 'google-site-verification')
+            ('content', 'LrdTUW9psUAMbh4Ia074-BPEVmcpBxF6Gwf0MSgQXZs')
+              
+            /title
+              Gmail
+            title/
+              
+            /style
+                @font-face {  font-family: 'Open Sans';  font-style: normal;  font-weight: 300;  src: local('Open Sans Light'), local('OpenSans-Light'), url(//fonts ...(cont)...
+            style/
+              
+            /style
+                h1, h2 {  -webkit-animation-duration: 0.1s;  -webkit-animation-name: fontfix;  -webkit-animation-iteration-count: 1;  -webkit-animation-timing-funct ...(cont)...
+            style/
+             
+            /style
+                html, body {  font-family: Arial, sans-serif;  background: #fff;  margin: 0;  padding: 0;  border: 0;  position: absolute;  height: 100%;  min-width ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (max-width: 800px), screen and (max-height: 800px)')
+                .google-header-bar.centered {  height: 83px;  }  .google-header-bar.centered .header .logo {  margin: 25px auto 20px;  }  .card {  margin-bottom: 20 ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (max-width: 580px)')
+                html, body {  font-size: 14px;  }  .google-header-bar.centered {  height: 73px;  }  .google-header-bar.centered .header .logo {  margin: 20px auto 1 ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5)')
+                .header .logo {  background-image: url(https://ssl.gstatic.com/accounts/ui/logo_2x.png);  }  .header .logo-w {  background-image: url(https://ssl.gs ...(cont)...
+            style/
+             
+            /style
+                pre.debug {  font-family: monospace;  position: absolute;  left: 0;  margin: 0;  padding: 1.5em;  font-size: 13px;  background: #f1f1f1;  border-top ...(cont)...
+            style/
+             
+            /style
+                .banner h1 {  font-family: 'Open Sans', arial;  -webkit-font-smoothing: antialiased;  color: #555;  font-size: 42px;  font-weight: 300;  margin-top: ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (max-width: 800px), screen and (max-height: 800px)')
+                .banner h1 {  font-size: 38px;  margin-bottom: 15px;  }  .banner h2 {  margin-bottom: 15px;  }  .one-google p.create-account,  .one-google p.switch- ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (max-width: 580px)')
+                .banner h1 {  font-size: 22px;  margin-bottom: 15px;  }  .signin-card {  width: 260px;  padding: 20px 20px;  margin: 0 auto 20px;  }  .signin-card . ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5)')
+                .one-google .logo-strip {  background-image: url(https://ssl.gstatic.com/accounts/ui/wlogostrip_230x17_2x.png);  } 
+            style/
+             
+            /style
+                .remember .bubble-wrap {  position: absolute;  padding-top: 3px;  -o-transition: opacity .218s ease-in .218s;  -moz-transition: opacity .218s ease-i ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (max-width: 800px), screen and (max-height: 800px)')
+                .dasher-tooltip {  top: 340px;  } 
+            style/
+             
+            /style
+                .jfk-tooltip {  background-color: #fff;  border: 1px solid;  color: #737373;  font-size: 12px;  position: absolute;  z-index: 800 !important;  borde ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (max-width: 580px)')
+                .jfk-tooltip {  display: none;  } 
+            style/
+             
+            /style
+              ('type', 'text/css')
+               .captcha-box {  background: #fff;  margin: 0 0 10px;  overflow: hidden;  padding: 10px; } .captcha-box .captcha-img {  text-align: center; } .captcha ...(cont)...
+            style/
+             
+            /style
+               .chromiumsync-custom-content {  padding-top: 20px;  margin-bottom: 0; } .form-panel {  -webkit-box-sizing: border-box;  box-sizing: border-box;  -web ...(cont)...
+            style/
+             
+            /style
+              ('media', 'screen and (max-width: 580px)')
+               .back-arrow {  top: 17px; } .circle-mask {  height: 72px;  width: 72px;  background-size: 72px; } .circle {  height: 72px;  width: 72px; } #canvas {  ...(cont)...
+            style/
+              
+          head/
+            
+          /body
+              
+            /div
+              ('class', 'wrapper')
+                
+              /div
+                ('class', 'google-header-bar  centered')
+                  
+                /div
+                  ('class', 'header content clearfix')
+                    
+                  /div
+                    ('class', 'logo logo-w')
+                    ('aria-label', 'Google')
+                  div/
+                    
+                div/
+                  
+              div/
+                
+              /div
+                ('class', 'main content clearfix')
+                 
+                /div
+                  ('class', 'banner')
+                   
+                  /h1
+                      One account. All of Google. 
+                  h1/
+                    
+                  /h2
+                    ('class', 'hidden-small')
+                      Sign in to continue to Gmail  
+                  h2/
+                   
+                div/
+                 
+                /div
+                  ('class', 'main-content \n  \n  \n    no-name\n  \n  \n  \n')
+                   
+                  /div
+                    ('class', 'card signin-card\n  \n    pre-shift\n  \n  \n  \n   no-name')
+                      
+                    /img
+                      ('class', 'circle-mask')
+                      ('src', 'https://ssl.gstatic.com/accounts/ui/avatar_2x.png')
+                        
+                      /form
+                        ('novalidate', None)
+                        ('method', 'post')
+                        ('action', 'https://accounts.google.com/signin/v1/lookup')
+                        ('id', 'gaia_loginform')
+                          
+                        /input
+                          ('name', 'Page')
+                          ('type', 'hidden')
+                          ('value', 'PasswordSeparationSignIn')
+                            
+                          /input
+                            ('type', 'hidden')
+                            ('name', '')
+                            ('value', '')
+                              
+                            /input
+                              ('type', 'hidden')
+                              ('name', 'gxf')
+                              ('value', 'AFoagUX6AaqLgTIGxpu5pvxnQRYKvWcrtg:1601822155165')
+                                
+                              /input
+                                ('type', 'hidden')
+                                ('name', 'continue')
+                                ('value', 'https://mail.google.com/mail/')
+                                  
+                                /input
+                                  ('type', 'hidden')
+                                  ('name', 'service')
+                                  ('value', 'mail')
+                                    
+                                  /input
+                                    ('type', 'hidden')
+                                    ('name', 'rm')
+                                    ('value', 'false')
+                                      
+                                    /input
+                                      ('type', 'hidden')
+                                      ('name', 'ltmpl')
+                                      ('value', 'default')
+                                        
+                                      /input
+                                        ('type', 'hidden')
+                                        ('name', 'scc')
+                                        ('value', '1')
+                                          
+                                        /input
+                                          ('type', 'hidden')
+                                          ('name', 'ss')
+                                          ('value', '1')
+                                            
+                                          /input
+                                            ('type', 'hidden')
+                                            ('name', 'osid')
+                                            ('value', '1')
+                                              
+                                            /input
+                                              ('type', 'hidden')
+                                              ('name', 'emr')
+                                              ('value', '1')
+                                                
+                                              /input
+                                                ('id', 'profile-information')
+                                                ('name', 'ProfileInformation')
+                                                ('type', 'hidden')
+                                                ('value', '')
+                                                  
+                                                /input
+                                                  ('id', 'session-state')
+                                                  ('name', 'SessionState')
+                                                  ('type', 'hidden')
+                                                  ('value', 'AEThLlwyzh8yhasTpfLYEJyZdD8NvT5xZcY4jW9vqcACrGFnb-hiWu8Y1xD5OBnmFS3aB_3tItqfi7htxDOnwNJI6IVj8rXLfEgI1vv3x0Kb0mU2wgPY_JgDW8VhS0TcQAIUaHu0755PRCYdawsEvis7jiWKn9OBXm7fOO7anw9-ynvkfGBtWUfxS7ikqTle93PQC_IeC5vF')
+                                                    
+                                                  /input
+                                                    ('name', 'flowName')
+                                                    ('type', 'hidden')
+                                                    ('value', 'GlifWebSignIn')
+                                                      
+                                                    /input
+                                                      ('type', 'hidden')
+                                                      ('id', '_utf8')
+                                                      ('name', '_utf8')
+                                                      ('value', '☃')
+                                                    input/
+                                                      
+                                                    /input
+                                                      ('type', 'hidden')
+                                                      ('name', 'bgresponse')
+                                                      ('id', 'bgresponse')
+                                                      ('value', 'js_disabled')
+                                                        
+                                                      /div
+                                                        ('class', 'form-panel first valid')
+                                                        ('id', 'gaia_firstform')
+                                                          
+                                                        /div
+                                                          ('class', 'slide-out ')
+                                                            
+                                                          /div
+                                                            ('class', 'input-wrapper focused')
+                                                              
+                                                            /div
+                                                              ('id', 'identifier-shown')
+                                                                
+                                                              /div
+                                                                  
+                                                                /label
+                                                                  ('class', 'hidden-label')
+                                                                  ('for', 'Email')
+                                                                    Enter your email
+                                                                label/
+                                                                  
+                                                                /input
+                                                                  ('id', 'Email')
+                                                                  ('type', 'email')
+                                                                  ('value', '')
+                                                                  ('spellcheck', 'false')
+                                                                  ('name', 'Email')
+                                                                  ('placeholder', 'Email or phone')
+                                                                    
+                                                                  /input
+                                                                    ('id', 'Passwd-hidden')
+                                                                    ('type', 'password')
+                                                                    ('spellcheck', 'false')
+                                                                    ('class', 'hidden')
+                                                                      
+                                                                  div/
+                                                                    
+                                                                div/
+                                                                  
+                                                                /span
+                                                                  ('role', 'alert')
+                                                                  ('class', 'error-msg')
+                                                                  ('id', 'errormsg_0_Email')
+                                                                span/
+                                                                  
+                                                              div/
+                                                               
+                                                              /input
+                                                                ('id', 'next')
+                                                                ('name', 'signIn')
+                                                                ('class', 'rc-button rc-button-submit')
+                                                                ('type', 'submit')
+                                                                ('value', 'Next')
+                                                                  
+                                                                /a
+                                                                  ('class', 'need-help')
+                                                                  ('href', 'https://accounts.google.com/signin/usernamerecovery?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&ss=1&scc=1&rm=false&osid=1&ltmpl=default&hl=en-GB')
+                                                                    Find my account  
+                                                                a/
+                                                                  
+                                                              div/
+                                                                
+                                                            div/
+                                                              
+                                                          form/
+                                                           
+                                                        div/
+                                                          
+                                                        /div
+                                                          ('class', 'card-mask-wrap\n    \n        \n     no-name')
+                                                            
+                                                          /div
+                                                            ('class', 'card-mask')
+                                                              
+                                                            /div
+                                                              ('class', 'one-google')
+                                                                
+                                                              /p
+                                                                ('class', 'create-account')
+                                                                  
+                                                                /span
+                                                                  ('id', 'link-signin-different')
+                                                                    
+                                                                  /a
+                                                                    ('href', 'https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&rm=false&ltmpl=default&scc=1&ss=1&osid=1&emr=1')
+                                                                      Sign in with a different account  
+                                                                  a/
+                                                                    
+                                                                span/
+                                                                  
+                                                                /span
+                                                                  ('id', 'link-signup')
+                                                                    
+                                                                  /a
+                                                                    ('href', 'https://accounts.google.com/SignUp?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ltmpl=default')
+                                                                      Create account  
+                                                                  a/
+                                                                    
+                                                                span/
+                                                                  
+                                                              p/
+                                                               
+                                                              /p
+                                                                ('class', 'tagline')
+                                                                  One Google Account for everything Google 
+                                                              p/
+                                                               
+                                                              /div
+                                                                ('class', 'logo-strip')
+                                                              div/
+                                                                
+                                                            div/
+                                                              
+                                                          div/
+                                                            
+                                                        div/
+                                                         
+                                                      div/
+                                                        
+                                                    div/
+                                                      
+                                                    /div
+                                                      ('class', 'google-footer-bar')
+                                                        
+                                                      /div
+                                                        ('class', 'footer content clearfix')
+                                                          
+                                                        /ul
+                                                          ('id', 'footer-list')
+                                                            
+                                                          /li
+                                                              
+                                                            /a
+                                                              ('href', 'https://www.google.com/intl/en-GB/about')
+                                                              ('target', '_blank')
+                                                                About Google  
+                                                            a/
+                                                              
+                                                          li/
+                                                            
+                                                          /li
+                                                              
+                                                            /a
+                                                              ('href', 'https://accounts.google.com/TOS?loc=GB&hl=en-GB&privacy=true')
+                                                              ('target', '_blank')
+                                                                Privacy  
+                                                            a/
+                                                              
+                                                          li/
+                                                            
+                                                          /li
+                                                              
+                                                            /a
+                                                              ('href', 'https://accounts.google.com/TOS?loc=GB&hl=en-GB')
+                                                              ('target', '_blank')
+                                                                Terms  
+                                                            a/
+                                                              
+                                                          li/
+                                                            
+                                                          /li
+                                                              
+                                                            /a
+                                                              ('href', 'http://www.google.com/support/accounts?hl=en-GB')
+                                                              ('target', '_blank')
+                                                                Help  
+                                                            a/
+                                                              
+                                                          li/
+                                                            
+                                                        ul/
+                                                          
+                                                      div/
+                                                       
+                                                    div/
+                                                      
+                                                  div/
+                                                   
+                                                  /script
+                                                    ('type', 'text/javascript')
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                      var gaia_attachEvent = function(element, event, callback) {  if (element && element.addEventListener) {  element.addEventListener(event, callback, f ...(cont)...
+                                                  script/
+                                                    
+                                                  /script
+                                                    ('type', 'text/javascript')
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                    (function(){var m=function(Y,W){if(Y=(W=null,E).trustedTypes,!Y||!Y.createPolicy)return W;try{W=Y.createPolicy("bg",{createHTML:h,createScript:h,creat ...(cont)...
+                                                  script/
+                                                    
+                                                  /script
+                                                    ('type', 'text/javascript')
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                      document.bg = new botguard.bg('tzJzEQcG9Zc4o1Png6ILzQtYaje6pFHpsYyUDS8vbMp5gXbDR/HSwPDjPABNlOO+38kH62oi2uObsB4r20sHEpOsL+VAix2hUUMjZMIUeUJw24NJbKT2F ...(cont)...
+                                                  script/
+                                                   
+                                                  /script
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                      gaia = window.gaia || {};  gaia.ps = gaia.ps || {};  gaia.ps.hasPrefilledIdentifier = false;  function gaia_parseFragment() {  var hash = location.h ...(cont)...
+                                                  script/
+                                                   
+                                                  /script
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                      var gaia_scrollToElement = function(element) {  var calculateOffsetHeight = function(element) {  var curtop = 0;  if (element.offsetParent) {  while ...(cont)...
+                                                  script/
+                                                   
+                                                  /script
+                                                    ('type', 'text/javascript')
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                     var BrowserSupport_={IsBrowserSupported:function(){var agt=navigator.userAgent.toLowerCase();var is_op=agt.indexOf("opera")!=-1;var is_ie=agt.indexOf ...(cont)...
+                                                  script/
+                                                   
+                                                  /script
+                                                    ('type', 'text/javascript')
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                     <!-- var start_time = (new Date()).getTime(); if (top.location != self.location) { top.location = self.location.href; } function SetGmailCookie(name, ...(cont)...
+                                                  script/
+                                                   
+                                                  /script
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                     gaia_attachEvent(window, 'load', function() {  OnLoad();  FixForm(); }); (function() {  var gaiaLoginForm = document.getElementById('gaia_loginform') ...(cont)...
+                                                  script/
+                                                    
+                                                  /script
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                      if (gaia.ps.hasPrefilledIdentifier) {  var form = document.getElementById('gaia_loginform');  if (form) {  form.submit();  }  }  
+                                                  script/
+                                                   
+                                                  /script
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                      (function(){  gaia_onLoginSubmit = function() {  try {  gaia.loginAutoRedirect.stop();  } catch (err) {  // do not prevent form from being submitted ...(cont)...
+                                                  script/
+                                                    
+                                                  /script
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                    var e=this,g=function(b,c){b=b.split(".");var a=e;b[0]in a||!a.execScript||a.execScript("var "+b[0]);for(var d;b.length&&(d=b.shift());)b.length||void ...(cont)...
+                                                  script/
+                                                    
+                                                  /script
+                                                    ('type', 'text/javascript')
+                                                    ('nonce', 'FZiHLAr+rr6j9/gmwHLF3g')
+                                                      gaia.loginAutoRedirect.start(5000,  'https:\x2F\x2Faccounts.google.com\x2FServiceLogin?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F\x26osid=1\x2 ...(cont)...
+                                                  script/
+                                                    
+                                                body/
+                                                 
+                                              html/
+                                               
+
+Process finished with exit code 0
