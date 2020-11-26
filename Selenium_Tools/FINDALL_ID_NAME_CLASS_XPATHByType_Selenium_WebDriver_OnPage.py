@@ -119,6 +119,17 @@ class FindAllIDNameClassUsingXpath():
         self.valuetofind = self.xpath_to_use(self.findwhat)[1]
         self.setUp_webdriver(self.browser)
         self.driver.get(self.base_url)
+        # new features by chrome incognito mode - pop-up of Agree button which I need to click
+        twoword = '.'.join(self.base_url.split('://')[1].split('.')[0:2])
+        oneword = self.base_url.split('://')[1].split('.')[0]
+        if oneword == 'google' or twoword == 'www.google':
+            if self.driver.find_element_by_css_selector("iframe"):
+                iframe1 = self.driver.find_elements_by_css_selector("iframe")
+                self.driver.switch_to.frame(iframe1[0])
+                # driver.find_element_by_xpath("//*[contains(text(),'I agree')]").click()
+                self.driver.find_element_by_id("introAgreeButton").click()
+                self.driver.switch_to.default_content()
+        self.driver.get(self.base_url)
         ids = self.find_element_xpath(self.driver, self.valuetofind)
         self.list_of_ids(ids)
         self.driver.quit()
